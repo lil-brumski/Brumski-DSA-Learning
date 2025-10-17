@@ -1,8 +1,11 @@
 #include <iostream>
-#include <type_traits>
+#include <stdexcept>
 #include <string>
 #include <memory>
 #include <expected>
+#include <vector>
+
+#include <argparse/argparse.hpp>
 
 /**
 * \typedef DSAPTR
@@ -99,23 +102,87 @@ public:
 };
 
 int main(int argc, char** argv){
-    std::cout << "Begin" << std::endl;
-    
-    LinkedList<int> EmptyList;
-    EmptyList.insertAtEnd(1);
 
-    std::cout << std::endl;
-    std::cout << std::endl;
+    if (argc == 1) {
+        std::cout << "Begin" << std::endl;
+        LinkedList<int> EmptyList;
+        EmptyList.insertAtEnd(1);
+        std::cout << std::endl;
+        std::cout << std::endl;
+        LinkedList<int> BIList;
+        BIList.insertAtFront(3).insertAtFront(2).insertAtFront(1).outputValues();
+        std::cout << std::endl;
+        LinkedList<std::string> BSList;
+        BSList.insertAtFront("Oghenebrume").insertAtFront("Tamaratare").insertAtFront("David").outputValues();
+        std::cout << "End" << std::endl;
+    }
+    else {
+        argparse::ArgumentParser program("LinkedList", "1.0");
 
-    LinkedList<int> BIList;
-    BIList.insertAtFront(3).insertAtFront(2).insertAtFront(1).outputValues();
+        std::vector<int> IntNumbers;
+        program.add_argument("-i", "--int")
+            .nargs(argparse::nargs_pattern::at_least_one)
+            .scan<'i', int>()
+            .store_into(IntNumbers);
 
-    std::cout << std::endl;
+        program.add_argument("-f", "--float")
+            .nargs(argparse::nargs_pattern::any)
+            .scan<'g', float>();
 
-    LinkedList<std::string> BSList;
-    BSList.insertAtFront("Oghenebrume").insertAtFront("Tamaratare").insertAtFront("David").outputValues();
+        std::vector<std::string> StringVessel;
+        program.add_argument("-s", "--string")
+            .nargs(argparse::nargs_pattern::at_least_one)
+            .store_into(StringVessel);
 
-    std::cout << "End" << std::endl;
+        try {
+            program.parse_args(argc, argv);
+        }
+        catch(const std::exception& error){
+            std::cerr << error.what() << std::endl;
+            std::cerr << program;
+            return -1;
+        }
+
+        /**
+        * 
+        */
+        if (program.is_used("--float")) {
+            std::vector<float> FloatNumbers = program.get<std::vector<float>>("--float");
+            LinkedList<float> list_f;
+            for (auto& s : FloatNumbers) {
+                list_f.insertAtFront(s);
+            }
+
+            std::cout << "\nSTART: Floats" << std::endl;
+            list_f.outputValues();
+            std::cout << "STOP: Floats" << std::endl;
+        }
+        /**
+        *
+        */
+        if (program.is_used("--int")) {
+            LinkedList<int> list_int;
+            for (auto& s : IntNumbers) {
+                list_int.insertAtFront(s);
+            }
+            std::cout << "\nSTART: Integers" << std::endl;
+            list_int.outputValues();
+            std::cout << "STOP: Integers" << std::endl;
+        }
+        /**
+        *
+        */
+        if (program.is_used("--string")) {
+            LinkedList<std::string> list_str;
+            for (auto& s : StringVessel) {
+                list_str.insertAtFront(s);
+            }
+            std::cout << "\nSTART: Strings" << std::endl;
+            list_str.outputValues();
+            std::cout << "STOP: Strings" << std::endl;
+        }
+        
+    }
 
     return 0;
 }

@@ -1,0 +1,78 @@
+{
+    "version": 8,
+  "configurePresets": [
+    {
+      "name": "dsa-rel-win",
+      "displayName": "dsa-rel-win",
+      "description": "For MSVC use, uses /MT",
+      "binaryDir": "${sourceDir}/build/${presetName}",
+      "cacheVariables": {
+        "CMAKE_MSVC_RUNTIME_LIBRARY": "MultiThreaded",
+        "CMAKE_BUILD_TYPE": "Release",
+        "CMAKE_TOOLCHAIN_FILE": ""
+      }
+    },
+    {
+      "name": "dsa-deb-win",
+      "displayName": "dsa-deb-win",
+      "description": "For MSVC use, uses /MDd",
+      "binaryDir": "${sourceDir}/build/${presetName}",
+      "cacheVariables": {
+        "CMAKE_MSVC_RUNTIME_LIBRARY": "MultiThreadedDebugDLL",
+        "CMAKE_BUILD_TYPE": "Debug",
+        "CMAKE_TOOLCHAIN_FILE": ""
+      }
+    },
+
+
+    {
+      "name": "dsa-rel-linux",
+      "displayName": "dsa-rel-linux",
+      "description": "For Linux",
+      "generator": "Unix Makefiles",
+      "binaryDir": "${sourceDir}/build/${presetName}",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Release",
+        "CMAKE_EXE_LINKER_FLAGS": "-static"
+      }
+    },
+
+
+    {
+      "name": "dsa-deb-linux",
+      "displayName": "dsa-deb-linux",
+      "generator": "Unix Makefiles",
+      "description": "For Linux",
+      "binaryDir": "${sourceDir}/build/${presetName}",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Debug"
+      }
+    }
+
+  ],
+
+  "buildPresets": [
+    {
+      "name": "dsa-rel-win",
+      "configurePreset": "dsa-rel-win",
+      "configuration": "Release"
+    },
+    {
+      "name": "dsa-deb-win",
+      "configurePreset": "dsa-deb-win",
+      "configuration": "Debug"
+    },
+
+    {
+      "name": "dsa-rel-linux",
+      "configurePreset": "dsa-rel-linux",
+      "configuration": "Release"
+    },
+    {
+      "name": "dsa-deb-linux",
+      "configurePreset": "dsa-deb-linux",
+      "configuration": "Debug"
+    }
+  ]
+ 
+}
