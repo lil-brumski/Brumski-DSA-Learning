@@ -1,0 +1,145 @@
+\doxysection{Linked\+List\texorpdfstring{$<$}{<} LLType \texorpdfstring{$>$}{>} Class Template Reference}
+\hypertarget{class_linked_list}{}\label{class_linked_list}\index{LinkedList$<$ LLType $>$@{LinkedList$<$ LLType $>$}}
+
+
+This is a template class that represents the linked list.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_linked_list_ab7bbba34b30827d6b1c7a6627d9929a4}{Linked\+List}} ()=default
+\begin{DoxyCompactList}\small\item\em Default Constructor. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_linked_list}{Linked\+List}} \& \mbox{\hyperlink{class_linked_list_a7bff2091127812b497269f829b8a0230}{insert\+At\+Front}} (LLType value)
+\begin{DoxyCompactList}\small\item\em Inserts a value at the front of the linked list. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_linked_list_a090563da27205724ff8c711ee7e2d0c1}{insert\+At\+End}} (LLType value)
+\begin{DoxyCompactList}\small\item\em A function that checks if the linked list is empty before putting a value at the end. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_linked_list}{Linked\+List}} \& \mbox{\hyperlink{class_linked_list_a60134ce768c1833e90860ebc330cb738}{output\+Values}} ()
+\begin{DoxyCompactList}\small\item\em Outputs the values in the linked list. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_linked_list_af347eb7a9d8c2d48f7b2066ff56d0a12}{\texorpdfstring{$\sim$}{\string~}\+Linked\+List}} ()=default
+\begin{DoxyCompactList}\small\item\em Default Destructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::expected$<$ int, std\+::string $>$ \mbox{\hyperlink{class_linked_list_a52787feeb26144e3074fbc65dc8e1a8b}{\+\_\+\+\_\+insert\+Value\+At\+The\+End\+Of\+The\+List}} (LLType value)
+\begin{DoxyCompactList}\small\item\em A function that checks if the linked list is empty before putting a value at the end. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{linkedlist_8cpp_a5aface2aee43d48082816ea90e689447}{DSAPTR}}$<$ \mbox{\hyperlink{class_node}{Node}}$<$ LLType $>$ $>$ \mbox{\hyperlink{class_linked_list_a94fa0b3a3127433bb110bf0fda8b713c}{head}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$class LLType$>$\newline
+class Linked\+List$<$ LLType $>$}
+This is a template class that represents the linked list. 
+
+It can take any basic C++ data type. 
+
+\label{doc-constructors}
+\Hypertarget{class_linked_list_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_linked_list_ab7bbba34b30827d6b1c7a6627d9929a4}\index{LinkedList$<$ LLType $>$@{LinkedList$<$ LLType $>$}!LinkedList@{LinkedList}}
+\index{LinkedList@{LinkedList}!LinkedList$<$ LLType $>$@{LinkedList$<$ LLType $>$}}
+\doxysubsubsection{\texorpdfstring{LinkedList()}{LinkedList()}}
+{\footnotesize\ttfamily \label{class_linked_list_ab7bbba34b30827d6b1c7a6627d9929a4} 
+template$<$class LLType$>$ \\
+\mbox{\hyperlink{class_linked_list}{Linked\+List}}$<$ LLType $>$\mbox{\hyperlink{class_linked_list}{\+::\+Linked\+List}} (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+Default Constructor. 
+
+\Hypertarget{class_linked_list_af347eb7a9d8c2d48f7b2066ff56d0a12}\index{LinkedList$<$ LLType $>$@{LinkedList$<$ LLType $>$}!````~LinkedList@{\texorpdfstring{$\sim$}{\string~}LinkedList}}
+\index{````~LinkedList@{\texorpdfstring{$\sim$}{\string~}LinkedList}!LinkedList$<$ LLType $>$@{LinkedList$<$ LLType $>$}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}LinkedList()}{\string~LinkedList()}}
+{\footnotesize\ttfamily \label{class_linked_list_af347eb7a9d8c2d48f7b2066ff56d0a12} 
+template$<$class LLType$>$ \\
+virtual \mbox{\hyperlink{class_linked_list}{Linked\+List}}$<$ LLType $>$\+::\texorpdfstring{$\sim$}{\string~}\mbox{\hyperlink{class_linked_list}{Linked\+List}} (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+
+
+Default Destructor. 
+
+
+
+\label{doc-func-members}
+\Hypertarget{class_linked_list_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_linked_list_a52787feeb26144e3074fbc65dc8e1a8b}\index{LinkedList$<$ LLType $>$@{LinkedList$<$ LLType $>$}!\_\_insertValueAtTheEndOfTheList@{\_\_insertValueAtTheEndOfTheList}}
+\index{\_\_insertValueAtTheEndOfTheList@{\_\_insertValueAtTheEndOfTheList}!LinkedList$<$ LLType $>$@{LinkedList$<$ LLType $>$}}
+\doxysubsubsection{\texorpdfstring{\_\_insertValueAtTheEndOfTheList()}{\_\_insertValueAtTheEndOfTheList()}}
+{\footnotesize\ttfamily \label{class_linked_list_a52787feeb26144e3074fbc65dc8e1a8b} 
+template$<$class LLType$>$ \\
+std\+::expected$<$ int, std\+::string $>$ \mbox{\hyperlink{class_linked_list}{Linked\+List}}$<$ LLType $>$\+::\+\_\+\+\_\+insert\+Value\+At\+The\+End\+Of\+The\+List (\begin{DoxyParamCaption}\item[{LLType}]{value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+A function that checks if the linked list is empty before putting a value at the end. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & -\/ if the linked list is empty it will return an error message in the form of a std\+::string, if not I\textquotesingle{}ll return the number 10. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_linked_list_a090563da27205724ff8c711ee7e2d0c1}\index{LinkedList$<$ LLType $>$@{LinkedList$<$ LLType $>$}!insertAtEnd@{insertAtEnd}}
+\index{insertAtEnd@{insertAtEnd}!LinkedList$<$ LLType $>$@{LinkedList$<$ LLType $>$}}
+\doxysubsubsection{\texorpdfstring{insertAtEnd()}{insertAtEnd()}}
+{\footnotesize\ttfamily \label{class_linked_list_a090563da27205724ff8c711ee7e2d0c1} 
+template$<$class LLType$>$ \\
+virtual void \mbox{\hyperlink{class_linked_list}{Linked\+List}}$<$ LLType $>$\+::insert\+At\+End (\begin{DoxyParamCaption}\item[{LLType}]{value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+A function that checks if the linked list is empty before putting a value at the end. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & -\/ if the linked list is empty it will return an error message in the form of a std\+::string \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_linked_list_a7bff2091127812b497269f829b8a0230}\index{LinkedList$<$ LLType $>$@{LinkedList$<$ LLType $>$}!insertAtFront@{insertAtFront}}
+\index{insertAtFront@{insertAtFront}!LinkedList$<$ LLType $>$@{LinkedList$<$ LLType $>$}}
+\doxysubsubsection{\texorpdfstring{insertAtFront()}{insertAtFront()}}
+{\footnotesize\ttfamily \label{class_linked_list_a7bff2091127812b497269f829b8a0230} 
+template$<$class LLType$>$ \\
+virtual \mbox{\hyperlink{class_linked_list}{Linked\+List}} \& \mbox{\hyperlink{class_linked_list}{Linked\+List}}$<$ LLType $>$\+::insert\+At\+Front (\begin{DoxyParamCaption}\item[{LLType}]{value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Inserts a value at the front of the linked list. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & -\/ the value that you want to pass to the front of the linked list \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_linked_list_a60134ce768c1833e90860ebc330cb738}\index{LinkedList$<$ LLType $>$@{LinkedList$<$ LLType $>$}!outputValues@{outputValues}}
+\index{outputValues@{outputValues}!LinkedList$<$ LLType $>$@{LinkedList$<$ LLType $>$}}
+\doxysubsubsection{\texorpdfstring{outputValues()}{outputValues()}}
+{\footnotesize\ttfamily \label{class_linked_list_a60134ce768c1833e90860ebc330cb738} 
+template$<$class LLType$>$ \\
+virtual \mbox{\hyperlink{class_linked_list}{Linked\+List}} \& \mbox{\hyperlink{class_linked_list}{Linked\+List}}$<$ LLType $>$\+::output\+Values (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Outputs the values in the linked list. 
+
+
+
+\label{doc-variable-members}
+\Hypertarget{class_linked_list_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_linked_list_a94fa0b3a3127433bb110bf0fda8b713c}\index{LinkedList$<$ LLType $>$@{LinkedList$<$ LLType $>$}!head@{head}}
+\index{head@{head}!LinkedList$<$ LLType $>$@{LinkedList$<$ LLType $>$}}
+\doxysubsubsection{\texorpdfstring{head}{head}}
+{\footnotesize\ttfamily \label{class_linked_list_a94fa0b3a3127433bb110bf0fda8b713c} 
+template$<$class LLType$>$ \\
+\mbox{\hyperlink{linkedlist_8cpp_a5aface2aee43d48082816ea90e689447}{DSAPTR}}$<$\mbox{\hyperlink{class_node}{Node}}$<$LLType$>$ $>$ \mbox{\hyperlink{class_linked_list}{Linked\+List}}$<$ LLType $>$\+::head\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+HP/\+Desktop/\+Brumski/\+C++/\+Brumski-\/\+DSA-\/\+Learning/\mbox{\hyperlink{linkedlist_8cpp}{linkedlist.\+cpp}}\end{DoxyCompactItemize}
