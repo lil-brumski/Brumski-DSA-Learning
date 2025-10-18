@@ -105,15 +105,8 @@ int main(int argc, char** argv){
 
     if (argc == 1) {
         std::cout << "Begin" << std::endl;
-        LinkedList<int> EmptyList;
-        EmptyList.insertAtEnd(1);
-        std::cout << std::endl;
-        std::cout << std::endl;
         LinkedList<int> BIList;
         BIList.insertAtFront(3).insertAtFront(2).insertAtFront(1).outputValues();
-        std::cout << std::endl;
-        LinkedList<std::string> BSList;
-        BSList.insertAtFront("Oghenebrume").insertAtFront("Tamaratare").insertAtFront("David").outputValues();
         std::cout << "End" << std::endl;
     }
     else {
@@ -126,7 +119,7 @@ int main(int argc, char** argv){
             .store_into(IntNumbers);
 
         program.add_argument("-f", "--float")
-            .nargs(argparse::nargs_pattern::any)
+            .nargs(argparse::nargs_pattern::at_least_one)
             .scan<'g', float>();
 
         std::vector<std::string> StringVessel;
