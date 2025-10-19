@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['head_0',['head',['../class_linked_list.html#a94fa0b3a3127433bb110bf0fda8b713c',1,'LinkedList']]]
+  ['data_0',['data',['../class_node.html#af903b2aaf21857d2d1f0496f40192b6a',1,'Node']]],
+  ['dsaptr_1',['DSAPTR',['../linkedlist_8hpp.html#a5aface2aee43d48082816ea90e689447',1,'linkedlist.hpp']]]
 ];

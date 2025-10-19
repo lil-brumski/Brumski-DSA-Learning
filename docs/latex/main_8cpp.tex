@@ -1,0 +1,81 @@
+\doxysection{C\+:/\+Users/\+HP/\+Desktop/\+Brumski/\+C++/\+Brumski-\/\+DSA-\/\+Learning/src/main.cpp File Reference}
+\hypertarget{main_8cpp}{}\label{main_8cpp}\index{C:/Users/HP/Desktop/Brumski/C++/Brumski-\/DSA-\/Learning/src/main.cpp@{C:/Users/HP/Desktop/Brumski/C++/Brumski-\/DSA-\/Learning/src/main.cpp}}
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$stdexcept$>$}\newline
+{\ttfamily \#include "{}linkedlist.\+hpp"{}}\newline
+{\ttfamily \#include $<$argparse/argparse.\+hpp$>$}\newline
+\doxysubsubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum class \mbox{\hyperlink{main_8cpp_ab87bacfdad76e61b9412d7124be44c1c}{Color}} \{ \mbox{\hyperlink{main_8cpp_ab87bacfdad76e61b9412d7124be44c1cabda9643ac6601722a28f238714274da4}{red}}
+, \mbox{\hyperlink{main_8cpp_ab87bacfdad76e61b9412d7124be44c1ca9f27410725ab8cc8854a2769c7a516b8}{green}}
+, \mbox{\hyperlink{main_8cpp_ab87bacfdad76e61b9412d7124be44c1cad487dd0b55dfcacdd920ccbdaeafa351}{yellow}}
+, \mbox{\hyperlink{main_8cpp_ab87bacfdad76e61b9412d7124be44c1ca86266ee937d97f812a8e57d22b62ee29}{reset}}
+ \}
+\begin{DoxyCompactList}\small\item\em Contains constants that will allow the text in the command line to have colours other than the default one. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+constexpr std\+::string\+\_\+view \mbox{\hyperlink{main_8cpp_a2e633d826d4d46805ebab0cbe10d54c0}{ansi}} (\mbox{\hyperlink{main_8cpp_ab87bacfdad76e61b9412d7124be44c1c}{Color}} c=\mbox{\hyperlink{main_8cpp_ab87bacfdad76e61b9412d7124be44c1ca86266ee937d97f812a8e57d22b62ee29}{Color\+::reset}})
+\begin{DoxyCompactList}\small\item\em View-\/only string function. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{main_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}{main}} (int argc, char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}argv)
+\end{DoxyCompactItemize}
+
+
+\label{doc-enum-members}
+\Hypertarget{main_8cpp_doc-enum-members}
+\doxysubsection{Enumeration Type Documentation}
+\Hypertarget{main_8cpp_ab87bacfdad76e61b9412d7124be44c1c}\index{main.cpp@{main.cpp}!Color@{Color}}
+\index{Color@{Color}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{Color}{Color}}
+{\footnotesize\ttfamily \label{main_8cpp_ab87bacfdad76e61b9412d7124be44c1c} 
+enum class \mbox{\hyperlink{main_8cpp_ab87bacfdad76e61b9412d7124be44c1c}{Color}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+
+
+Contains constants that will allow the text in the command line to have colours other than the default one. 
+
+\begin{DoxyEnumFields}[2]{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{red@{red}!main.cpp@{main.cpp}}\index{main.cpp@{main.cpp}!red@{red}}}\Hypertarget{main_8cpp_ab87bacfdad76e61b9412d7124be44c1cabda9643ac6601722a28f238714274da4}\label{main_8cpp_ab87bacfdad76e61b9412d7124be44c1cabda9643ac6601722a28f238714274da4} 
+red&Will display the colour red. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{green@{green}!main.cpp@{main.cpp}}\index{main.cpp@{main.cpp}!green@{green}}}\Hypertarget{main_8cpp_ab87bacfdad76e61b9412d7124be44c1ca9f27410725ab8cc8854a2769c7a516b8}\label{main_8cpp_ab87bacfdad76e61b9412d7124be44c1ca9f27410725ab8cc8854a2769c7a516b8} 
+green&Will display the colour green. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{yellow@{yellow}!main.cpp@{main.cpp}}\index{main.cpp@{main.cpp}!yellow@{yellow}}}\Hypertarget{main_8cpp_ab87bacfdad76e61b9412d7124be44c1cad487dd0b55dfcacdd920ccbdaeafa351}\label{main_8cpp_ab87bacfdad76e61b9412d7124be44c1cad487dd0b55dfcacdd920ccbdaeafa351} 
+yellow&Will display the colour yellow. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{reset@{reset}!main.cpp@{main.cpp}}\index{main.cpp@{main.cpp}!reset@{reset}}}\Hypertarget{main_8cpp_ab87bacfdad76e61b9412d7124be44c1ca86266ee937d97f812a8e57d22b62ee29}\label{main_8cpp_ab87bacfdad76e61b9412d7124be44c1ca86266ee937d97f812a8e57d22b62ee29} 
+reset&Will display the default command line colour. \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\label{doc-func-members}
+\Hypertarget{main_8cpp_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{main_8cpp_a2e633d826d4d46805ebab0cbe10d54c0}\index{main.cpp@{main.cpp}!ansi@{ansi}}
+\index{ansi@{ansi}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{ansi()}{ansi()}}
+{\footnotesize\ttfamily \label{main_8cpp_a2e633d826d4d46805ebab0cbe10d54c0} 
+std\+::string\+\_\+view ansi (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{main_8cpp_ab87bacfdad76e61b9412d7124be44c1c}{Color}}}]{c}{ = {\ttfamily \mbox{\hyperlink{main_8cpp_ab87bacfdad76e61b9412d7124be44c1ca86266ee937d97f812a8e57d22b62ee29}{Color\+::reset}}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [constexpr]}}
+
+
+
+View-\/only string function. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & -\/ the enum constant containing the ANSI value that you want displayed. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{main_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}\index{main.cpp@{main.cpp}!main@{main}}
+\index{main@{main}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily \label{main_8cpp_a3c04138a5bfe5d72780bb7e82a18e627} 
+int main (\begin{DoxyParamCaption}\item[{int}]{argc}{, }\item[{char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{argv}{}\end{DoxyParamCaption})}
+
