@@ -36,16 +36,6 @@ class LinkedList {
 private:
     DSAPTR<Node<LLType>> head;
 
-    /**
-    * A function that checks if the linked list is empty before putting a value at the end.
-    * @param value - if the linked list is empty it will return an error message in the form of a std::string, if not I'll return the number 10.
-    */
-    std::expected<int, std::string> insertValueAtTheEndOfTheList(LLType value) {
-        DSAPTR<Node<LLType>> newNode = std::make_shared<Node<LLType>>();
-        if (head == nullptr) return std::unexpected("Linked List is empty, fill it first!");
-        return 10;
-    }
-
 public:
     /**
     * Default Constructor
@@ -53,10 +43,51 @@ public:
     LinkedList() = default;
 
     /**
+    * Allows access to private members of objects of the same type
+    */
+    friend class LinkedList<LLType>;
+
+    /**
+    * Deleted copy constructor
+    */
+    LinkedList(const LinkedList<LLType>&) = delete;
+
+    /**
+    * Move constructor
+    * @param other  - the object that you want to transfer ownership from
+    */
+    LinkedList(LinkedList<LLType>&& other) noexcept {
+        head = other.head;
+        other.head = nullptr;
+    }
+
+    /**
     * Inserts a value at the front of the linked list
     * @param value - the value that you want to pass to the front of the linked list
     */
     virtual LinkedList& insertAtFront(LLType value) {
+        DSAPTR<Node<LLType>> newNode = std::make_shared<Node<LLType>>();
+        newNode->data = value;
+        newNode->next = nullptr;
+
+        if (!head) {
+            head = newNode;
+            return *this;
+        }
+
+        DSAPTR<Node<LLType>> lastNode = head;
+        while (lastNode->next != nullptr) {
+            lastNode = lastNode->next;
+        }
+        lastNode->next = newNode;
+        return *this;
+    }
+
+    /**
+    * Inserts a value at the end of the linked list
+    * @param value - the value that you want to pass to the back of the linked list
+    */
+    virtual LinkedList& insertAtEnd(LLType value) {
         DSAPTR<Node<LLType>> newNode = std::make_shared<Node<LLType>>();
         newNode->data = value;
         newNode->next = head;
@@ -66,27 +97,38 @@ public:
     }
 
     /**
-    * A function that checks if the linked list is empty before putting a value at the end.
-    * @param value - if the linked list is empty it will return an error message in the form of a std::string
+    * Outputs the values in the linked list
     */
-    virtual void insertAtEnd(LLType value) {
-        auto InsertEndVar = insertValueAtTheEndOfTheList(value);
+    virtual LinkedList<LLType>& outputValues() {
+        DSAPTR<Node<LLType>> PRINT_node = head;
 
-        if (InsertEndVar) {
-            return;
+        if (!PRINT_node) {
+            std::cerr << "Object is null!" << std::endl;
+            return *this;
         }
-        else {
-            std::cout << InsertEndVar.error();
+
+        while (PRINT_node) {
+            std::cout << "Value: " << PRINT_node->data << std::endl;
+            PRINT_node = PRINT_node->next;
         }
+
+        return *this;
     }
 
     /**
-    * Outputs the values in the linked list
+    * Prevents assigning the values of existing LinkedList<T> objects to other objects.
     */
-    virtual LinkedList& outputValues() {
-        while (head) {
-            std::cout << "Value: " << head->data << std::endl;
-            head = head->next;
+    LinkedList<LLType>& operator=(const LinkedList<LLType>&) = delete;
+
+    /**
+    * Move assignment operator
+    * @param other  - the object that you want to transfer ownership from
+    */
+    LinkedList<LLType>& operator=(LinkedList<LLType>&& other) noexcept {
+        if (this != &other) {
+            head.reset();
+            head = other.head;
+            other.head = nullptr;
         }
 
         return *this;
@@ -104,3 +146,8 @@ public:
 * Basic example using a LinkedList<int>
 */
 void ListExample();
+
+/**
+* Basic example using a LinkedList<int>
+*/
+void ListExample2();

@@ -54,10 +54,11 @@ constexpr std::string_view ansi(Color c = Color::reset) {
 int main(int argc, char** argv) {
 
     if (argc == 1) {
-        ListExample();
+        //ListExample();
+        ListExample2();
     }
     else {
-        argparse::ArgumentParser program("LinkedList", "1.0");
+        argparse::ArgumentParser program("LinkedList", "1.0.1");
 
         std::vector<int> IntNumbers;
         program.add_argument("-i", "--int")
