@@ -26,7 +26,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Brumski&#39;s Data Structures and Algorithm Learning Project<span id="projectnumber">&#160;1.0.1</span>
+   <div id="projectname">Brumski&#39;s Data Structures and Algorithm Learning Project<span id="projectnumber">&#160;1.1</span>
    </div>
    <div id="projectbrief">For Learning Data Structures and Algorithms in C++</div>
   </td>
@@ -113,7 +113,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae9434520e2d7e006d98a41888828b1fe" id="r_ae9434520e2d7e006d98a41888828b1fe"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_linked_list.html">LinkedList</a>&lt; LLType &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae9434520e2d7e006d98a41888828b1fe">outputValues</a> ()</td></tr>
 <tr class="memdesc:ae9434520e2d7e006d98a41888828b1fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Outputs the values in the linked list.  <br /></td></tr>
 <tr class="memitem:abe0f0cf4b775b72cad13f9a9d6f21f6e" id="r_abe0f0cf4b775b72cad13f9a9d6f21f6e"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_linked_list.html">LinkedList</a>&lt; LLType &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abe0f0cf4b775b72cad13f9a9d6f21f6e">operator=</a> (const <a class="el" href="class_linked_list.html">LinkedList</a>&lt; LLType &gt; &amp;)=delete</td></tr>
-<tr class="memdesc:abe0f0cf4b775b72cad13f9a9d6f21f6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prevents assigning the values of existing <a class="el" href="class_linked_list.html">LinkedList&lt;T&gt;</a> objects to other objects.  <br /></td></tr>
+<tr class="memdesc:abe0f0cf4b775b72cad13f9a9d6f21f6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prevents assigning the values of existing <a class="el" href="class_linked_list.html" title="This is a template class that represents the linked list.">LinkedList&lt;T&gt;</a> objects to other objects.  <br /></td></tr>
 <tr class="memitem:ae93030ec989925d27b5b818f6b62245a" id="r_ae93030ec989925d27b5b818f6b62245a"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_linked_list.html">LinkedList</a>&lt; LLType &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae93030ec989925d27b5b818f6b62245a">operator=</a> (<a class="el" href="class_linked_list.html">LinkedList</a>&lt; LLType &gt; &amp;&amp;other) noexcept</td></tr>
 <tr class="memdesc:ae93030ec989925d27b5b818f6b62245a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move assignment operator.  <br /></td></tr>
 <tr class="memitem:af347eb7a9d8c2d48f7b2066ff56d0a12" id="r_af347eb7a9d8c2d48f7b2066ff56d0a12"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af347eb7a9d8c2d48f7b2066ff56d0a12">~LinkedList</a> ()=default</td></tr>
@@ -122,11 +122,6 @@ Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a94fa0b3a3127433bb110bf0fda8b713c" id="r_a94fa0b3a3127433bb110bf0fda8b713c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="linkedlist_8hpp.html#a5aface2aee43d48082816ea90e689447">DSAPTR</a>&lt; <a class="el" href="class_node.html">Node</a>&lt; LLType &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a94fa0b3a3127433bb110bf0fda8b713c">head</a></td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 id="header-friends" class="groupheader"><a id="friends" name="friends"></a>
-Friends</h2></td></tr>
-<tr class="memitem:a0c4d03395d14e770d65a61ed5fe3fd1e" id="r_a0c4d03395d14e770d65a61ed5fe3fd1e"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0c4d03395d14e770d65a61ed5fe3fd1e">LinkedList&lt; LLType &gt;</a></td></tr>
-<tr class="memdesc:a0c4d03395d14e770d65a61ed5fe3fd1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allows access to private members of objects of the same type.  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;class LLType&gt;<br />
@@ -351,7 +346,7 @@ template&lt;class LLType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Prevents assigning the values of existing <a class="el" href="class_linked_list.html">LinkedList&lt;T&gt;</a> objects to other objects. </p>
+<p>Prevents assigning the values of existing <a class="el" href="class_linked_list.html" title="This is a template class that represents the linked list.">LinkedList&lt;T&gt;</a> objects to other objects. </p>
 
 </div>
 </div>
@@ -416,33 +411,6 @@ template&lt;class LLType&gt; </div>
 </div><div class="memdoc">
 
 <p>Outputs the values in the linked list. </p>
-
-</div>
-</div>
-<a name="doc-related-members" id="doc-related-members"></a><h2 id="header-doc-related-members" class="groupheader">Friends And Related Symbol Documentation</h2>
-<a id="a0c4d03395d14e770d65a61ed5fe3fd1e" name="a0c4d03395d14e770d65a61ed5fe3fd1e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0c4d03395d14e770d65a61ed5fe3fd1e">&#9670;&#160;</a></span>LinkedList&lt; LLType &gt;</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class LLType&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">friend class <a class="el" href="class_linked_list.html">LinkedList</a>&lt; LLType &gt;</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel friend">friend</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Allows access to private members of objects of the same type. </p>
 
 </div>
 </div>

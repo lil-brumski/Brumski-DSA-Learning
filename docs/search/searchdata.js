@@ -7,8 +7,7 @@ var indexSectionsWithContent =
   4: "dhmn",
   5: "d",
   6: "c",
-  7: "gry",
-  8: "l"
+  7: "gry"
 };
 
 var indexSectionNames =
@@ -20,8 +19,7 @@ var indexSectionNames =
   4: "variables",
   5: "typedefs",
   6: "enums",
-  7: "enumvalues",
-  8: "related"
+  7: "enumvalues"
 };
 
 var indexSectionLabels =
@@ -33,7 +31,6 @@ var indexSectionLabels =
   4: "Variables",
   5: "Typedefs",
   6: "Enumerations",
-  7: "Enumerator",
-  8: "Friends"
+  7: "Enumerator"
 };
 

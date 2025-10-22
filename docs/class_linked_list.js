@@ -9,6 +9,5 @@ var class_linked_list =
     [ "operator=", "class_linked_list.html#abe0f0cf4b775b72cad13f9a9d6f21f6e", null ],
     [ "operator=", "class_linked_list.html#ae93030ec989925d27b5b818f6b62245a", null ],
     [ "outputValues", "class_linked_list.html#ae9434520e2d7e006d98a41888828b1fe", null ],
-    [ "LinkedList< LLType >", "class_linked_list.html#a0c4d03395d14e770d65a61ed5fe3fd1e", null ],
     [ "head", "class_linked_list.html#a94fa0b3a3127433bb110bf0fda8b713c", null ]
 ];

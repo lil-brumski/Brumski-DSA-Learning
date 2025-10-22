@@ -98,7 +98,10 @@ public:
 	}
 };
 
-
+/**
+* Basic example using a MyStack<T>
+* @param object1 - a reference to the MyStack<T> object we want to work on
+*/
 template<class T>
 void UsingStack3(MyStack<T>& object1) {
 	while (!object1.isEmpty()) {

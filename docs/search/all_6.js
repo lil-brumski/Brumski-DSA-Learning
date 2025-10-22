@@ -3,8 +3,6 @@ var searchData=
   ['linkedlist_0',['LinkedList',['../class_linked_list.html',1,'LinkedList&lt; LLType &gt;'],['../class_linked_list.html#ab7bbba34b30827d6b1c7a6627d9929a4',1,'LinkedList::LinkedList()=default'],['../class_linked_list.html#ad38fc41e97e6a857be2665804f8004ef',1,'LinkedList::LinkedList(const LinkedList&lt; LLType &gt; &amp;)=delete'],['../class_linked_list.html#adf477c56976a04e25e92787b4e906eb9',1,'LinkedList::LinkedList(LinkedList&lt; LLType &gt; &amp;&amp;other) noexcept']]],
   ['linkedlist_2ecpp_1',['linkedlist.cpp',['../linkedlist_8cpp.html',1,'']]],
   ['linkedlist_2ehpp_2',['linkedlist.hpp',['../linkedlist_8hpp.html',1,'']]],
-  ['linkedlist_3c_20lltype_20_3e_3',['LinkedList&lt; LLType &gt;',['../class_linked_list.html#a0c4d03395d14e770d65a61ed5fe3fd1e',1,'LinkedList']]],
-  ['linkedlist_3c_20t_20_3e_4',['LinkedList&lt; T &gt;',['../class_linked_list.html',1,'']]],
-  ['listexample_5',['ListExample',['../linkedlist_8cpp.html#a558dcde16df55182bdb79452b84c5eec',1,'ListExample():&#160;linkedlist.cpp'],['../linkedlist_8hpp.html#a558dcde16df55182bdb79452b84c5eec',1,'ListExample():&#160;linkedlist.cpp']]],
-  ['listexample2_6',['ListExample2',['../linkedlist_8cpp.html#a9564967f2f24e151270dd25ec83562bb',1,'ListExample2():&#160;linkedlist.cpp'],['../linkedlist_8hpp.html#a9564967f2f24e151270dd25ec83562bb',1,'ListExample2():&#160;linkedlist.cpp']]]
+  ['listexample_3',['ListExample',['../linkedlist_8cpp.html#a558dcde16df55182bdb79452b84c5eec',1,'ListExample():&#160;linkedlist.cpp'],['../linkedlist_8hpp.html#a558dcde16df55182bdb79452b84c5eec',1,'ListExample():&#160;linkedlist.cpp']]],
+  ['listexample2_4',['ListExample2',['../linkedlist_8cpp.html#a9564967f2f24e151270dd25ec83562bb',1,'ListExample2():&#160;linkedlist.cpp'],['../linkedlist_8hpp.html#a9564967f2f24e151270dd25ec83562bb',1,'ListExample2():&#160;linkedlist.cpp']]]
 ];
