@@ -1,6 +1,9 @@
 #include <vector>
 #include <stdexcept>
+#include <string>
+
 #include "linkedlist.hpp"
+#include "stack_dsa.cpp"
 #include <argparse/argparse.hpp>
 
 #if defined(_WIN32)
@@ -55,25 +58,44 @@ int main(int argc, char** argv) {
 
     if (argc == 1) {
         //ListExample();
-        ListExample2();
+        //ListExample2();
+        //UsingStack();
+        UsingStack2();
     }
     else {
-        argparse::ArgumentParser program("LinkedList", "1.0.1");
+        argparse::ArgumentParser program("LinkedList", "1.1");
 
+        //For linked lists
         std::vector<int> IntNumbers;
-        program.add_argument("-i", "--int")
+        program.add_argument("-il", "--intll")
             .nargs(argparse::nargs_pattern::at_least_one)
             .scan<'i', int>()
             .store_into(IntNumbers);
 
-        program.add_argument("-f", "--float")
+        program.add_argument("-fl", "--floatll")
             .nargs(argparse::nargs_pattern::at_least_one)
             .scan<'g', float>();
 
         std::vector<std::string> StringVessel;
-        program.add_argument("-s", "--string")
+        program.add_argument("-sl", "--stringll")
             .nargs(argparse::nargs_pattern::at_least_one)
             .store_into(StringVessel);
+
+        //For stack data structure
+        std::vector<int> SINT;
+        program.add_argument("-is", "--intst")
+            .nargs(argparse::nargs_pattern::at_least_one)
+            .scan<'i', int>()
+            .store_into(SINT);
+
+        program.add_argument("-fs", "--floatst")
+            .nargs(argparse::nargs_pattern::at_least_one)
+            .scan<'g', float>();
+
+        std::vector<std::string> SCHAR;
+        program.add_argument("-ss", "--stringst")
+            .nargs(argparse::nargs_pattern::at_least_one)
+            .store_into(SCHAR);
 
         try {
             program.parse_args(argc, argv);
@@ -85,42 +107,79 @@ int main(int argc, char** argv) {
         }
 
         /**
-        *
+        * For checking if --floatll or --floatst is passed as arguments
         */
-        if (program.is_used("--float")) {
-            std::vector<float> FloatNumbers = program.get<std::vector<float>>("--float");
-            LinkedList<float> list_f;
-            for (auto& s : FloatNumbers) {
-                list_f.insertAtEnd(s);
-            }
+        if (program.is_used("--floatll") || program.is_used("--floatst")) {
+            if (program.is_used("--floatll")) {
+                std::vector<float> FloatNumbers = program.get<std::vector<float>>("--floatll");
+                LinkedList<float> list_f;
+                for (auto& s : FloatNumbers) {
+                    list_f.insertAtEnd(s);
+                }
 
-            std::cout << ansi(Color::green) << "\nSTART: Floats" << ansi() << std::endl;
-            list_f.outputValues();
-            std::cout << ansi(Color::green) << "STOP: Floats" << ansi() << std::endl;
-        }
-        /**
-        *
-        */
-        if (program.is_used("--int")) {
-            LinkedList<int> list_int;
-            for (auto& s : IntNumbers) {
-                list_int.insertAtEnd(s);
+                std::cout << ansi(Color::green) << "\nSTART (linked list): Floats" << ansi() << std::endl;
+                list_f.outputValues();
+                std::cout << ansi(Color::green) << "STOP: Floats" << ansi() << std::endl;
             }
-            std::cout << ansi(Color::green) << "\nSTART: Integers" << ansi() << std::endl;
-            list_int.outputValues();
-            std::cout << ansi(Color::green) << "STOP: Integers" << ansi() << std::endl;
-        }
-        /**
-        *
-        */
-        if (program.is_used("--string")) {
-            LinkedList<std::string> list_str;
-            for (auto& s : StringVessel) {
-                list_str.insertAtEnd(s);
+            if(program.is_used("--floatst")){
+                std::vector<float> FDEC = program.get<std::vector<float>>("--floatst");
+                MyStack<float> obj_f;
+                for (auto& s : FDEC) {
+                    obj_f.push_top(s);
+                }
+
+                std::cout << ansi(Color::green) << "\nSTART (stack): Floats" << ansi() << std::endl;
+                UsingStack3(obj_f);
+                std::cout << ansi(Color::green) << "STOP: Floats" << ansi() << std::endl;
             }
-            std::cout << ansi(Color::green) << "\nSTART: Strings" << ansi() << std::endl;
-            list_str.outputValues();
-            std::cout << ansi(Color::green) << "STOP: Strings" << ansi() << std::endl;
+        }
+
+        /**
+        * For checking if --intll or --intst is passed as arguments
+        */
+        if (program.is_used("--intll") || program.is_used("--intst")) {
+            if (program.is_used("--intll")) {
+                LinkedList<int> list_int;
+                for (auto& s : IntNumbers) {
+                    list_int.insertAtEnd(s);
+                }
+                std::cout << ansi(Color::green) << "\nSTART (linked list): Integers" << ansi() << std::endl;
+                list_int.outputValues();
+                std::cout << ansi(Color::green) << "STOP: Integers" << ansi() << std::endl;
+            }
+            if(program.is_used("--intst")) {
+                MyStack<int> obj_int;
+                for (auto& s : SINT) {
+                    obj_int.push_top(s);
+                }
+                std::cout << ansi(Color::green) << "\nSTART (stack): Integers" << ansi() << std::endl;
+                UsingStack3(obj_int);
+                std::cout << ansi(Color::green) << "STOP: Integers" << ansi() << std::endl;
+            }
+        }
+
+        /**
+        * For checking if --stringll or --stringst is passed as arguments
+        */
+        if (program.is_used("--stringll") || program.is_used("--stringst")) {
+            if (program.is_used("--stringll")) {
+                LinkedList<std::string> list_str;
+                for (auto& s : StringVessel) {
+                    list_str.insertAtEnd(s);
+                }
+                std::cout << ansi(Color::green) << "\nSTART (linked list): Strings" << ansi() << std::endl;
+                list_str.outputValues();
+                std::cout << ansi(Color::green) << "STOP: Strings" << ansi() << std::endl;
+            }
+            if(program.is_used("--stringst")) {
+                MyStack<std::string> obj_str;
+                for (auto& s : SCHAR) {
+                    obj_str.push_top(s);
+                }
+                std::cout << ansi(Color::green) << "\nSTART (stack): Strings" << ansi() << std::endl;
+                UsingStack3(obj_str);
+                std::cout << ansi(Color::green) << "STOP: Strings" << ansi() << std::endl;
+            }
         }
 
     }

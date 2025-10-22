@@ -1,9 +1,7 @@
 #pragma once
 
 #include <iostream>
-#include <string>
 #include <memory>
-#include <expected>
 
 /**
 * \typedef DSAPTR
@@ -41,12 +39,6 @@ public:
     * Default Constructor
     */
     LinkedList() = default;
-
-    //TODO: remove
-    /**
-    * Allows access to private members of objects of the same type
-    */
-    friend class LinkedList<LLType>;
 
     /**
     * Deleted copy constructor
