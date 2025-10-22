@@ -24,9 +24,9 @@ virtual \mbox{\hyperlink{class_linked_list}{Linked\+List}} \& \mbox{\hyperlink{c
 \begin{DoxyCompactList}\small\item\em Inserts a value at the end of the linked list. \end{DoxyCompactList}\item 
 virtual \mbox{\hyperlink{class_linked_list}{Linked\+List}}$<$ LLType $>$ \& \mbox{\hyperlink{class_linked_list_ae9434520e2d7e006d98a41888828b1fe}{output\+Values}} ()
 \begin{DoxyCompactList}\small\item\em Outputs the values in the linked list. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{class_linked_list}{Linked\+List}}$<$ LLType $>$ \& \mbox{\hyperlink{class_linked_list_aaea6219cb448194263a1af4dde563d74}{operator=}} (const \mbox{\hyperlink{class_linked_list}{Linked\+List}}$<$ LLType $>$ \&)=delete
+virtual \mbox{\hyperlink{class_linked_list}{Linked\+List}}$<$ LLType $>$ \& \mbox{\hyperlink{class_linked_list_abe0f0cf4b775b72cad13f9a9d6f21f6e}{operator=}} (const \mbox{\hyperlink{class_linked_list}{Linked\+List}}$<$ LLType $>$ \&)=delete
 \begin{DoxyCompactList}\small\item\em Prevents assigning the values of existing \doxylink{class_linked_list}{Linked\+List$<$\+T$>$} objects to other objects. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{class_linked_list}{Linked\+List}}$<$ LLType $>$ \& \mbox{\hyperlink{class_linked_list_ad9da97e99d5249722f1c9b91394fe3eb}{operator=}} (\mbox{\hyperlink{class_linked_list}{Linked\+List}}$<$ LLType $>$ \&\&other) noexcept
+virtual \mbox{\hyperlink{class_linked_list}{Linked\+List}}$<$ LLType $>$ \& \mbox{\hyperlink{class_linked_list_ae93030ec989925d27b5b818f6b62245a}{operator=}} (\mbox{\hyperlink{class_linked_list}{Linked\+List}}$<$ LLType $>$ \&\&other) noexcept
 \begin{DoxyCompactList}\small\item\em Move assignment operator. \end{DoxyCompactList}\item 
 virtual \mbox{\hyperlink{class_linked_list_af347eb7a9d8c2d48f7b2066ff56d0a12}{\texorpdfstring{$\sim$}{\string~}\+Linked\+List}} ()=default
 \begin{DoxyCompactList}\small\item\em Default Destructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
@@ -138,23 +138,23 @@ Inserts a value at the front of the linked list.
 {\em value} & -\/ the value that you want to pass to the front of the linked list \\
 \hline
 \end{DoxyParams}
-\Hypertarget{class_linked_list_aaea6219cb448194263a1af4dde563d74}\index{LinkedList$<$ LLType $>$@{LinkedList$<$ LLType $>$}!operator=@{operator=}}
+\Hypertarget{class_linked_list_abe0f0cf4b775b72cad13f9a9d6f21f6e}\index{LinkedList$<$ LLType $>$@{LinkedList$<$ LLType $>$}!operator=@{operator=}}
 \index{operator=@{operator=}!LinkedList$<$ LLType $>$@{LinkedList$<$ LLType $>$}}
 \doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily \label{class_linked_list_aaea6219cb448194263a1af4dde563d74} 
+{\footnotesize\ttfamily \label{class_linked_list_abe0f0cf4b775b72cad13f9a9d6f21f6e} 
 template$<$class LLType$>$ \\
-\mbox{\hyperlink{class_linked_list}{Linked\+List}}$<$ LLType $>$ \& \mbox{\hyperlink{class_linked_list}{Linked\+List}}$<$ LLType $>$\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_linked_list}{Linked\+List}}$<$ LLType $>$ \&}]{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+virtual \mbox{\hyperlink{class_linked_list}{Linked\+List}}$<$ LLType $>$ \& \mbox{\hyperlink{class_linked_list}{Linked\+List}}$<$ LLType $>$\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_linked_list}{Linked\+List}}$<$ LLType $>$ \&}]{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [delete]}}
 
 
 
 Prevents assigning the values of existing \doxylink{class_linked_list}{Linked\+List$<$\+T$>$} objects to other objects. 
 
-\Hypertarget{class_linked_list_ad9da97e99d5249722f1c9b91394fe3eb}\index{LinkedList$<$ LLType $>$@{LinkedList$<$ LLType $>$}!operator=@{operator=}}
+\Hypertarget{class_linked_list_ae93030ec989925d27b5b818f6b62245a}\index{LinkedList$<$ LLType $>$@{LinkedList$<$ LLType $>$}!operator=@{operator=}}
 \index{operator=@{operator=}!LinkedList$<$ LLType $>$@{LinkedList$<$ LLType $>$}}
 \doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily \label{class_linked_list_ad9da97e99d5249722f1c9b91394fe3eb} 
+{\footnotesize\ttfamily \label{class_linked_list_ae93030ec989925d27b5b818f6b62245a} 
 template$<$class LLType$>$ \\
-\mbox{\hyperlink{class_linked_list}{Linked\+List}}$<$ LLType $>$ \& \mbox{\hyperlink{class_linked_list}{Linked\+List}}$<$ LLType $>$\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_linked_list}{Linked\+List}}$<$ LLType $>$ \&\&}]{other}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+virtual \mbox{\hyperlink{class_linked_list}{Linked\+List}}$<$ LLType $>$ \& \mbox{\hyperlink{class_linked_list}{Linked\+List}}$<$ LLType $>$\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_linked_list}{Linked\+List}}$<$ LLType $>$ \&\&}]{other}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}, {\ttfamily [noexcept]}}
 
 
 

@@ -75,10 +75,6 @@ public:
         return *this;
     }
 
-    /**
-    * Inserts a value at any point in the linked list
-    * @param value - the value that you want to pass to any point in the linked list
-    */
     /*virtual LinkedList& insertAtAny(LLType value) {
         if (!head) {
             std::cerr << "Object is null!" << std::endl;

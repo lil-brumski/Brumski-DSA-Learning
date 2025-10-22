@@ -59,7 +59,7 @@ public:
 	MyStack<T>& operator=(const MyStack<T>&) = delete;
 
 	/**
-	* Default moves assignment operator
+	* Default move assignment operator
 	*/
 	MyStack<T>& operator=(MyStack<T>&&) = default;
 };
