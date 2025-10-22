@@ -91,7 +91,7 @@ int main(int argc, char** argv) {
             std::vector<float> FloatNumbers = program.get<std::vector<float>>("--float");
             LinkedList<float> list_f;
             for (auto& s : FloatNumbers) {
-                list_f.insertAtFront(s);
+                list_f.insertAtEnd(s);
             }
 
             std::cout << ansi(Color::green) << "\nSTART: Floats" << ansi() << std::endl;
@@ -104,7 +104,7 @@ int main(int argc, char** argv) {
         if (program.is_used("--int")) {
             LinkedList<int> list_int;
             for (auto& s : IntNumbers) {
-                list_int.insertAtFront(s);
+                list_int.insertAtEnd(s);
             }
             std::cout << ansi(Color::green) << "\nSTART: Integers" << ansi() << std::endl;
             list_int.outputValues();
@@ -116,7 +116,7 @@ int main(int argc, char** argv) {
         if (program.is_used("--string")) {
             LinkedList<std::string> list_str;
             for (auto& s : StringVessel) {
-                list_str.insertAtFront(s);
+                list_str.insertAtEnd(s);
             }
             std::cout << ansi(Color::green) << "\nSTART: Strings" << ansi() << std::endl;
             list_str.outputValues();

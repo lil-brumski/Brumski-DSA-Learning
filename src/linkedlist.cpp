@@ -11,7 +11,7 @@ void ListExample() {
 void ListExample2() {
     std::cout << "BIList" << std::endl;
     LinkedList<int> BIList;
-    BIList.insertAtFront(1).insertAtFront(2).insertAtFront(3).outputValues();
+    BIList.insertAtEnd(1).insertAtEnd(2).insertAtEnd(3).outputValues();
    
     std::cout << "\nCopyObj1" << std::endl;
     LinkedList<int> CopyObj1 = std::move(BIList);

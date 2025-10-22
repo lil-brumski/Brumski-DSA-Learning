@@ -42,6 +42,7 @@ public:
     */
     LinkedList() = default;
 
+    //TODO: remove
     /**
     * Allows access to private members of objects of the same type
     */
@@ -68,6 +69,37 @@ public:
     virtual LinkedList& insertAtFront(LLType value) {
         DSAPTR<Node<LLType>> newNode = std::make_shared<Node<LLType>>();
         newNode->data = value;
+        newNode->next = head;
+
+        head = newNode;
+        return *this;
+    }
+
+    /**
+    * Inserts a value at any point in the linked list
+    * @param value - the value that you want to pass to any point in the linked list
+    */
+    /*virtual LinkedList& insertAtAny(LLType value) {
+        if (!head) {
+            std::cerr << "Object is null!" << std::endl;
+            return *this;
+        }
+
+        DSAPTR<Node<LLType>> newNode = std::make_unique<Node<LLType>>();
+        newNode->data = value;
+        newNode->next = head->next;
+
+        head->next = newNode;
+        return *this;
+    }*/
+
+    /**
+    * Inserts a value at the end of the linked list
+    * @param value - the value that you want to pass to the back of the linked list
+    */
+    virtual LinkedList& insertAtEnd(LLType value) {
+        DSAPTR<Node<LLType>> newNode = std::make_shared<Node<LLType>>();
+        newNode->data = value;
         newNode->next = nullptr;
 
         if (!head) {
@@ -80,19 +112,6 @@ public:
             lastNode = lastNode->next;
         }
         lastNode->next = newNode;
-        return *this;
-    }
-
-    /**
-    * Inserts a value at the end of the linked list
-    * @param value - the value that you want to pass to the back of the linked list
-    */
-    virtual LinkedList& insertAtEnd(LLType value) {
-        DSAPTR<Node<LLType>> newNode = std::make_shared<Node<LLType>>();
-        newNode->data = value;
-        newNode->next = head;
-
-        head = newNode;
         return *this;
     }
 
@@ -118,13 +137,13 @@ public:
     /**
     * Prevents assigning the values of existing LinkedList<T> objects to other objects.
     */
-    LinkedList<LLType>& operator=(const LinkedList<LLType>&) = delete;
+    virtual LinkedList<LLType>& operator=(const LinkedList<LLType>&) = delete;
 
     /**
     * Move assignment operator
     * @param other  - the object that you want to transfer ownership from
     */
-    LinkedList<LLType>& operator=(LinkedList<LLType>&& other) noexcept {
+    virtual LinkedList<LLType>& operator=(LinkedList<LLType>&& other) noexcept {
         if (this != &other) {
             head.reset();
             head = other.head;
