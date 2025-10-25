@@ -9,6 +9,8 @@ void ListExample() {
 }
 
 void ListExample2() {
+    std::cout << "\nLINKED LIST DATA STRUCTURE" << std::endl;
+
     std::cout << "BIList" << std::endl;
     LinkedList<int> BIList;
     BIList.insertAtEnd(1).insertAtEnd(2).insertAtEnd(3).outputValues();

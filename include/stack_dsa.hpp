@@ -51,7 +51,7 @@ public:
 	/**
 	* Returns the top element of the stack
 	*/
-	T Top() {
+	virtual T Top() {
 		return myTop->data;
 	}
 
@@ -59,7 +59,7 @@ public:
 	* Pushes a new element to the top of the stack
 	* @param value - The value you want to pass to the top of the stack
 	*/
-	MyStack<T>& push_top(T value) {
+	virtual MyStack<T>& push_top(const T& value) {
 		DSAPTR<Node<T>> newNode = std::make_shared<Node<T>>();
 		newNode->data = value;
 		newNode->next = myTop;
@@ -71,7 +71,7 @@ public:
 	/**
 	* Removes the top element of the stack
 	*/
-	MyStack<T>& popTop() {
+	virtual MyStack<T>& popTop() {
 		myTop = myTop->next;
 		return *this;
 	}
@@ -79,7 +79,7 @@ public:
 	/**
 	* Returns true if the stack is empty
 	*/
-	bool isEmpty() {
+	virtual bool isEmpty() {
 		if (myTop) return false;
 		else return true;
 

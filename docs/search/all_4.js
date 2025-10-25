@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['head_0',['head',['../class_linked_list.html#a94fa0b3a3127433bb110bf0fda8b713c',1,'LinkedList']]]
+  ['green_0',['green',['../main_8cpp.html#ab87bacfdad76e61b9412d7124be44c1ca9f27410725ab8cc8854a2769c7a516b8',1,'main.cpp']]]
 ];

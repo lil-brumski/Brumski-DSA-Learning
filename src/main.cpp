@@ -4,6 +4,8 @@
 
 #include "linkedlist.hpp"
 #include "stack_dsa.cpp"
+#include "queue_dsa.cpp"
+
 #include <argparse/argparse.hpp>
 
 #if defined(_WIN32)
@@ -58,12 +60,14 @@ int main(int argc, char** argv) {
 
     if (argc == 1) {
         //ListExample();
-        //ListExample2();
+        ListExample2();
         //UsingStack();
         UsingStack2();
+        //UsingQueue();
+        UsingQueue2();
     }
     else {
-        argparse::ArgumentParser program("LinkedList", "1.1");
+        argparse::ArgumentParser program("LinkedList", "1.2");
 
         //For linked lists
         std::vector<int> IntNumbers;
@@ -107,7 +111,7 @@ int main(int argc, char** argv) {
         }
 
         /**
-        * For checking if --floatll or --floatst is passed as arguments
+        * For checking if --floatll and/or --floatst is/are passed as arguments
         */
         if (program.is_used("--floatll") || program.is_used("--floatst")) {
             if (program.is_used("--floatll")) {
@@ -135,7 +139,7 @@ int main(int argc, char** argv) {
         }
 
         /**
-        * For checking if --intll or --intst is passed as arguments
+        * For checking if --intll and/or --intst is/are passed as arguments
         */
         if (program.is_used("--intll") || program.is_used("--intst")) {
             if (program.is_used("--intll")) {
@@ -159,7 +163,7 @@ int main(int argc, char** argv) {
         }
 
         /**
-        * For checking if --stringll or --stringst is passed as arguments
+        * For checking if --stringll and/or --stringst is/are passed as arguments
         */
         if (program.is_used("--stringll") || program.is_used("--stringst")) {
             if (program.is_used("--stringll")) {

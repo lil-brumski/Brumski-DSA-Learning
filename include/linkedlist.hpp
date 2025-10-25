@@ -73,7 +73,7 @@ public:
     * Inserts a value at the front of the linked list
     * @param value - the value that you want to pass to the front of the linked list
     */
-    virtual LinkedList& insertAtFront(LLType value) {
+    virtual LinkedList& insertAtFront(const LLType& value) {
         DSAPTR<Node<LLType>> newNode = std::make_shared<Node<LLType>>();
         newNode->data = value;
         newNode->next = head;
@@ -86,7 +86,7 @@ public:
     * Inserts a value at the end of the linked list
     * @param value - the value that you want to pass to the back of the linked list
     */
-    virtual LinkedList& insertAtEnd(LLType value) {
+    virtual LinkedList& insertAtEnd(const LLType& value) {
         DSAPTR<Node<LLType>> newNode = std::make_shared<Node<LLType>>();
         newNode->data = value;
         newNode->next = nullptr;

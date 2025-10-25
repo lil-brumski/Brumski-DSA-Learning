@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['yellow_0',['yellow',['../main_8cpp.html#ab87bacfdad76e61b9412d7124be44c1cad487dd0b55dfcacdd920ccbdaeafa351',1,'main.cpp']]]
+  ['thefirst_0',['theFirst',['../class_my_queue.html#a2141810c99775578420361d4025cc459',1,'MyQueue']]],
+  ['top_1',['Top',['../class_my_stack.html#a6c53b5bd3c96604bdfb0a7c6636dac7f',1,'MyStack']]]
 ];

@@ -1,0 +1,80 @@
+\doxysection{queue\+\_\+dsa.\+hpp}
+\hypertarget{queue__dsa_8hpp_source}{}\label{queue__dsa_8hpp_source}\index{C:/Users/HP/Desktop/Brumski/C++/Brumski-\/DSA-\/Learning/include/queue\_dsa.hpp@{C:/Users/HP/Desktop/Brumski/C++/Brumski-\/DSA-\/Learning/include/queue\_dsa.hpp}}
+\mbox{\hyperlink{queue__dsa_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{linkedlist_8hpp}{linkedlist.hpp}}"{}}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{keyword}{template}<\textcolor{keyword}{class}\ T>}
+\DoxyCodeLine{00005\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_my_queue_ac76245b95d700b5cc5e93b9985aebb0f}{MyQueue}}\ \{}
+\DoxyCodeLine{00006\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00007\ \ \ \ \ \mbox{\hyperlink{linkedlist_8hpp_a5aface2aee43d48082816ea90e689447}{DSAPTR<Node<T>}}>\ \mbox{\hyperlink{class_my_queue_a2141810c99775578420361d4025cc459}{theFirst}};\ }
+\DoxyCodeLine{00008\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00012\ \ \ \ \ \mbox{\hyperlink{class_my_queue_ac76245b95d700b5cc5e93b9985aebb0f}{MyQueue}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00017\ \ \ \ \ \mbox{\hyperlink{class_my_queue_a3eafbfab8c16b472710836e86db33aa5}{MyQueue}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_my_queue_ac76245b95d700b5cc5e93b9985aebb0f}{MyQueue<T>}}\&)\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00023\ \ \ \ \ \mbox{\hyperlink{class_my_queue_ae542281896714163c98224bc916e8a4b}{MyQueue}}(\mbox{\hyperlink{class_my_queue_ac76245b95d700b5cc5e93b9985aebb0f}{MyQueue<T>}}\&\&\ other)\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00028\ \ \ \ \ \mbox{\hyperlink{class_my_queue_ac76245b95d700b5cc5e93b9985aebb0f}{MyQueue}}\&\ \mbox{\hyperlink{class_my_queue_a8c56e3046b20a230b666e11e6ffbddda}{operator=}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_my_queue_ac76245b95d700b5cc5e93b9985aebb0f}{MyQueue<T>}}\&)\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00034\ \ \ \ \ \mbox{\hyperlink{class_my_queue_ac76245b95d700b5cc5e93b9985aebb0f}{MyQueue}}\&\ \mbox{\hyperlink{class_my_queue_a8cedbcb810aaaa53782582d0d2ecf65a}{operator=}}(\mbox{\hyperlink{class_my_queue_ac76245b95d700b5cc5e93b9985aebb0f}{MyQueue<T>}}\&\&\ other)\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00035\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{class_my_queue_ac76245b95d700b5cc5e93b9985aebb0f}{MyQueue<T>}}\&\ \mbox{\hyperlink{class_my_queue_a76f2a52c29de95352d9743d630ac5bc9}{push\_back}}(\textcolor{keyword}{const}\ T\&\ value)\ \{}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{linkedlist_8hpp_a5aface2aee43d48082816ea90e689447}{DSAPTR<Node<T>}}>\ newNode\ =\ std::make\_shared<Node<T>>();}
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ newNode-\/>data\ =\ value;}
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ newNode-\/>next\ =\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!\mbox{\hyperlink{class_my_queue_a2141810c99775578420361d4025cc459}{theFirst}})\ \{}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_my_queue_a2141810c99775578420361d4025cc459}{theFirst}}\ =\ newNode;}
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ *\textcolor{keyword}{this};}
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{linkedlist_8hpp_a5aface2aee43d48082816ea90e689447}{DSAPTR<Node<T>}}>\ lastNode\ =\ \mbox{\hyperlink{class_my_queue_a2141810c99775578420361d4025cc459}{theFirst}};}
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}\ (lastNode-\/>next\ !=\ \textcolor{keyword}{nullptr})\ \{}
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ \ \ \ \ lastNode\ =\ lastNode-\/>next;}
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ lastNode-\/>next\ =\ newNode;}
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ *\textcolor{keyword}{this};}
+\DoxyCodeLine{00056\ \ \ \ \ \}}
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00061\ \ \ \ \ \textcolor{keyword}{virtual}\ T\ \mbox{\hyperlink{class_my_queue_a6c19b79d70c5b75b08e39cc18e72ebd3}{front\_element}}()\ \{}
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_my_queue_a2141810c99775578420361d4025cc459}{theFirst}}-\/>data;}
+\DoxyCodeLine{00063\ \ \ \ \ \}}
+\DoxyCodeLine{00064\ }
+\DoxyCodeLine{00068\ \ \ \ \ \textcolor{keyword}{virtual}\ T\ \mbox{\hyperlink{class_my_queue_a04500ea380d36eb6aea81408ccc7ec74}{last\_element}}()\ \{}
+\DoxyCodeLine{00069\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{linkedlist_8hpp_a5aface2aee43d48082816ea90e689447}{DSAPTR<Node<T>}}>\ temp\ =\ \mbox{\hyperlink{class_my_queue_a2141810c99775578420361d4025cc459}{theFirst}};}
+\DoxyCodeLine{00070\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}\ (temp-\/>next\ !=\ \textcolor{keyword}{nullptr})\ \{}
+\DoxyCodeLine{00071\ \ \ \ \ \ \ \ \ \ \ \ \ temp\ =\ temp-\/>next;}
+\DoxyCodeLine{00072\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00073\ }
+\DoxyCodeLine{00074\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ temp-\/>data;}
+\DoxyCodeLine{00075\ \ \ \ \ \}}
+\DoxyCodeLine{00076\ }
+\DoxyCodeLine{00080\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{class_my_queue_ac76245b95d700b5cc5e93b9985aebb0f}{MyQueue<T>}}\&\ \mbox{\hyperlink{class_my_queue_a3d0d1d80217a103d6b8a5d4f0f9e625c}{popFront}}()\ \{}
+\DoxyCodeLine{00081\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_my_queue_a2141810c99775578420361d4025cc459}{theFirst}}\ =\ \mbox{\hyperlink{class_my_queue_a2141810c99775578420361d4025cc459}{theFirst}}-\/>next;}
+\DoxyCodeLine{00082\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ *\textcolor{keyword}{this};}
+\DoxyCodeLine{00083\ \ \ \ \ \}}
+\DoxyCodeLine{00084\ }
+\DoxyCodeLine{00088\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_my_queue_ad8262f29399507cadd669736a0e0cf9e}{isEmpty}}()\ \{}
+\DoxyCodeLine{00089\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{class_my_queue_a2141810c99775578420361d4025cc459}{theFirst}})\ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00090\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00091\ }
+\DoxyCodeLine{00092\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00093\ \ \ \ \ \}}
+\DoxyCodeLine{00094\ }
+\DoxyCodeLine{00095\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{size\_t}\ \mbox{\hyperlink{class_my_queue_a5e3ac9de3d6021ee4f675a253577aa07}{size}}()\ \{}
+\DoxyCodeLine{00096\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{linkedlist_8hpp_a5aface2aee43d48082816ea90e689447}{DSAPTR<Node<T>}}>\ temp\ =\ \mbox{\hyperlink{class_my_queue_a2141810c99775578420361d4025cc459}{theFirst}};}
+\DoxyCodeLine{00097\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{size\_t}\ counter\ =\ 0;}
+\DoxyCodeLine{00098\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}\ (temp)\ \{}
+\DoxyCodeLine{00099\ \ \ \ \ \ \ \ \ \ \ \ \ temp\ =\ temp-\/>next;}
+\DoxyCodeLine{00100\ \ \ \ \ \ \ \ \ \ \ \ \ counter++;}
+\DoxyCodeLine{00101\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00102\ }
+\DoxyCodeLine{00103\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ counter;}
+\DoxyCodeLine{00104\ \ \ \ \ \}}
+\DoxyCodeLine{00105\ \};}
+\DoxyCodeLine{00106\ }
+\DoxyCodeLine{00107\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{queue__dsa_8hpp_a79b22eae2930982af77519fad4932293}{UsingQueue}}();}
+
+\end{DoxyCode}

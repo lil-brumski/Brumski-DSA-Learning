@@ -1,0 +1,199 @@
+\doxysection{My\+Queue\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>} Class Template Reference}
+\hypertarget{class_my_queue}{}\label{class_my_queue}\index{MyQueue$<$ T $>$@{MyQueue$<$ T $>$}}
+
+
+{\ttfamily \#include $<$queue\+\_\+dsa.\+hpp$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_my_queue_ac76245b95d700b5cc5e93b9985aebb0f}{My\+Queue}} ()=default
+\begin{DoxyCompactList}\small\item\em Default Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_my_queue_a3eafbfab8c16b472710836e86db33aa5}{My\+Queue}} (const \mbox{\hyperlink{class_my_queue}{My\+Queue}}$<$ T $>$ \&)=delete
+\begin{DoxyCompactList}\small\item\em Deleted copy constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_my_queue_ae542281896714163c98224bc916e8a4b}{My\+Queue}} (\mbox{\hyperlink{class_my_queue}{My\+Queue}}$<$ T $>$ \&\&other)=default
+\begin{DoxyCompactList}\small\item\em Default Move constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_my_queue}{My\+Queue}} \& \mbox{\hyperlink{class_my_queue_a8c56e3046b20a230b666e11e6ffbddda}{operator=}} (const \mbox{\hyperlink{class_my_queue}{My\+Queue}}$<$ T $>$ \&)=delete
+\begin{DoxyCompactList}\small\item\em Deleted copy assignment operator. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_my_queue}{My\+Queue}} \& \mbox{\hyperlink{class_my_queue_a8cedbcb810aaaa53782582d0d2ecf65a}{operator=}} (\mbox{\hyperlink{class_my_queue}{My\+Queue}}$<$ T $>$ \&\&other)=default
+\begin{DoxyCompactList}\small\item\em Default Move assignment operator. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_my_queue}{My\+Queue}}$<$ T $>$ \& \mbox{\hyperlink{class_my_queue_a76f2a52c29de95352d9743d630ac5bc9}{push\+\_\+back}} (const T \&value)
+\begin{DoxyCompactList}\small\item\em Inserts a value at the end of the queue. \end{DoxyCompactList}\item 
+virtual T \mbox{\hyperlink{class_my_queue_a6c19b79d70c5b75b08e39cc18e72ebd3}{front\+\_\+element}} ()
+\begin{DoxyCompactList}\small\item\em Prints out the front element in the queue. \end{DoxyCompactList}\item 
+virtual T \mbox{\hyperlink{class_my_queue_a04500ea380d36eb6aea81408ccc7ec74}{last\+\_\+element}} ()
+\begin{DoxyCompactList}\small\item\em Prints out the last element in the queue. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_my_queue}{My\+Queue}}$<$ T $>$ \& \mbox{\hyperlink{class_my_queue_a3d0d1d80217a103d6b8a5d4f0f9e625c}{pop\+Front}} ()
+\begin{DoxyCompactList}\small\item\em Removes the first element in the queue. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{class_my_queue_ad8262f29399507cadd669736a0e0cf9e}{is\+Empty}} ()
+\begin{DoxyCompactList}\small\item\em Returns true if the queue is empty. \end{DoxyCompactList}\item 
+virtual size\+\_\+t \mbox{\hyperlink{class_my_queue_a5e3ac9de3d6021ee4f675a253577aa07}{size}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{linkedlist_8hpp_a5aface2aee43d48082816ea90e689447}{DSAPTR}}$<$ \mbox{\hyperlink{class_node}{Node}}$<$ T $>$ $>$ \mbox{\hyperlink{class_my_queue_a2141810c99775578420361d4025cc459}{the\+First}}
+\begin{DoxyCompactList}\small\item\em Pointer to the first element of the queue. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{class_my_queue_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_my_queue_ac76245b95d700b5cc5e93b9985aebb0f}\index{MyQueue$<$ T $>$@{MyQueue$<$ T $>$}!MyQueue@{MyQueue}}
+\index{MyQueue@{MyQueue}!MyQueue$<$ T $>$@{MyQueue$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{MyQueue()}{MyQueue()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{class_my_queue_ac76245b95d700b5cc5e93b9985aebb0f} 
+template$<$class T$>$ \\
+\mbox{\hyperlink{class_my_queue}{My\+Queue}}$<$ T $>$\mbox{\hyperlink{class_my_queue}{\+::\+My\+Queue}} (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+Default Constructor. 
+
+\Hypertarget{class_my_queue_a3eafbfab8c16b472710836e86db33aa5}\index{MyQueue$<$ T $>$@{MyQueue$<$ T $>$}!MyQueue@{MyQueue}}
+\index{MyQueue@{MyQueue}!MyQueue$<$ T $>$@{MyQueue$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{MyQueue()}{MyQueue()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{class_my_queue_a3eafbfab8c16b472710836e86db33aa5} 
+template$<$class T$>$ \\
+\mbox{\hyperlink{class_my_queue}{My\+Queue}}$<$ T $>$\mbox{\hyperlink{class_my_queue}{\+::\+My\+Queue}} (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_my_queue}{My\+Queue}}$<$ T $>$ \&}]{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+Deleted copy constructor. 
+
+\Hypertarget{class_my_queue_ae542281896714163c98224bc916e8a4b}\index{MyQueue$<$ T $>$@{MyQueue$<$ T $>$}!MyQueue@{MyQueue}}
+\index{MyQueue@{MyQueue}!MyQueue$<$ T $>$@{MyQueue$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{MyQueue()}{MyQueue()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{class_my_queue_ae542281896714163c98224bc916e8a4b} 
+template$<$class T$>$ \\
+\mbox{\hyperlink{class_my_queue}{My\+Queue}}$<$ T $>$\mbox{\hyperlink{class_my_queue}{\+::\+My\+Queue}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_my_queue}{My\+Queue}}$<$ T $>$ \&\&}]{other}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+Default Move constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & -\/ the object that you want to transfer ownership from \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{class_my_queue_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_my_queue_a6c19b79d70c5b75b08e39cc18e72ebd3}\index{MyQueue$<$ T $>$@{MyQueue$<$ T $>$}!front\_element@{front\_element}}
+\index{front\_element@{front\_element}!MyQueue$<$ T $>$@{MyQueue$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{front\_element()}{front\_element()}}
+{\footnotesize\ttfamily \label{class_my_queue_a6c19b79d70c5b75b08e39cc18e72ebd3} 
+template$<$class T$>$ \\
+virtual T \mbox{\hyperlink{class_my_queue}{My\+Queue}}$<$ T $>$\+::front\+\_\+element (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Prints out the front element in the queue. 
+
+\Hypertarget{class_my_queue_ad8262f29399507cadd669736a0e0cf9e}\index{MyQueue$<$ T $>$@{MyQueue$<$ T $>$}!isEmpty@{isEmpty}}
+\index{isEmpty@{isEmpty}!MyQueue$<$ T $>$@{MyQueue$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{isEmpty()}{isEmpty()}}
+{\footnotesize\ttfamily \label{class_my_queue_ad8262f29399507cadd669736a0e0cf9e} 
+template$<$class T$>$ \\
+virtual bool \mbox{\hyperlink{class_my_queue}{My\+Queue}}$<$ T $>$\+::is\+Empty (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Returns true if the queue is empty. 
+
+\Hypertarget{class_my_queue_a04500ea380d36eb6aea81408ccc7ec74}\index{MyQueue$<$ T $>$@{MyQueue$<$ T $>$}!last\_element@{last\_element}}
+\index{last\_element@{last\_element}!MyQueue$<$ T $>$@{MyQueue$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{last\_element()}{last\_element()}}
+{\footnotesize\ttfamily \label{class_my_queue_a04500ea380d36eb6aea81408ccc7ec74} 
+template$<$class T$>$ \\
+virtual T \mbox{\hyperlink{class_my_queue}{My\+Queue}}$<$ T $>$\+::last\+\_\+element (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Prints out the last element in the queue. 
+
+\Hypertarget{class_my_queue_a8c56e3046b20a230b666e11e6ffbddda}\index{MyQueue$<$ T $>$@{MyQueue$<$ T $>$}!operator=@{operator=}}
+\index{operator=@{operator=}!MyQueue$<$ T $>$@{MyQueue$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_my_queue_a8c56e3046b20a230b666e11e6ffbddda} 
+template$<$class T$>$ \\
+\mbox{\hyperlink{class_my_queue}{My\+Queue}} \& \mbox{\hyperlink{class_my_queue}{My\+Queue}}$<$ T $>$\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_my_queue}{My\+Queue}}$<$ T $>$ \&}]{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+Deleted copy assignment operator. 
+
+\Hypertarget{class_my_queue_a8cedbcb810aaaa53782582d0d2ecf65a}\index{MyQueue$<$ T $>$@{MyQueue$<$ T $>$}!operator=@{operator=}}
+\index{operator=@{operator=}!MyQueue$<$ T $>$@{MyQueue$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_my_queue_a8cedbcb810aaaa53782582d0d2ecf65a} 
+template$<$class T$>$ \\
+\mbox{\hyperlink{class_my_queue}{My\+Queue}} \& \mbox{\hyperlink{class_my_queue}{My\+Queue}}$<$ T $>$\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_my_queue}{My\+Queue}}$<$ T $>$ \&\&}]{other}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+Default Move assignment operator. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & -\/ the object that you want to transfer ownership from \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_my_queue_a3d0d1d80217a103d6b8a5d4f0f9e625c}\index{MyQueue$<$ T $>$@{MyQueue$<$ T $>$}!popFront@{popFront}}
+\index{popFront@{popFront}!MyQueue$<$ T $>$@{MyQueue$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{popFront()}{popFront()}}
+{\footnotesize\ttfamily \label{class_my_queue_a3d0d1d80217a103d6b8a5d4f0f9e625c} 
+template$<$class T$>$ \\
+virtual \mbox{\hyperlink{class_my_queue}{My\+Queue}}$<$ T $>$ \& \mbox{\hyperlink{class_my_queue}{My\+Queue}}$<$ T $>$\+::pop\+Front (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Removes the first element in the queue. 
+
+\Hypertarget{class_my_queue_a76f2a52c29de95352d9743d630ac5bc9}\index{MyQueue$<$ T $>$@{MyQueue$<$ T $>$}!push\_back@{push\_back}}
+\index{push\_back@{push\_back}!MyQueue$<$ T $>$@{MyQueue$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{push\_back()}{push\_back()}}
+{\footnotesize\ttfamily \label{class_my_queue_a76f2a52c29de95352d9743d630ac5bc9} 
+template$<$class T$>$ \\
+virtual \mbox{\hyperlink{class_my_queue}{My\+Queue}}$<$ T $>$ \& \mbox{\hyperlink{class_my_queue}{My\+Queue}}$<$ T $>$\+::push\+\_\+back (\begin{DoxyParamCaption}\item[{const T \&}]{value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Inserts a value at the end of the queue. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & -\/ the value that you want to pass to the end of the queue \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_my_queue_a5e3ac9de3d6021ee4f675a253577aa07}\index{MyQueue$<$ T $>$@{MyQueue$<$ T $>$}!size@{size}}
+\index{size@{size}!MyQueue$<$ T $>$@{MyQueue$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily \label{class_my_queue_a5e3ac9de3d6021ee4f675a253577aa07} 
+template$<$class T$>$ \\
+virtual size\+\_\+t \mbox{\hyperlink{class_my_queue}{My\+Queue}}$<$ T $>$\+::size (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+\label{doc-variable-members}
+\Hypertarget{class_my_queue_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_my_queue_a2141810c99775578420361d4025cc459}\index{MyQueue$<$ T $>$@{MyQueue$<$ T $>$}!theFirst@{theFirst}}
+\index{theFirst@{theFirst}!MyQueue$<$ T $>$@{MyQueue$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{theFirst}{theFirst}}
+{\footnotesize\ttfamily \label{class_my_queue_a2141810c99775578420361d4025cc459} 
+template$<$class T$>$ \\
+\mbox{\hyperlink{linkedlist_8hpp_a5aface2aee43d48082816ea90e689447}{DSAPTR}}$<$\mbox{\hyperlink{class_node}{Node}}$<$T$>$ $>$ \mbox{\hyperlink{class_my_queue}{My\+Queue}}$<$ T $>$\+::the\+First\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Pointer to the first element of the queue. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+HP/\+Desktop/\+Brumski/\+C++/\+Brumski-\/\+DSA-\/\+Learning/include/\mbox{\hyperlink{queue__dsa_8hpp}{queue\+\_\+dsa.\+hpp}}\end{DoxyCompactItemize}

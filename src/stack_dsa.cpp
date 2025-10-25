@@ -16,6 +16,8 @@ void UsingStack() {
 }
 
 void UsingStack2() {
+	std::cout << "\nSTACK DATA STRUCTURE" << std::endl;
+
 	MyStack<int> object1;
 	object1.push_top(45);
 	object1.push_top(75);

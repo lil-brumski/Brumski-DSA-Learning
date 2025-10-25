@@ -16,20 +16,20 @@ This is a template class that represents the stack data structure.
 \begin{DoxyCompactList}\small\item\em Default Constructor. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{class_my_stack_a1401dfc373aef01be9bec209c1531a30}{My\+Stack}} (const \mbox{\hyperlink{class_my_stack}{My\+Stack}}$<$ T $>$ \&)=delete
 \begin{DoxyCompactList}\small\item\em Deleted copy constructor. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{class_my_stack_ad7b539c4e86598c8fdf3de3408b3860d}{My\+Stack}} (\mbox{\hyperlink{class_my_stack}{My\+Stack}}$<$ T $>$ \&\&other) noexcept
-\begin{DoxyCompactList}\small\item\em Move constructor. \end{DoxyCompactList}\item 
-T \mbox{\hyperlink{class_my_stack_a75f1925b57f38898a8fbd5fb9d13d3a6}{Top}} ()
-\begin{DoxyCompactList}\small\item\em Returns the top element of the stack. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{class_my_stack}{My\+Stack}}$<$ T $>$ \& \mbox{\hyperlink{class_my_stack_a5ef37650486ef55a6ad9dfc44bff2a1a}{push\+\_\+top}} (T value)
-\begin{DoxyCompactList}\small\item\em Pushes a new element to the top of the stack. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{class_my_stack}{My\+Stack}}$<$ T $>$ \& \mbox{\hyperlink{class_my_stack_a2d2d6d3255834cfdcf139448fda733e1}{pop\+Top}} ()
-\begin{DoxyCompactList}\small\item\em Removes the top element of the stack. \end{DoxyCompactList}\item 
-bool \mbox{\hyperlink{class_my_stack_abfd8746d2bc92f298742ec8d8288f4cb}{is\+Empty}} ()
-\begin{DoxyCompactList}\small\item\em Returns true if the stack is empty. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_my_stack_a2df886765dc72f5aeffae04eb30373eb}{My\+Stack}} (\mbox{\hyperlink{class_my_stack}{My\+Stack}}$<$ T $>$ \&\&other) noexcept=default
+\begin{DoxyCompactList}\small\item\em Default Move constructor. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{class_my_stack}{My\+Stack}}$<$ T $>$ \& \mbox{\hyperlink{class_my_stack_a8da4f76555596974150e409b3bc9598a}{operator=}} (const \mbox{\hyperlink{class_my_stack}{My\+Stack}}$<$ T $>$ \&)=delete
 \begin{DoxyCompactList}\small\item\em Deleted copy assignment operator. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{class_my_stack}{My\+Stack}}$<$ T $>$ \& \mbox{\hyperlink{class_my_stack_a8d918d12fc3c90726395e8d2d5540b10}{operator=}} (\mbox{\hyperlink{class_my_stack}{My\+Stack}}$<$ T $>$ \&\&other)
-\begin{DoxyCompactList}\small\item\em Move assignment operator. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\mbox{\hyperlink{class_my_stack}{My\+Stack}}$<$ T $>$ \& \mbox{\hyperlink{class_my_stack_a68f9b89a3b58adcd9107a32f48a967c5}{operator=}} (\mbox{\hyperlink{class_my_stack}{My\+Stack}}$<$ T $>$ \&\&other) noexcept=default
+\begin{DoxyCompactList}\small\item\em Default Move assignment operator. \end{DoxyCompactList}\item 
+virtual T \mbox{\hyperlink{class_my_stack_a6c53b5bd3c96604bdfb0a7c6636dac7f}{Top}} ()
+\begin{DoxyCompactList}\small\item\em Returns the top element of the stack. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_my_stack}{My\+Stack}}$<$ T $>$ \& \mbox{\hyperlink{class_my_stack_a92c7f1af509db146274b5117090295b5}{push\+\_\+top}} (const T \&value)
+\begin{DoxyCompactList}\small\item\em Pushes a new element to the top of the stack. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_my_stack}{My\+Stack}}$<$ T $>$ \& \mbox{\hyperlink{class_my_stack_aff269b73017c084cf5cce86e3f97dc44}{pop\+Top}} ()
+\begin{DoxyCompactList}\small\item\em Removes the top element of the stack. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{class_my_stack_af1cde3c714578d491b281d6bf74079b9}{is\+Empty}} ()
+\begin{DoxyCompactList}\small\item\em Returns true if the stack is empty. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -69,16 +69,16 @@ template$<$class T$>$ \\
 
 Deleted copy constructor. 
 
-\Hypertarget{class_my_stack_ad7b539c4e86598c8fdf3de3408b3860d}\index{MyStack$<$ T $>$@{MyStack$<$ T $>$}!MyStack@{MyStack}}
+\Hypertarget{class_my_stack_a2df886765dc72f5aeffae04eb30373eb}\index{MyStack$<$ T $>$@{MyStack$<$ T $>$}!MyStack@{MyStack}}
 \index{MyStack@{MyStack}!MyStack$<$ T $>$@{MyStack$<$ T $>$}}
 \doxysubsubsection{\texorpdfstring{MyStack()}{MyStack()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
-{\footnotesize\ttfamily \label{class_my_stack_ad7b539c4e86598c8fdf3de3408b3860d} 
+{\footnotesize\ttfamily \label{class_my_stack_a2df886765dc72f5aeffae04eb30373eb} 
 template$<$class T$>$ \\
-\mbox{\hyperlink{class_my_stack}{My\+Stack}}$<$ T $>$\mbox{\hyperlink{class_my_stack}{\+::\+My\+Stack}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_my_stack}{My\+Stack}}$<$ T $>$ \&\&}]{other}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+\mbox{\hyperlink{class_my_stack}{My\+Stack}}$<$ T $>$\mbox{\hyperlink{class_my_stack}{\+::\+My\+Stack}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_my_stack}{My\+Stack}}$<$ T $>$ \&\&}]{other}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}, {\ttfamily [noexcept]}}
 
 
 
-Move constructor. 
+Default Move constructor. 
 
 
 \begin{DoxyParams}{Parameters}
@@ -90,12 +90,12 @@ Move constructor.
 \label{doc-func-members}
 \Hypertarget{class_my_stack_doc-func-members}
 \doxysubsection{Member Function Documentation}
-\Hypertarget{class_my_stack_abfd8746d2bc92f298742ec8d8288f4cb}\index{MyStack$<$ T $>$@{MyStack$<$ T $>$}!isEmpty@{isEmpty}}
+\Hypertarget{class_my_stack_af1cde3c714578d491b281d6bf74079b9}\index{MyStack$<$ T $>$@{MyStack$<$ T $>$}!isEmpty@{isEmpty}}
 \index{isEmpty@{isEmpty}!MyStack$<$ T $>$@{MyStack$<$ T $>$}}
 \doxysubsubsection{\texorpdfstring{isEmpty()}{isEmpty()}}
-{\footnotesize\ttfamily \label{class_my_stack_abfd8746d2bc92f298742ec8d8288f4cb} 
+{\footnotesize\ttfamily \label{class_my_stack_af1cde3c714578d491b281d6bf74079b9} 
 template$<$class T$>$ \\
-bool \mbox{\hyperlink{class_my_stack}{My\+Stack}}$<$ T $>$\+::is\+Empty (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+virtual bool \mbox{\hyperlink{class_my_stack}{My\+Stack}}$<$ T $>$\+::is\+Empty (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
 
 
 
@@ -112,39 +112,39 @@ template$<$class T$>$ \\
 
 Deleted copy assignment operator. 
 
-\Hypertarget{class_my_stack_a8d918d12fc3c90726395e8d2d5540b10}\index{MyStack$<$ T $>$@{MyStack$<$ T $>$}!operator=@{operator=}}
+\Hypertarget{class_my_stack_a68f9b89a3b58adcd9107a32f48a967c5}\index{MyStack$<$ T $>$@{MyStack$<$ T $>$}!operator=@{operator=}}
 \index{operator=@{operator=}!MyStack$<$ T $>$@{MyStack$<$ T $>$}}
 \doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily \label{class_my_stack_a8d918d12fc3c90726395e8d2d5540b10} 
+{\footnotesize\ttfamily \label{class_my_stack_a68f9b89a3b58adcd9107a32f48a967c5} 
 template$<$class T$>$ \\
-\mbox{\hyperlink{class_my_stack}{My\+Stack}}$<$ T $>$ \& \mbox{\hyperlink{class_my_stack}{My\+Stack}}$<$ T $>$\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_my_stack}{My\+Stack}}$<$ T $>$ \&\&}]{other}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+\mbox{\hyperlink{class_my_stack}{My\+Stack}}$<$ T $>$ \& \mbox{\hyperlink{class_my_stack}{My\+Stack}}$<$ T $>$\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_my_stack}{My\+Stack}}$<$ T $>$ \&\&}]{other}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}, {\ttfamily [noexcept]}}
 
 
 
-Move assignment operator. 
+Default Move assignment operator. 
 
 
 \begin{DoxyParams}{Parameters}
 {\em other} & -\/ the object that you want to transfer ownership from \\
 \hline
 \end{DoxyParams}
-\Hypertarget{class_my_stack_a2d2d6d3255834cfdcf139448fda733e1}\index{MyStack$<$ T $>$@{MyStack$<$ T $>$}!popTop@{popTop}}
+\Hypertarget{class_my_stack_aff269b73017c084cf5cce86e3f97dc44}\index{MyStack$<$ T $>$@{MyStack$<$ T $>$}!popTop@{popTop}}
 \index{popTop@{popTop}!MyStack$<$ T $>$@{MyStack$<$ T $>$}}
 \doxysubsubsection{\texorpdfstring{popTop()}{popTop()}}
-{\footnotesize\ttfamily \label{class_my_stack_a2d2d6d3255834cfdcf139448fda733e1} 
+{\footnotesize\ttfamily \label{class_my_stack_aff269b73017c084cf5cce86e3f97dc44} 
 template$<$class T$>$ \\
-\mbox{\hyperlink{class_my_stack}{My\+Stack}}$<$ T $>$ \& \mbox{\hyperlink{class_my_stack}{My\+Stack}}$<$ T $>$\+::pop\+Top (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+virtual \mbox{\hyperlink{class_my_stack}{My\+Stack}}$<$ T $>$ \& \mbox{\hyperlink{class_my_stack}{My\+Stack}}$<$ T $>$\+::pop\+Top (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
 
 
 
 Removes the top element of the stack. 
 
-\Hypertarget{class_my_stack_a5ef37650486ef55a6ad9dfc44bff2a1a}\index{MyStack$<$ T $>$@{MyStack$<$ T $>$}!push\_top@{push\_top}}
+\Hypertarget{class_my_stack_a92c7f1af509db146274b5117090295b5}\index{MyStack$<$ T $>$@{MyStack$<$ T $>$}!push\_top@{push\_top}}
 \index{push\_top@{push\_top}!MyStack$<$ T $>$@{MyStack$<$ T $>$}}
 \doxysubsubsection{\texorpdfstring{push\_top()}{push\_top()}}
-{\footnotesize\ttfamily \label{class_my_stack_a5ef37650486ef55a6ad9dfc44bff2a1a} 
+{\footnotesize\ttfamily \label{class_my_stack_a92c7f1af509db146274b5117090295b5} 
 template$<$class T$>$ \\
-\mbox{\hyperlink{class_my_stack}{My\+Stack}}$<$ T $>$ \& \mbox{\hyperlink{class_my_stack}{My\+Stack}}$<$ T $>$\+::push\+\_\+top (\begin{DoxyParamCaption}\item[{T}]{value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+virtual \mbox{\hyperlink{class_my_stack}{My\+Stack}}$<$ T $>$ \& \mbox{\hyperlink{class_my_stack}{My\+Stack}}$<$ T $>$\+::push\+\_\+top (\begin{DoxyParamCaption}\item[{const T \&}]{value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
 
 
 
@@ -155,12 +155,12 @@ Pushes a new element to the top of the stack.
 {\em value} & -\/ The value you want to pass to the top of the stack \\
 \hline
 \end{DoxyParams}
-\Hypertarget{class_my_stack_a75f1925b57f38898a8fbd5fb9d13d3a6}\index{MyStack$<$ T $>$@{MyStack$<$ T $>$}!Top@{Top}}
+\Hypertarget{class_my_stack_a6c53b5bd3c96604bdfb0a7c6636dac7f}\index{MyStack$<$ T $>$@{MyStack$<$ T $>$}!Top@{Top}}
 \index{Top@{Top}!MyStack$<$ T $>$@{MyStack$<$ T $>$}}
 \doxysubsubsection{\texorpdfstring{Top()}{Top()}}
-{\footnotesize\ttfamily \label{class_my_stack_a75f1925b57f38898a8fbd5fb9d13d3a6} 
+{\footnotesize\ttfamily \label{class_my_stack_a6c53b5bd3c96604bdfb0a7c6636dac7f} 
 template$<$class T$>$ \\
-T \mbox{\hyperlink{class_my_stack}{My\+Stack}}$<$ T $>$\+::\+Top (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+virtual T \mbox{\hyperlink{class_my_stack}{My\+Stack}}$<$ T $>$\+::\+Top (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
 
 
 
