@@ -46,14 +46,29 @@ public:
     LinkedList(const LinkedList<LLType>&) = delete;
 
     /**
-    * Move constructor
+    * Default Move constructor
     * @param other  - the object that you want to transfer ownership from
     */
-    LinkedList(LinkedList<LLType>&& other) noexcept {
-        head = other.head;
-        other.head = nullptr;
-    }
+    LinkedList(LinkedList<LLType>&& other) noexcept = default;
 
+    /**
+    * Default Copy assignment operator
+    * Prevents assigning the values of existing LinkedList<T> objects to other objects.
+    */
+    virtual LinkedList<LLType>& operator=(const LinkedList<LLType>&) = delete;
+
+    /**
+    * Move assignment operator
+    * @param other  - the object that you want to transfer ownership from
+    */
+    virtual LinkedList<LLType>& operator=(LinkedList<LLType>&& other) noexcept = default;
+
+    /**
+    * Default Destructor
+    */
+    virtual ~LinkedList() = default;
+
+public:
     /**
     * Inserts a value at the front of the linked list
     * @param value - the value that you want to pass to the front of the linked list
@@ -66,20 +81,6 @@ public:
         head = newNode;
         return *this;
     }
-
-    /*virtual LinkedList& insertAtAny(LLType value) {
-        if (!head) {
-            std::cerr << "Object is null!" << std::endl;
-            return *this;
-        }
-
-        DSAPTR<Node<LLType>> newNode = std::make_unique<Node<LLType>>();
-        newNode->data = value;
-        newNode->next = head->next;
-
-        head->next = newNode;
-        return *this;
-    }*/
 
     /**
     * Inserts a value at the end of the linked list
@@ -121,31 +122,6 @@ public:
 
         return *this;
     }
-
-    /**
-    * Prevents assigning the values of existing LinkedList<T> objects to other objects.
-    */
-    virtual LinkedList<LLType>& operator=(const LinkedList<LLType>&) = delete;
-
-    /**
-    * Move assignment operator
-    * @param other  - the object that you want to transfer ownership from
-    */
-    virtual LinkedList<LLType>& operator=(LinkedList<LLType>&& other) noexcept {
-        if (this != &other) {
-            head.reset();
-            head = other.head;
-            other.head = nullptr;
-        }
-
-        return *this;
-    }
-
-    /**
-    * Default Destructor
-    */
-    virtual ~LinkedList() = default;
-
 };
 
 

@@ -29,15 +29,21 @@ public:
 	MyStack(const MyStack<T>&) = delete;
 
 	/**
-	* Move constructor
+	* Default Move constructor
 	* @param other  - the object that you want to transfer ownership from
 	*/
-	MyStack(MyStack<T>&& other) noexcept {
-		myTop = other.myTop;
-		other.myTop = nullptr;
-	}
+	MyStack(MyStack<T>&& other) noexcept = default;
 
+	/**
+	* Deleted copy assignment operator
+	*/
+	MyStack<T>& operator=(const MyStack<T>&) = delete;
 
+	/**
+	* Default Move assignment operator
+	* @param other  - the object that you want to transfer ownership from
+	*/
+	MyStack<T>& operator=(MyStack<T>&& other) noexcept = default;
 private:
 	DSAPTR<Node<T>> myTop; /**< Pointer to the top element of the stack*/
 
@@ -78,23 +84,6 @@ public:
 		else return true;
 
 		return false;
-	}
-
-	/**
-	* Deleted copy assignment operator
-	*/
-	MyStack<T>& operator=(const MyStack<T>&) = delete;
-
-	/**
-	* Move assignment operator
-	* @param other  - the object that you want to transfer ownership from
-	*/
-	MyStack<T>& operator=(MyStack<T>&& other) {
-		if(this != &other) {
-			myTop.reset();
-			myTop = other.myTop;
-			other.myTop = nullptr;
-		}
 	}
 };
 
