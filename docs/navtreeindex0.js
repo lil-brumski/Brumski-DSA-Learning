@@ -75,6 +75,8 @@ var NAVTREEINDEX0 =
 "queue__dsa_8cpp_source.html":[1,0,1,2],
 "queue__dsa_8hpp.html":[1,0,0,1],
 "queue__dsa_8hpp.html#a79b22eae2930982af77519fad4932293":[1,0,0,1,1],
+"queue__dsa_8hpp.html#a9984162e62bdffd507933f58acd76ab1":[1,0,0,1,2],
+"queue__dsa_8hpp.html#aa4d33478478758030e8e2023b368ed95":[1,0,0,1,3],
 "queue__dsa_8hpp_source.html":[1,0,0,1],
 "stack__dsa_8cpp.html":[1,0,1,3],
 "stack__dsa_8cpp.html#a02f0478341bf980020d53f6d2f5db570":[1,0,1,3,1],

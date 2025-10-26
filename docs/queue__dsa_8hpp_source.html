@@ -26,7 +26,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Brumski&#39;s Data Structures and Algorithm Learning Project<span id="projectnumber">&#160;1.1</span>
+   <div id="projectname">Brumski&#39;s Data Structures and Algorithm Learning Project<span id="projectnumber">&#160;1.2</span>
    </div>
    <div id="projectbrief">For Learning Data Structures and Algorithms in C++</div>
   </td>
@@ -180,6 +180,20 @@ $(function(){initNavTree('queue__dsa_8hpp_source.html','',''); });
 </div>
 <div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span> </div>
 <div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span><span class="keywordtype">void</span> <a class="code hl_function" href="queue__dsa_8hpp.html#a79b22eae2930982af77519fad4932293">UsingQueue</a>();</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span> </div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span><span class="keywordtype">void</span> <a class="code hl_function" href="queue__dsa_8hpp.html#a9984162e62bdffd507933f58acd76ab1">UsingQueue2</a>();</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span> </div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span><span class="keyword">template</span>&lt;<span class="keyword">class</span> T&gt;</div>
+<div class="foldopen" id="foldopen00112" data-start="{" data-end="}">
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno"><a class="line" href="queue__dsa_8hpp.html#aa4d33478478758030e8e2023b368ed95">  112</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="queue__dsa_8hpp.html#aa4d33478478758030e8e2023b368ed95">UsingQueue3</a>(<a class="code hl_class" href="class_my_queue.html">MyQueue&lt;T&gt;</a>&amp; deez) {</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>    <span class="keywordflow">while</span> (!deez.<a class="code hl_function" href="class_my_queue.html#ad8262f29399507cadd669736a0e0cf9e">isEmpty</a>()) {</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>        std::cout &lt;&lt; <span class="stringliteral">&quot;The first in the queue right now is &quot;</span> &lt;&lt; deez.<a class="code hl_function" href="class_my_queue.html#a6c19b79d70c5b75b08e39cc18e72ebd3">front_element</a>() &lt;&lt; std::endl;</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>        deez.<a class="code hl_function" href="class_my_queue.html#a3d0d1d80217a103d6b8a5d4f0f9e625c">popFront</a>();</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>        std::cout &lt;&lt; <span class="stringliteral">&quot;The first has been popped!&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>    }</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>}</div>
+</div>
+<div class="ttc" id="aclass_my_queue_html"><div class="ttname"><a href="class_my_queue.html">MyQueue</a></div><div class="ttdef"><b>Definition</b> queue_dsa.hpp:5</div></div>
 <div class="ttc" id="aclass_my_queue_html_a04500ea380d36eb6aea81408ccc7ec74"><div class="ttname"><a href="class_my_queue.html#a04500ea380d36eb6aea81408ccc7ec74">MyQueue::last_element</a></div><div class="ttdeci">virtual T last_element()</div><div class="ttdoc">Prints out the last element in the queue.</div><div class="ttdef"><b>Definition</b> queue_dsa.hpp:68</div></div>
 <div class="ttc" id="aclass_my_queue_html_a2141810c99775578420361d4025cc459"><div class="ttname"><a href="class_my_queue.html#a2141810c99775578420361d4025cc459">MyQueue::theFirst</a></div><div class="ttdeci">DSAPTR&lt; Node&lt; T &gt; &gt; theFirst</div><div class="ttdoc">Pointer to the first element of the queue.</div><div class="ttdef"><b>Definition</b> queue_dsa.hpp:7</div></div>
 <div class="ttc" id="aclass_my_queue_html_a3d0d1d80217a103d6b8a5d4f0f9e625c"><div class="ttname"><a href="class_my_queue.html#a3d0d1d80217a103d6b8a5d4f0f9e625c">MyQueue::popFront</a></div><div class="ttdeci">virtual MyQueue&lt; T &gt; &amp; popFront()</div><div class="ttdoc">Removes the first element in the queue.</div><div class="ttdef"><b>Definition</b> queue_dsa.hpp:80</div></div>
@@ -195,6 +209,8 @@ $(function(){initNavTree('queue__dsa_8hpp_source.html','',''); });
 <div class="ttc" id="alinkedlist_8hpp_html"><div class="ttname"><a href="linkedlist_8hpp.html">linkedlist.hpp</a></div></div>
 <div class="ttc" id="alinkedlist_8hpp_html_a5aface2aee43d48082816ea90e689447"><div class="ttname"><a href="linkedlist_8hpp.html#a5aface2aee43d48082816ea90e689447">DSAPTR</a></div><div class="ttdeci">std::shared_ptr&lt; T &gt; DSAPTR</div><div class="ttdoc">Type alias for std::shared_ptr&lt;T&gt;</div><div class="ttdef"><b>Definition</b> linkedlist.hpp:11</div></div>
 <div class="ttc" id="aqueue__dsa_8hpp_html_a79b22eae2930982af77519fad4932293"><div class="ttname"><a href="queue__dsa_8hpp.html#a79b22eae2930982af77519fad4932293">UsingQueue</a></div><div class="ttdeci">void UsingQueue()</div><div class="ttdef"><b>Definition</b> queue_dsa.cpp:7</div></div>
+<div class="ttc" id="aqueue__dsa_8hpp_html_a9984162e62bdffd507933f58acd76ab1"><div class="ttname"><a href="queue__dsa_8hpp.html#a9984162e62bdffd507933f58acd76ab1">UsingQueue2</a></div><div class="ttdeci">void UsingQueue2()</div><div class="ttdef"><b>Definition</b> queue_dsa.cpp:12</div></div>
+<div class="ttc" id="aqueue__dsa_8hpp_html_aa4d33478478758030e8e2023b368ed95"><div class="ttname"><a href="queue__dsa_8hpp.html#aa4d33478478758030e8e2023b368ed95">UsingQueue3</a></div><div class="ttdeci">void UsingQueue3(MyQueue&lt; T &gt; &amp;deez)</div><div class="ttdef"><b>Definition</b> queue_dsa.hpp:112</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 </div><!-- container -->

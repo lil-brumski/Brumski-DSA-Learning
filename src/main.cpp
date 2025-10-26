@@ -101,6 +101,22 @@ int main(int argc, char** argv) {
             .nargs(argparse::nargs_pattern::at_least_one)
             .store_into(SCHAR);
 
+        //For queue data structure
+        std::vector<int> QINT;
+        program.add_argument("-iq", "--intqu")
+            .nargs(argparse::nargs_pattern::at_least_one)
+            .scan<'i', int>()
+            .store_into(QINT);
+
+        program.add_argument("-fq", "--floatqu")
+            .nargs(argparse::nargs_pattern::at_least_one)
+            .scan<'g', float>();
+
+        std::vector<std::string> QCHAR;
+        program.add_argument("-sq", "--stringqu")
+            .nargs(argparse::nargs_pattern::at_least_one)
+            .store_into(QCHAR);
+
         try {
             program.parse_args(argc, argv);
         }
@@ -111,9 +127,9 @@ int main(int argc, char** argv) {
         }
 
         /**
-        * For checking if --floatll and/or --floatst is/are passed as arguments
+        * For checking if --floatll and/or --floatst and/or --floatqu is/are passed as arguments
         */
-        if (program.is_used("--floatll") || program.is_used("--floatst")) {
+        if (program.is_used("--floatll") || program.is_used("--floatst") || program.is_used("--floatqu")) {
             if (program.is_used("--floatll")) {
                 std::vector<float> FloatNumbers = program.get<std::vector<float>>("--floatll");
                 LinkedList<float> list_f;
@@ -136,12 +152,23 @@ int main(int argc, char** argv) {
                 UsingStack3(obj_f);
                 std::cout << ansi(Color::green) << "STOP: Floats" << ansi() << std::endl;
             }
+            if (program.is_used("--floatqu")) {
+                std::vector<float> FQ = program.get<std::vector<float>>("--floatqu");
+                MyQueue<float> myFQ;
+                for (auto& s : FQ) {
+                    myFQ.push_back(s);
+                }
+
+                std::cout << ansi(Color::green) << "\nSTART (queue): Floats" << ansi() << std::endl;
+                UsingQueue3(myFQ);
+                std::cout << ansi(Color::green) << "STOP: Floats" << ansi() << std::endl;
+            }
         }
 
         /**
-        * For checking if --intll and/or --intst is/are passed as arguments
+        * For checking if --intll and/or --intst and/or --intqu is/are passed as arguments
         */
-        if (program.is_used("--intll") || program.is_used("--intst")) {
+        if (program.is_used("--intll") || program.is_used("--intst") || program.is_used("--intqu")) {
             if (program.is_used("--intll")) {
                 LinkedList<int> list_int;
                 for (auto& s : IntNumbers) {
@@ -160,12 +187,21 @@ int main(int argc, char** argv) {
                 UsingStack3(obj_int);
                 std::cout << ansi(Color::green) << "STOP: Integers" << ansi() << std::endl;
             }
+            if (program.is_used("--intqu")) {
+                MyQueue<int> myIQ;
+                for (auto& s : QINT) {
+                    myIQ.push_back(s);
+                }
+                std::cout << ansi(Color::green) << "\nSTART (queue): Integers" << ansi() << std::endl;
+                UsingQueue3(myIQ);
+                std::cout << ansi(Color::green) << "STOP: Integers" << ansi() << std::endl;
+            }
         }
 
         /**
-        * For checking if --stringll and/or --stringst is/are passed as arguments
+        * For checking if --stringll and/or --stringst and/or --stringqu is/are passed as arguments
         */
-        if (program.is_used("--stringll") || program.is_used("--stringst")) {
+        if (program.is_used("--stringll") || program.is_used("--stringst") || program.is_used("--stringqu")) {
             if (program.is_used("--stringll")) {
                 LinkedList<std::string> list_str;
                 for (auto& s : StringVessel) {
@@ -182,6 +218,15 @@ int main(int argc, char** argv) {
                 }
                 std::cout << ansi(Color::green) << "\nSTART (stack): Strings" << ansi() << std::endl;
                 UsingStack3(obj_str);
+                std::cout << ansi(Color::green) << "STOP: Strings" << ansi() << std::endl;
+            }
+            if (program.is_used("--stringqu")) {
+                MyQueue<std::string> mySQ;
+                for (auto& s : QCHAR) {
+                    mySQ.push_back(s);
+                }
+                std::cout << ansi(Color::green) << "\nSTART (queue): Strings" << ansi() << std::endl;
+                UsingQueue3(mySQ);
                 std::cout << ansi(Color::green) << "STOP: Strings" << ansi() << std::endl;
             }
         }

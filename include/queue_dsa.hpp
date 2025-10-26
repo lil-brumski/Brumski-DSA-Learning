@@ -105,3 +105,14 @@ public:
 };
 
 void UsingQueue();
+
+void UsingQueue2();
+
+template<class T>
+void UsingQueue3(MyQueue<T>& deez) {
+	while (!deez.isEmpty()) {
+		std::cout << "The first in the queue right now is " << deez.front_element() << std::endl;
+		deez.popFront();
+		std::cout << "The first has been popped!" << std::endl;
+	}
+}
