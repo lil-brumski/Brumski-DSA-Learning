@@ -5,6 +5,8 @@
 #include "linkedlist.hpp"
 #include "stack_dsa.cpp"
 #include "queue_dsa.cpp"
+#include "map_dsa.hpp"
+#include "binary_tree.hpp"
 
 #include <argparse/argparse.hpp>
 
@@ -65,6 +67,9 @@ int main(int argc, char** argv) {
         UsingStack2();
         //UsingQueue();
         UsingQueue2();
+        //UsingMap();
+        UsingMap2();
+        UsingBST();
     }
     else {
         argparse::ArgumentParser program("LinkedList", "1.2");

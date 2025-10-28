@@ -6,7 +6,6 @@
 
 void UsingQueue() {
 	std::queue<int> deez;
-	//deez
 }
 
 void UsingQueue2() {

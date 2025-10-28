@@ -19,5 +19,9 @@ add_library(MyQueue STATIC "src/queue_dsa.cpp")
 add_library(My::Queue ALIAS MyQueue)
 target_include_directories(MyQueue PUBLIC include)
 
+add_library(MyBinaryTree STATIC "src/binary_tree.cpp")
+add_library(My::BinaryTree ALIAS MyBinaryTree)
+target_include_directories(MyBinaryTree PUBLIC include)
+
 add_executable(brumski_dsa "src/main.cpp")
-target_link_libraries(brumski_dsa PRIVATE argparse Linked::List My::Stack My::Queue)
+target_link_libraries(brumski_dsa PRIVATE argparse Linked::List My::Stack My::Queue My::BinaryTree)

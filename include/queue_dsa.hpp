@@ -104,10 +104,20 @@ public:
 	}
 };
 
+/**
+* Incomplete std::queue example
+*/
 void UsingQueue();
 
+/**
+* Example demonstrating the use of MyQueue<T>
+*/
 void UsingQueue2();
 
+/**
+* For accessing the elements of a MyQueue<T> object
+* @param deez - the MyQueue<T> object, no copy is made, uses a reference instead
+*/
 template<class T>
 void UsingQueue3(MyQueue<T>& deez) {
 	while (!deez.isEmpty()) {
