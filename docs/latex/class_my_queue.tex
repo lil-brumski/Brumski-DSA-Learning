@@ -4,6 +4,11 @@
 
 {\ttfamily \#include $<$queue\+\_\+dsa.\+hpp$>$}
 
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_my_queue_1_1_node}{Node}}
+\begin{DoxyCompactList}\small\item\em This is a template class that represents a single element of a queue, and it will be called "{}\+Node"{}. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -32,7 +37,7 @@ virtual size\+\_\+t \mbox{\hyperlink{class_my_queue_a5e3ac9de3d6021ee4f675a25357
 \doxysubsubsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{linkedlist_8hpp_a5aface2aee43d48082816ea90e689447}{DSAPTR}}$<$ \mbox{\hyperlink{class_node}{Node}}$<$ T $>$ $>$ \mbox{\hyperlink{class_my_queue_a2141810c99775578420361d4025cc459}{the\+First}}
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_my_queue_1_1_node}{Node}}$<$ T $>$ $>$ \mbox{\hyperlink{class_my_queue_aabdef303ee05e1aa10cfd05dc409aaaf}{the\+First}}
 \begin{DoxyCompactList}\small\item\em Pointer to the first element of the queue. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
@@ -181,12 +186,12 @@ virtual size\+\_\+t \mbox{\hyperlink{class_my_queue}{My\+Queue}}$<$ T $>$\+::siz
 \label{doc-variable-members}
 \Hypertarget{class_my_queue_doc-variable-members}
 \doxysubsection{Member Data Documentation}
-\Hypertarget{class_my_queue_a2141810c99775578420361d4025cc459}\index{MyQueue$<$ T $>$@{MyQueue$<$ T $>$}!theFirst@{theFirst}}
+\Hypertarget{class_my_queue_aabdef303ee05e1aa10cfd05dc409aaaf}\index{MyQueue$<$ T $>$@{MyQueue$<$ T $>$}!theFirst@{theFirst}}
 \index{theFirst@{theFirst}!MyQueue$<$ T $>$@{MyQueue$<$ T $>$}}
 \doxysubsubsection{\texorpdfstring{theFirst}{theFirst}}
-{\footnotesize\ttfamily \label{class_my_queue_a2141810c99775578420361d4025cc459} 
+{\footnotesize\ttfamily \label{class_my_queue_aabdef303ee05e1aa10cfd05dc409aaaf} 
 template$<$class T$>$ \\
-\mbox{\hyperlink{linkedlist_8hpp_a5aface2aee43d48082816ea90e689447}{DSAPTR}}$<$\mbox{\hyperlink{class_node}{Node}}$<$T$>$ $>$ \mbox{\hyperlink{class_my_queue}{My\+Queue}}$<$ T $>$\+::the\+First\hspace{0.3cm}{\ttfamily [private]}}
+std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{class_my_queue_1_1_node}{Node}}$<$T$>$ $>$ \mbox{\hyperlink{class_my_queue}{My\+Queue}}$<$ T $>$\+::the\+First\hspace{0.3cm}{\ttfamily [private]}}
 
 
 

@@ -1,0 +1,41 @@
+\doxysection{map\+\_\+dsa.\+hpp}
+\hypertarget{map__dsa_8hpp_source}{}\label{map__dsa_8hpp_source}\index{C:/Users/HP/Desktop/Brumski/C++/Brumski-\/DSA-\/Learning/include/map\_dsa.hpp@{C:/Users/HP/Desktop/Brumski/C++/Brumski-\/DSA-\/Learning/include/map\_dsa.hpp}}
+\mbox{\hyperlink{map__dsa_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <map>}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <utility>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <list>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{map__dsa_8hpp_a97ec42d1436c4687968c3901fa1a363e}{UsingMap}}()\ \{}
+\DoxyCodeLine{00010\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)nMAP\ (1)\ DATA\ STRUCTURE"{}}\ <<\ std::endl;}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \ \ \ \ std::map<std::string,\ std::pair<std::string,\ std::string>>\ students;}
+\DoxyCodeLine{00013\ \ \ \ \ students.emplace(\textcolor{stringliteral}{"{}7890"{}},\ std::pair\{\ \textcolor{stringliteral}{"{}David"{}},\ \textcolor{stringliteral}{"{}Tamaratare"{}}\ \});}
+\DoxyCodeLine{00014\ \ \ \ \ students.emplace(\textcolor{stringliteral}{"{}7891"{}},\ std::pair\{\textcolor{stringliteral}{"{}David"{}},\ \textcolor{stringliteral}{"{}Tamaralayefa"{}}\});}
+\DoxyCodeLine{00015\ \ \ \ \ students.emplace(\textcolor{stringliteral}{"{}7892"{}},\ std::pair\{\textcolor{stringliteral}{"{}Daniel"{}},\ \textcolor{stringliteral}{"{}Mark"{}}\});}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}The\ student\ with\ a\ MATRIC.\ NO.\ of\ 7890\ is\ "{}}\ <<\ students[\textcolor{stringliteral}{"{}7890"{}}].first\ <<\ \textcolor{stringliteral}{"{}\ "{}}\ <<\ students[\textcolor{stringliteral}{"{}7890"{}}].second\ <<\ std::endl;}
+\DoxyCodeLine{00018\ \}}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{map__dsa_8hpp_aa0d4612ffd45c140ef556e4103774ed3}{UsingMap2}}()\ \{}
+\DoxyCodeLine{00021\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)nMAP\ (2)\ DATA\ STRUCTURE"{}}\ <<\ std::endl;}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ \ \ \ \ std::map<std::string,\ std::list<std::string>>\ students;}
+\DoxyCodeLine{00024\ \ \ \ \ students.emplace(\textcolor{stringliteral}{"{}7890"{}},\ std::list<std::string>\{\textcolor{stringliteral}{"{}David"{}},\ \textcolor{stringliteral}{"{}Tamaratare"{}},\ \textcolor{stringliteral}{"{}Oghenebrume"{}}\});}
+\DoxyCodeLine{00025\ \ \ \ \ students.emplace(\textcolor{stringliteral}{"{}7891"{}},\ std::list<std::string>\{\textcolor{stringliteral}{"{}David"{}},\ \textcolor{stringliteral}{"{}Tamaralayefa"{}}\});}
+\DoxyCodeLine{00026\ \ \ \ \ students.emplace(\textcolor{stringliteral}{"{}7892"{}},\ std::list<std::string>\{\textcolor{stringliteral}{"{}David"{}},\ \textcolor{stringliteral}{"{}Oghenebrume"{}}\});}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keyword}{auto}\&\ student\ :\ students)\ \{}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}The\ student\ with\ a\ MATRIC.\ NO.\ of\ "{}}\ <<\ student.first\ <<\ \textcolor{stringliteral}{"{}\ is\ "{}};}
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keyword}{auto}\&\ name\ :\ student.second)\ \{}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \ \ \ \ std::cout\ <<\ name\ <<\ \textcolor{stringliteral}{"{}\ "{}};}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ std::cout\ <<\ std::endl;}
+\DoxyCodeLine{00034\ \ \ \ \ \}}
+\DoxyCodeLine{00035\ \}}
+
+\end{DoxyCode}

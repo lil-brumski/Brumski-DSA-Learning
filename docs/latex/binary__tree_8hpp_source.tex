@@ -1,0 +1,85 @@
+\doxysection{binary\+\_\+tree.\+hpp}
+\hypertarget{binary__tree_8hpp_source}{}\label{binary__tree_8hpp_source}\index{C:/Users/HP/Desktop/Brumski/C++/Brumski-\/DSA-\/Learning/include/binary\_tree.hpp@{C:/Users/HP/Desktop/Brumski/C++/Brumski-\/DSA-\/Learning/include/binary\_tree.hpp}}
+\mbox{\hyperlink{binary__tree_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#include\ <memory>}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00007\ \textcolor{keyword}{template}<\textcolor{keyword}{class}\ T>}
+\DoxyCodeLine{00008\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_b_s_tree}{BSTree}}\ \{}
+\DoxyCodeLine{00009\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00013\ \ \ \ \ \textcolor{keyword}{template}<\textcolor{keyword}{class}\ N>}
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_b_s_tree_1_1_b_s_t_node}{BSTNode}}\ \{}
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00016\ \ \ \ \ \ \ \ \ N\ \mbox{\hyperlink{class_b_s_tree_1_1_b_s_t_node_a5fb1a8aa69c3261aa31feec715296a4c}{data}};\ }
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ std::shared\_ptr<BSTNode<N>>\ \mbox{\hyperlink{class_b_s_tree_1_1_b_s_t_node_aef1d682d927281b52542a0341c01bb35}{left}};\ }
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ std::shared\_ptr<BSTNode<N>>\ \mbox{\hyperlink{class_b_s_tree_1_1_b_s_t_node_ae13d8c33dc135fb90fea4da9c17ffdf5}{right}};\ }
+\DoxyCodeLine{00019\ \ \ \ \ \};}
+\DoxyCodeLine{00020\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00021\ \ \ \ \ std::shared\_ptr<BSTNode<T>>\ \mbox{\hyperlink{class_b_s_tree_a2a1c3c0ab8976f4f5a2ff6b4d0ed57d2}{root}};}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_b_s_tree_a971bb58c0583730e47cb8c862a7e214a}{insert}}(\textcolor{keyword}{const}\ T\&\ value)\ \{}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ std::shared\_ptr<BSTNode<T>>\ node\ =\ std::make\_shared<BSTNode<T>>();}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ node-\/>data\ =\ value;}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_b_s_tree_a2a1c3c0ab8976f4f5a2ff6b4d0ed57d2}{root}}\ =\ \mbox{\hyperlink{class_b_s_tree_a4914409b0d3f890f1fe0e407520b20c1}{insertHelper}}(\mbox{\hyperlink{class_b_s_tree_a2a1c3c0ab8976f4f5a2ff6b4d0ed57d2}{root}},\ node);}
+\DoxyCodeLine{00032\ \ \ \ \ \}}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_b_s_tree_aa395dae0b7d12552ab32585b0fbc243b}{display}}()\ \{}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_b_s_tree_ae3c66e2e2f5f08cef6e13703c3d12a62}{displayHelper}}(\mbox{\hyperlink{class_b_s_tree_a2a1c3c0ab8976f4f5a2ff6b4d0ed57d2}{root}});}
+\DoxyCodeLine{00036\ \ \ \ \ \}}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_b_s_tree_a3444ef8e9ad83e5a6b830c402940e13a}{search}}()\{}
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00040\ \ \ \ \ \}}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_b_s_tree_ab2913a8d89eb1fced8acad77567f5ccf}{remove}}()\ \{}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00044\ \ \ \ \ \}}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00046\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00052\ \ \ \ \ \textcolor{keyword}{virtual}\ std::shared\_ptr<BSTNode<T>>\ \mbox{\hyperlink{class_b_s_tree_a4914409b0d3f890f1fe0e407520b20c1}{insertHelper}}(std::shared\_ptr<\mbox{\hyperlink{class_b_s_tree_1_1_b_s_t_node}{BSTNode<T>}}>\&\ \mbox{\hyperlink{class_b_s_tree_a2a1c3c0ab8976f4f5a2ff6b4d0ed57d2}{root}},\ \textcolor{keyword}{const}\ std::shared\_ptr<\mbox{\hyperlink{class_b_s_tree_1_1_b_s_t_node}{BSTNode<T>}}>\&\ node)\ \{}
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ T\ data\ =\ node-\/>data;}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{class_b_s_tree_a2a1c3c0ab8976f4f5a2ff6b4d0ed57d2}{root}}\ ==\ \textcolor{keyword}{nullptr})\ \{}
+\DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_b_s_tree_a2a1c3c0ab8976f4f5a2ff6b4d0ed57d2}{root}}\ =\ node;}
+\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_b_s_tree_a2a1c3c0ab8976f4f5a2ff6b4d0ed57d2}{root}};}
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (data\ <\ root-\/>data)\ \{}
+\DoxyCodeLine{00060\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_b_s_tree_a2a1c3c0ab8976f4f5a2ff6b4d0ed57d2}{root}}-\/>left\ =\ \mbox{\hyperlink{class_b_s_tree_a4914409b0d3f890f1fe0e407520b20c1}{insertHelper}}(\mbox{\hyperlink{class_b_s_tree_a2a1c3c0ab8976f4f5a2ff6b4d0ed57d2}{root}}-\/>left,\ node);}
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_b_s_tree_a2a1c3c0ab8976f4f5a2ff6b4d0ed57d2}{root}}-\/>right\ =\ \mbox{\hyperlink{class_b_s_tree_a4914409b0d3f890f1fe0e407520b20c1}{insertHelper}}(\mbox{\hyperlink{class_b_s_tree_a2a1c3c0ab8976f4f5a2ff6b4d0ed57d2}{root}}-\/>right,\ node);}
+\DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_b_s_tree_a2a1c3c0ab8976f4f5a2ff6b4d0ed57d2}{root}};}
+\DoxyCodeLine{00067\ \ \ \ \ \}}
+\DoxyCodeLine{00068\ }
+\DoxyCodeLine{00069\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_b_s_tree_ae3c66e2e2f5f08cef6e13703c3d12a62}{displayHelper}}(std::shared\_ptr<\mbox{\hyperlink{class_b_s_tree_1_1_b_s_t_node}{BSTNode<T>}}>\&\ \mbox{\hyperlink{class_b_s_tree_a2a1c3c0ab8976f4f5a2ff6b4d0ed57d2}{root}})\ \{}
+\DoxyCodeLine{00070\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{class_b_s_tree_a2a1c3c0ab8976f4f5a2ff6b4d0ed57d2}{root}})\ \{}
+\DoxyCodeLine{00071\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_b_s_tree_ae3c66e2e2f5f08cef6e13703c3d12a62}{displayHelper}}(\mbox{\hyperlink{class_b_s_tree_a2a1c3c0ab8976f4f5a2ff6b4d0ed57d2}{root}}-\/>left);}
+\DoxyCodeLine{00072\ \ \ \ \ \ \ \ \ \ \ \ \ std::cout\ <<\ \mbox{\hyperlink{class_b_s_tree_a2a1c3c0ab8976f4f5a2ff6b4d0ed57d2}{root}}-\/>data\ <<\ std::endl;}
+\DoxyCodeLine{00073\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_b_s_tree_ae3c66e2e2f5f08cef6e13703c3d12a62}{displayHelper}}(\mbox{\hyperlink{class_b_s_tree_a2a1c3c0ab8976f4f5a2ff6b4d0ed57d2}{root}}-\/>right);}
+\DoxyCodeLine{00074\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00075\ \ \ \ \ \}}
+\DoxyCodeLine{00076\ }
+\DoxyCodeLine{00077\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_b_s_tree_aa11cfad710f2cf388b01519eeb3c8fff}{searchHelper}}()\ \{}
+\DoxyCodeLine{00078\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00079\ \ \ \ \ \}}
+\DoxyCodeLine{00080\ }
+\DoxyCodeLine{00081\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_b_s_tree_ad41dafd6e308e0e7dfb511f95d218456}{removeHelper}}()\ \{}
+\DoxyCodeLine{00082\ }
+\DoxyCodeLine{00083\ \ \ \ \ \}}
+\DoxyCodeLine{00084\ }
+\DoxyCodeLine{00085\ \ \ \ \ T\ \mbox{\hyperlink{class_b_s_tree_ac568908c3536077210c4807db8d74a36}{successor}}()\{}
+\DoxyCodeLine{00086\ }
+\DoxyCodeLine{00087\ \ \ \ \ \}}
+\DoxyCodeLine{00088\ }
+\DoxyCodeLine{00089\ \ \ \ \ T\ \mbox{\hyperlink{class_b_s_tree_a88503849084901e9beb209cc1e2e3987}{predecessor}}()\{}
+\DoxyCodeLine{00090\ }
+\DoxyCodeLine{00091\ \ \ \ \ \}}
+\DoxyCodeLine{00092\ \};}
+\DoxyCodeLine{00093\ }
+\DoxyCodeLine{00094\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{binary__tree_8hpp_af0ee63651448b2849229ba69ecd81024}{UsingBST}}();}
+
+\end{DoxyCode}

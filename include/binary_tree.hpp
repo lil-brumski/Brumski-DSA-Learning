@@ -2,21 +2,21 @@
 #include <iostream>
 
 /**
-* This is a template class that represents a node/element in a Binary Search Tree. It can take any basic C++ data type.
-*/
-template<class N>
-class BSTNode {
-public:
-	N data; /**< Holds the data of a single node/element*/
-	std::shared_ptr<BSTNode<N>> left; /**< Pointer to left child*/
-	std::shared_ptr<BSTNode<N>> right; /**< Pointer to right child*/
-};
-
-/**
 * This is a template class that represents a Binary Search Tree. It can take any basic C++ data type.
 */
 template<class T>
 class BSTree {
+private:
+	/**
+	* This is a template class that represents a node/element in a Binary Search Tree. It can take any basic C++ data type.
+	*/
+	template<class N>
+	class BSTNode {
+	public:
+		N data; /**< Holds the data of a single node/element*/
+		std::shared_ptr<BSTNode<N>> left; /**< Pointer to left child*/
+		std::shared_ptr<BSTNode<N>> right; /**< Pointer to right child*/
+	};
 public:
 	std::shared_ptr<BSTNode<T>> root;
 

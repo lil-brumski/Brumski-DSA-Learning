@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['_7elinkedlist_0',['~LinkedList',['../class_linked_list.html#af347eb7a9d8c2d48f7b2066ff56d0a12',1,'LinkedList']]]
+  ['top_0',['Top',['../class_my_stack.html#a6c53b5bd3c96604bdfb0a7c6636dac7f',1,'MyStack']]]
 ];

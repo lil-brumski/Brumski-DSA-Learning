@@ -4,35 +4,27 @@
 #include <memory>
 
 /**
-* \typedef DSAPTR
-* \brief Type alias for std::shared_ptr<T>
-*/
-template<class T>
-using DSAPTR = std::shared_ptr<T>;
-
-/**
-* This is a template class represents a single element of the linked list, and it will be called "Node"
-*/
-template<class NType>
-class Node {
-public:
-    NType data{}; /**< Stores the data for each node*/
-    DSAPTR<Node<NType>> next = nullptr; /**< Stores the address of the next node*/
-
-    /**
-    * Default Constructor
-    */
-    Node() = default;
-};
-
-
-/**
 * This is a template class that represents the linked list. It can take any basic C++ data type.
 */
 template<class LLType>
 class LinkedList {
 private:
-    DSAPTR<Node<LLType>> head;
+    /**
+    * This is a template class represents a single element of the linked list, and it will be called "Node"
+    */
+    template<class NType>
+    class Node {
+    public:
+        NType data{}; /**< Stores the data for each node*/
+        std::shared_ptr<Node<NType>> next = nullptr; /**< Stores the address of the next node*/
+
+        /**
+        * Default Constructor
+        */
+        Node() = default;
+    };
+private:
+    std::shared_ptr<Node<LLType>> head;
 
 public:
     /**
@@ -74,7 +66,7 @@ public:
     * @param value - the value that you want to pass to the front of the linked list
     */
     virtual LinkedList& insertAtFront(const LLType& value) {
-        DSAPTR<Node<LLType>> newNode = std::make_shared<Node<LLType>>();
+        std::shared_ptr<Node<LLType>> newNode = std::make_shared<Node<LLType>>();
         newNode->data = value;
         newNode->next = head;
 
@@ -87,7 +79,7 @@ public:
     * @param value - the value that you want to pass to the back of the linked list
     */
     virtual LinkedList& insertAtEnd(const LLType& value) {
-        DSAPTR<Node<LLType>> newNode = std::make_shared<Node<LLType>>();
+        std::shared_ptr<Node<LLType>> newNode = std::make_shared<Node<LLType>>();
         newNode->data = value;
         newNode->next = nullptr;
 
@@ -96,7 +88,7 @@ public:
             return *this;
         }
 
-        DSAPTR<Node<LLType>> lastNode = head;
+        std::shared_ptr<Node<LLType>> lastNode = head;
         while (lastNode->next != nullptr) {
             lastNode = lastNode->next;
         }
@@ -108,7 +100,7 @@ public:
     * Outputs the values in the linked list
     */
     virtual LinkedList<LLType>& outputValues() {
-        DSAPTR<Node<LLType>> PRINT_node = head;
+        std::shared_ptr<Node<LLType>> PRINT_node = head;
 
         if (!PRINT_node) {
             std::cerr << "Object is null!" << std::endl;

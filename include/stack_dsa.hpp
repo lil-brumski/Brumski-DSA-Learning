@@ -1,6 +1,6 @@
 #pragma once
-
-#include "linkedlist.hpp"
+#include <memory>
+#include <iostream>
 
 /**
 * Basic example using a std::stack<int>
@@ -17,6 +17,21 @@ void UsingStack2();
 */
 template<class T>
 class MyStack {
+private:
+	/**
+	* This is a template class that represents a single element of a stack, and it will be called "Node"
+	*/
+	template<class NType>
+	class Node {
+	public:
+		NType data{}; /**< Stores the data for each node*/
+		std::shared_ptr<Node<NType>> next = nullptr; /**< Stores the address of the next node*/
+
+		/**
+		* Default Constructor
+		*/
+		Node() = default;
+	};
 public:
 	/**
 	* Default Constructor
@@ -45,7 +60,7 @@ public:
 	*/
 	MyStack<T>& operator=(MyStack<T>&& other) noexcept = default;
 private:
-	DSAPTR<Node<T>> myTop; /**< Pointer to the top element of the stack*/
+	std::shared_ptr<Node<T>> myTop; /**< Pointer to the top element of the stack*/
 
 public:
 	/**
@@ -60,7 +75,7 @@ public:
 	* @param value - The value you want to pass to the top of the stack
 	*/
 	virtual MyStack<T>& push_top(const T& value) {
-		DSAPTR<Node<T>> newNode = std::make_shared<Node<T>>();
+		std::shared_ptr<Node<T>> newNode = std::make_shared<Node<T>>();
 		newNode->data = value;
 		newNode->next = myTop;
 		myTop = newNode;

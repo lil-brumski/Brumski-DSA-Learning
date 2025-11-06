@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['red_0',['red',['../main_8cpp.html#ab87bacfdad76e61b9412d7124be44c1cabda9643ac6601722a28f238714274da4',1,'main.cpp']]],
-  ['reset_1',['reset',['../main_8cpp.html#ab87bacfdad76e61b9412d7124be44c1ca86266ee937d97f812a8e57d22b62ee29',1,'main.cpp']]]
+  ['queue_5fdsa_2ecpp_0',['queue_dsa.cpp',['../queue__dsa_8cpp.html',1,'']]],
+  ['queue_5fdsa_2ehpp_1',['queue_dsa.hpp',['../queue__dsa_8hpp.html',1,'']]]
 ];

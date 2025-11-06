@@ -9,6 +9,11 @@ This is a template class that represents the linked list.
 
 {\ttfamily \#include $<$linkedlist.\+hpp$>$}
 
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_linked_list_1_1_node}{Node}}
+\begin{DoxyCompactList}\small\item\em This is a template class represents a single element of the linked list, and it will be called "{}\+Node"{}. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -33,7 +38,7 @@ virtual \mbox{\hyperlink{class_linked_list}{Linked\+List}}$<$ LLType $>$ \& \mbo
 \doxysubsubsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{linkedlist_8hpp_a5aface2aee43d48082816ea90e689447}{DSAPTR}}$<$ \mbox{\hyperlink{class_node}{Node}}$<$ LLType $>$ $>$ \mbox{\hyperlink{class_linked_list_a94fa0b3a3127433bb110bf0fda8b713c}{head}}
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_linked_list_1_1_node}{Node}}$<$ LLType $>$ $>$ \mbox{\hyperlink{class_linked_list_a63ecd9feda1359713c2fc2cee24154d2}{head}}
 \end{DoxyCompactItemize}
 
 
@@ -176,12 +181,12 @@ Outputs the values in the linked list.
 \label{doc-variable-members}
 \Hypertarget{class_linked_list_doc-variable-members}
 \doxysubsection{Member Data Documentation}
-\Hypertarget{class_linked_list_a94fa0b3a3127433bb110bf0fda8b713c}\index{LinkedList$<$ LLType $>$@{LinkedList$<$ LLType $>$}!head@{head}}
+\Hypertarget{class_linked_list_a63ecd9feda1359713c2fc2cee24154d2}\index{LinkedList$<$ LLType $>$@{LinkedList$<$ LLType $>$}!head@{head}}
 \index{head@{head}!LinkedList$<$ LLType $>$@{LinkedList$<$ LLType $>$}}
 \doxysubsubsection{\texorpdfstring{head}{head}}
-{\footnotesize\ttfamily \label{class_linked_list_a94fa0b3a3127433bb110bf0fda8b713c} 
+{\footnotesize\ttfamily \label{class_linked_list_a63ecd9feda1359713c2fc2cee24154d2} 
 template$<$class LLType$>$ \\
-\mbox{\hyperlink{linkedlist_8hpp_a5aface2aee43d48082816ea90e689447}{DSAPTR}}$<$\mbox{\hyperlink{class_node}{Node}}$<$LLType$>$ $>$ \mbox{\hyperlink{class_linked_list}{Linked\+List}}$<$ LLType $>$\+::head\hspace{0.3cm}{\ttfamily [private]}}
+std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{class_linked_list_1_1_node}{Node}}$<$LLType$>$ $>$ \mbox{\hyperlink{class_linked_list}{Linked\+List}}$<$ LLType $>$\+::head\hspace{0.3cm}{\ttfamily [private]}}
 
 
 

@@ -9,6 +9,11 @@ This is a template class that represents the stack data structure.
 
 {\ttfamily \#include $<$stack\+\_\+dsa.\+hpp$>$}
 
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_my_stack_1_1_node}{Node}}
+\begin{DoxyCompactList}\small\item\em This is a template class that represents a single element of a stack, and it will be called "{}\+Node"{}. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -33,7 +38,7 @@ virtual bool \mbox{\hyperlink{class_my_stack_af1cde3c714578d491b281d6bf74079b9}{
 \doxysubsubsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{linkedlist_8hpp_a5aface2aee43d48082816ea90e689447}{DSAPTR}}$<$ \mbox{\hyperlink{class_node}{Node}}$<$ T $>$ $>$ \mbox{\hyperlink{class_my_stack_a430abb7a1945e8e57d49aac93792bbd8}{my\+Top}}
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_my_stack_1_1_node}{Node}}$<$ T $>$ $>$ \mbox{\hyperlink{class_my_stack_adfcbce04fd62bc11c92a569832381523}{my\+Top}}
 \begin{DoxyCompactList}\small\item\em Pointer to the top element of the stack. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
@@ -171,12 +176,12 @@ Returns the top element of the stack.
 \label{doc-variable-members}
 \Hypertarget{class_my_stack_doc-variable-members}
 \doxysubsection{Member Data Documentation}
-\Hypertarget{class_my_stack_a430abb7a1945e8e57d49aac93792bbd8}\index{MyStack$<$ T $>$@{MyStack$<$ T $>$}!myTop@{myTop}}
+\Hypertarget{class_my_stack_adfcbce04fd62bc11c92a569832381523}\index{MyStack$<$ T $>$@{MyStack$<$ T $>$}!myTop@{myTop}}
 \index{myTop@{myTop}!MyStack$<$ T $>$@{MyStack$<$ T $>$}}
 \doxysubsubsection{\texorpdfstring{myTop}{myTop}}
-{\footnotesize\ttfamily \label{class_my_stack_a430abb7a1945e8e57d49aac93792bbd8} 
+{\footnotesize\ttfamily \label{class_my_stack_adfcbce04fd62bc11c92a569832381523} 
 template$<$class T$>$ \\
-\mbox{\hyperlink{linkedlist_8hpp_a5aface2aee43d48082816ea90e689447}{DSAPTR}}$<$\mbox{\hyperlink{class_node}{Node}}$<$T$>$ $>$ \mbox{\hyperlink{class_my_stack}{My\+Stack}}$<$ T $>$\+::my\+Top\hspace{0.3cm}{\ttfamily [private]}}
+std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{class_my_stack_1_1_node}{Node}}$<$T$>$ $>$ \mbox{\hyperlink{class_my_stack}{My\+Stack}}$<$ T $>$\+::my\+Top\hspace{0.3cm}{\ttfamily [private]}}
 
 
 

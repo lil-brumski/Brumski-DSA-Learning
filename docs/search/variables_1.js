@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['head_0',['head',['../class_linked_list.html#a94fa0b3a3127433bb110bf0fda8b713c',1,'LinkedList']]]
+  ['head_0',['head',['../class_linked_list.html#a63ecd9feda1359713c2fc2cee24154d2',1,'LinkedList']]]
 ];

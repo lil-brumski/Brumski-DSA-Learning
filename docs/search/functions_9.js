@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['top_0',['Top',['../class_my_stack.html#a6c53b5bd3c96604bdfb0a7c6636dac7f',1,'MyStack']]]
+  ['remove_0',['remove',['../class_b_s_tree.html#ab2913a8d89eb1fced8acad77567f5ccf',1,'BSTree']]],
+  ['removehelper_1',['removeHelper',['../class_b_s_tree.html#ad41dafd6e308e0e7dfb511f95d218456',1,'BSTree']]]
 ];

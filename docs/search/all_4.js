@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['green_0',['green',['../main_8cpp.html#ab87bacfdad76e61b9412d7124be44c1ca9f27410725ab8cc8854a2769c7a516b8',1,'main.cpp']]]
+  ['front_5felement_0',['front_element',['../class_my_queue.html#a6c19b79d70c5b75b08e39cc18e72ebd3',1,'MyQueue']]]
 ];

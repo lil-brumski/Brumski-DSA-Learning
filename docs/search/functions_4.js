@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['main_0',['main',['../main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627',1,'main.cpp']]],
-  ['myqueue_1',['MyQueue',['../class_my_queue.html#ac76245b95d700b5cc5e93b9985aebb0f',1,'MyQueue::MyQueue()=default'],['../class_my_queue.html#a3eafbfab8c16b472710836e86db33aa5',1,'MyQueue::MyQueue(const MyQueue&lt; T &gt; &amp;)=delete'],['../class_my_queue.html#ae542281896714163c98224bc916e8a4b',1,'MyQueue::MyQueue(MyQueue&lt; T &gt; &amp;&amp;other)=default']]],
-  ['mystack_2',['MyStack',['../class_my_stack.html#afe002424439904e08e5a7c35ca64a022',1,'MyStack::MyStack()=default'],['../class_my_stack.html#a1401dfc373aef01be9bec209c1531a30',1,'MyStack::MyStack(const MyStack&lt; T &gt; &amp;)=delete'],['../class_my_stack.html#a2df886765dc72f5aeffae04eb30373eb',1,'MyStack::MyStack(MyStack&lt; T &gt; &amp;&amp;other) noexcept=default']]]
+  ['last_5felement_0',['last_element',['../class_my_queue.html#a04500ea380d36eb6aea81408ccc7ec74',1,'MyQueue']]],
+  ['linkedlist_1',['LinkedList',['../class_linked_list.html#ab7bbba34b30827d6b1c7a6627d9929a4',1,'LinkedList::LinkedList()=default'],['../class_linked_list.html#ad38fc41e97e6a857be2665804f8004ef',1,'LinkedList::LinkedList(const LinkedList&lt; LLType &gt; &amp;)=delete'],['../class_linked_list.html#a65fd191db289a155075afbc22d1bc127',1,'LinkedList::LinkedList(LinkedList&lt; LLType &gt; &amp;&amp;other) noexcept=default']]],
+  ['listexample_2',['ListExample',['../linkedlist_8cpp.html#a558dcde16df55182bdb79452b84c5eec',1,'ListExample():&#160;linkedlist.cpp'],['../linkedlist_8hpp.html#a558dcde16df55182bdb79452b84c5eec',1,'ListExample():&#160;linkedlist.cpp']]],
+  ['listexample2_3',['ListExample2',['../linkedlist_8cpp.html#a9564967f2f24e151270dd25ec83562bb',1,'ListExample2():&#160;linkedlist.cpp'],['../linkedlist_8hpp.html#a9564967f2f24e151270dd25ec83562bb',1,'ListExample2():&#160;linkedlist.cpp']]]
 ];

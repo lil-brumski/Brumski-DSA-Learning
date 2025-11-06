@@ -1,10 +1,26 @@
 #pragma once
-#include "linkedlist.hpp"
+#include <memory>
+#include <iostream>
 
 template<class T>
 class MyQueue {
 private:
-	DSAPTR<Node<T>> theFirst; /**< Pointer to the first element of the queue*/
+	/**
+	* This is a template class that represents a single element of a queue, and it will be called "Node"
+	*/
+	template<class NType>
+	class Node {
+	public:
+		NType data{}; /**< Stores the data for each node*/
+		std::shared_ptr<Node<NType>> next = nullptr; /**< Stores the address of the next node*/
+
+		/**
+		* Default Constructor
+		*/
+		Node() = default;
+	};
+private:
+	std::shared_ptr<Node<T>> theFirst; /**< Pointer to the first element of the queue*/
 public:
 	/**
 	* Default Constructor
@@ -38,7 +54,7 @@ public:
 	* @param value - the value that you want to pass to the end of the queue
 	*/
 	virtual MyQueue<T>& push_back(const T& value) {
-		DSAPTR<Node<T>> newNode = std::make_shared<Node<T>>();
+		std::shared_ptr<Node<T>> newNode = std::make_shared<Node<T>>();
 		newNode->data = value;
 		newNode->next = nullptr;
 
@@ -47,7 +63,7 @@ public:
 			return *this;
 		}
 
-		DSAPTR<Node<T>> lastNode = theFirst;
+		std::shared_ptr<Node<T>> lastNode = theFirst;
 		while (lastNode->next != nullptr) {
 			lastNode = lastNode->next;
 		}
@@ -66,7 +82,7 @@ public:
 	* Prints out the last element in the queue
 	*/
 	virtual T last_element() {
-		DSAPTR<Node<T>> temp = theFirst;
+		std::shared_ptr<Node<T>> temp = theFirst;
 		while (temp->next != nullptr) {
 			temp = temp->next;
 		}
@@ -93,7 +109,7 @@ public:
 	}
 
 	virtual size_t size() {
-		DSAPTR<Node<T>> temp = theFirst;
+		std::shared_ptr<Node<T>> temp = theFirst;
 		size_t counter = 0;
 		while (temp) {
 			temp = temp->next;

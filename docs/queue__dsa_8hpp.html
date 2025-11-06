@@ -26,7 +26,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Brumski&#39;s Data Structures and Algorithm Learning Project<span id="projectnumber">&#160;1.2</span>
+   <div id="projectname">Brumski&#39;s Data Structures and Algorithm Learning Project<span id="projectnumber">&#160;1.3</span>
    </div>
    <div id="projectbrief">For Learning Data Structures and Algorithms in C++</div>
   </td>
@@ -92,20 +92,26 @@ $(function(){initNavTree('queue__dsa_8hpp.html','',''); });
   <div class="headertitle"><div class="title">queue_dsa.hpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="linkedlist_8hpp_source.html">linkedlist.hpp</a>&quot;</code><br />
+<div class="textblock"><code>#include &lt;memory&gt;</code><br />
+<code>#include &lt;iostream&gt;</code><br />
 </div>
 <p><a href="queue__dsa_8hpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:MyQueue_3C_20T_20_3E" id="r_MyQueue_3C_20T_20_3E"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_my_queue.html">MyQueue&lt; T &gt;</a></td></tr>
+<tr class="memitem:MyQueue_3C_20T_20_3E_3A_3ANode_3C_20NType_20_3E" id="r_MyQueue_3C_20T_20_3E_3A_3ANode_3C_20NType_20_3E"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_my_queue_1_1_node.html">MyQueue&lt; T &gt;::Node&lt; NType &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is a template class that represents a single element of a queue, and it will be called "Node".  <a href="class_my_queue_1_1_node.html#details">More...</a><br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a79b22eae2930982af77519fad4932293" id="r_a79b22eae2930982af77519fad4932293"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a79b22eae2930982af77519fad4932293">UsingQueue</a> ()</td></tr>
+<tr class="memdesc:a79b22eae2930982af77519fad4932293"><td class="mdescLeft">&#160;</td><td class="mdescRight">Incomplete std::queue example.  <br /></td></tr>
 <tr class="memitem:a9984162e62bdffd507933f58acd76ab1" id="r_a9984162e62bdffd507933f58acd76ab1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9984162e62bdffd507933f58acd76ab1">UsingQueue2</a> ()</td></tr>
+<tr class="memdesc:a9984162e62bdffd507933f58acd76ab1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Example demonstrating the use of <a class="el" href="class_my_queue.html">MyQueue&lt;T&gt;</a>  <br /></td></tr>
 <tr class="memitem:aa4d33478478758030e8e2023b368ed95" id="r_aa4d33478478758030e8e2023b368ed95"><td class="memTemplParams" colspan="2">template&lt;class T&gt; </td></tr>
 <tr class="memitem:aa4d33478478758030e8e2023b368ed95 template"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa4d33478478758030e8e2023b368ed95">UsingQueue3</a> (<a class="el" href="class_my_queue.html">MyQueue</a>&lt; T &gt; &amp;deez)</td></tr>
+<tr class="memdesc:aa4d33478478758030e8e2023b368ed95"><td class="mdescLeft">&#160;</td><td class="mdescRight">For accessing the elements of a <a class="el" href="class_my_queue.html">MyQueue&lt;T&gt;</a> object.  <br /></td></tr>
 </table>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Function Documentation</h2>
 <a id="a79b22eae2930982af77519fad4932293" name="a79b22eae2930982af77519fad4932293"></a>
@@ -123,6 +129,8 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Incomplete std::queue example. </p>
+
 </div>
 </div>
 <a id="a9984162e62bdffd507933f58acd76ab1" name="a9984162e62bdffd507933f58acd76ab1"></a>
@@ -139,6 +147,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Example demonstrating the use of <a class="el" href="class_my_queue.html">MyQueue&lt;T&gt;</a> </p>
 
 </div>
 </div>
@@ -158,6 +168,14 @@ template&lt;class T&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>For accessing the elements of a <a class="el" href="class_my_queue.html">MyQueue&lt;T&gt;</a> object. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">deez</td><td>- the <a class="el" href="class_my_queue.html">MyQueue&lt;T&gt;</a> object, no copy is made, uses a reference instead </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

@@ -1,5 +1,6 @@
 var class_my_queue =
 [
+    [ "Node", "class_my_queue_1_1_node.html", "class_my_queue_1_1_node" ],
     [ "MyQueue", "class_my_queue.html#ac76245b95d700b5cc5e93b9985aebb0f", null ],
     [ "MyQueue", "class_my_queue.html#a3eafbfab8c16b472710836e86db33aa5", null ],
     [ "MyQueue", "class_my_queue.html#ae542281896714163c98224bc916e8a4b", null ],
@@ -11,5 +12,5 @@ var class_my_queue =
     [ "popFront", "class_my_queue.html#a3d0d1d80217a103d6b8a5d4f0f9e625c", null ],
     [ "push_back", "class_my_queue.html#a76f2a52c29de95352d9743d630ac5bc9", null ],
     [ "size", "class_my_queue.html#a5e3ac9de3d6021ee4f675a253577aa07", null ],
-    [ "theFirst", "class_my_queue.html#a2141810c99775578420361d4025cc459", null ]
+    [ "theFirst", "class_my_queue.html#aabdef303ee05e1aa10cfd05dc409aaaf", null ]
 ];
