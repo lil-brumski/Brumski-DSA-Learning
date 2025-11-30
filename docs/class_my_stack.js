@@ -10,5 +10,5 @@ var class_my_stack =
     [ "popTop", "class_my_stack.html#aff269b73017c084cf5cce86e3f97dc44", null ],
     [ "push_top", "class_my_stack.html#a92c7f1af509db146274b5117090295b5", null ],
     [ "Top", "class_my_stack.html#a6c53b5bd3c96604bdfb0a7c6636dac7f", null ],
-    [ "myTop", "class_my_stack.html#adfcbce04fd62bc11c92a569832381523", null ]
+    [ "myTop", "class_my_stack.html#a4e40957dd662c88cd809a8f3fb35c336", null ]
 ];

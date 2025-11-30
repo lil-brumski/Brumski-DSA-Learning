@@ -13,7 +13,9 @@ void UsingStack();
 void UsingStack2();
 
 /**
-* This is a template class that represents the stack data structure. It can take any basic C++ data type.
+* This is a template class that represents the stack data structure. 
+* It can take any basic C++ data type. 
+* It uses the Last In First Out (LIFO) principle.
 */
 template<class T>
 class MyStack {
@@ -25,7 +27,7 @@ private:
 	class Node {
 	public:
 		NType data{}; /**< Stores the data for each node*/
-		std::shared_ptr<Node<NType>> next = nullptr; /**< Stores the address of the next node*/
+		std::unique_ptr<Node<NType>> next = nullptr; /**< Stores the address of the next node*/
 
 		/**
 		* Default Constructor
@@ -60,7 +62,7 @@ public:
 	*/
 	MyStack<T>& operator=(MyStack<T>&& other) noexcept = default;
 private:
-	std::shared_ptr<Node<T>> myTop; /**< Pointer to the top element of the stack*/
+	std::unique_ptr<Node<T>> myTop; /**< Pointer to the top element of the stack*/
 
 public:
 	/**
@@ -75,10 +77,10 @@ public:
 	* @param value - The value you want to pass to the top of the stack
 	*/
 	virtual MyStack<T>& push_top(const T& value) {
-		std::shared_ptr<Node<T>> newNode = std::make_shared<Node<T>>();
+		std::unique_ptr<Node<T>> newNode = std::make_unique<Node<T>>();
 		newNode->data = value;
-		newNode->next = myTop;
-		myTop = newNode;
+		newNode->next = std::move(myTop);
+		myTop = std::move(newNode);
 
 		return *this;
 	}
@@ -87,7 +89,7 @@ public:
 	* Removes the top element of the stack
 	*/
 	virtual MyStack<T>& popTop() {
-		myTop = myTop->next;
+		myTop = std::move(myTop->next);
 		return *this;
 	}
 

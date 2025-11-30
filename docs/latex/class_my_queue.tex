@@ -2,6 +2,11 @@
 \hypertarget{class_my_queue}{}\label{class_my_queue}\index{MyQueue$<$ T $>$@{MyQueue$<$ T $>$}}
 
 
+This is a template class that represents the queue data structure.  
+
+
+
+
 {\ttfamily \#include $<$queue\+\_\+dsa.\+hpp$>$}
 
 \doxysubsubsection*{Classes}
@@ -37,9 +42,16 @@ virtual size\+\_\+t \mbox{\hyperlink{class_my_queue_a5e3ac9de3d6021ee4f675a25357
 \doxysubsubsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
-std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_my_queue_1_1_node}{Node}}$<$ T $>$ $>$ \mbox{\hyperlink{class_my_queue_aabdef303ee05e1aa10cfd05dc409aaaf}{the\+First}}
+std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{class_my_queue_1_1_node}{Node}}$<$ T $>$ $>$ \mbox{\hyperlink{class_my_queue_a54b7da23ad3226b87795cfa9b907160e}{the\+First}}
 \begin{DoxyCompactList}\small\item\em Pointer to the first element of the queue. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$class T$>$\newline
+class My\+Queue$<$ T $>$}
+This is a template class that represents the queue data structure. 
+
+It can take any basic C++ data type. It uses the First In First Out (FIFO) principle. 
 
 \label{doc-constructors}
 \Hypertarget{class_my_queue_doc-constructors}
@@ -186,12 +198,12 @@ virtual size\+\_\+t \mbox{\hyperlink{class_my_queue}{My\+Queue}}$<$ T $>$\+::siz
 \label{doc-variable-members}
 \Hypertarget{class_my_queue_doc-variable-members}
 \doxysubsection{Member Data Documentation}
-\Hypertarget{class_my_queue_aabdef303ee05e1aa10cfd05dc409aaaf}\index{MyQueue$<$ T $>$@{MyQueue$<$ T $>$}!theFirst@{theFirst}}
+\Hypertarget{class_my_queue_a54b7da23ad3226b87795cfa9b907160e}\index{MyQueue$<$ T $>$@{MyQueue$<$ T $>$}!theFirst@{theFirst}}
 \index{theFirst@{theFirst}!MyQueue$<$ T $>$@{MyQueue$<$ T $>$}}
 \doxysubsubsection{\texorpdfstring{theFirst}{theFirst}}
-{\footnotesize\ttfamily \label{class_my_queue_aabdef303ee05e1aa10cfd05dc409aaaf} 
+{\footnotesize\ttfamily \label{class_my_queue_a54b7da23ad3226b87795cfa9b907160e} 
 template$<$class T$>$ \\
-std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{class_my_queue_1_1_node}{Node}}$<$T$>$ $>$ \mbox{\hyperlink{class_my_queue}{My\+Queue}}$<$ T $>$\+::the\+First\hspace{0.3cm}{\ttfamily [private]}}
+std\+::unique\+\_\+ptr$<$\mbox{\hyperlink{class_my_queue_1_1_node}{Node}}$<$T$>$ $>$ \mbox{\hyperlink{class_my_queue}{My\+Queue}}$<$ T $>$\+::the\+First\hspace{0.3cm}{\ttfamily [private]}}
 
 
 

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['linkedlist_3c_20lltype_20_3e_0',['LinkedList&lt; LLType &gt;',['../class_linked_list.html#a0c4d03395d14e770d65a61ed5fe3fd1e',1,'LinkedList']]]
+  ['operator_3c_3c_0',['operator&lt;&lt;',['../class_linked_list.html#aae564fcddff7b8a01358a7b560ba1cb7',1,'LinkedList']]]
 ];

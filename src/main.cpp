@@ -72,7 +72,7 @@ int main(int argc, char** argv) {
         UsingBST();
     }
     else {
-        argparse::ArgumentParser program("LinkedList", "1.2");
+        argparse::ArgumentParser program("LinkedList", "1.3");
 
         //For linked lists
         std::vector<int> IntNumbers;
@@ -143,7 +143,7 @@ int main(int argc, char** argv) {
                 }
 
                 std::cout << ansi(Color::green) << "\nSTART (linked list): Floats" << ansi() << std::endl;
-                list_f.outputValues();
+                std::cout << list_f << std::endl;
                 std::cout << ansi(Color::green) << "STOP: Floats" << ansi() << std::endl;
             }
             if(program.is_used("--floatst")){
@@ -180,7 +180,7 @@ int main(int argc, char** argv) {
                     list_int.insertAtEnd(s);
                 }
                 std::cout << ansi(Color::green) << "\nSTART (linked list): Integers" << ansi() << std::endl;
-                list_int.outputValues();
+                std::cout << list_int << std::endl;
                 std::cout << ansi(Color::green) << "STOP: Integers" << ansi() << std::endl;
             }
             if(program.is_used("--intst")) {
@@ -213,7 +213,7 @@ int main(int argc, char** argv) {
                     list_str.insertAtEnd(s);
                 }
                 std::cout << ansi(Color::green) << "\nSTART (linked list): Strings" << ansi() << std::endl;
-                list_str.outputValues();
+                std::cout << list_str << std::endl;
                 std::cout << ansi(Color::green) << "STOP: Strings" << ansi() << std::endl;
             }
             if(program.is_used("--stringst")) {

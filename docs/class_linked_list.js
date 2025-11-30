@@ -9,6 +9,6 @@ var class_linked_list =
     [ "insertAtFront", "class_linked_list.html#a4bf4f5cb6609fff49bf82ab37ed9c3e4", null ],
     [ "operator=", "class_linked_list.html#abe0f0cf4b775b72cad13f9a9d6f21f6e", null ],
     [ "operator=", "class_linked_list.html#a79314289744bd433485ee7c38c633a04", null ],
-    [ "outputValues", "class_linked_list.html#ae9434520e2d7e006d98a41888828b1fe", null ],
-    [ "head", "class_linked_list.html#a63ecd9feda1359713c2fc2cee24154d2", null ]
+    [ "operator<<", "class_linked_list.html#aae564fcddff7b8a01358a7b560ba1cb7", null ],
+    [ "head", "class_linked_list.html#a797fde5d3747e434387d27a5477b915a", null ]
 ];

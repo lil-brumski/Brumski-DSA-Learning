@@ -32,14 +32,17 @@ virtual \mbox{\hyperlink{class_linked_list_af347eb7a9d8c2d48f7b2066ff56d0a12}{\t
 virtual \mbox{\hyperlink{class_linked_list}{Linked\+List}} \& \mbox{\hyperlink{class_linked_list_a4bf4f5cb6609fff49bf82ab37ed9c3e4}{insert\+At\+Front}} (const LLType \&value)
 \begin{DoxyCompactList}\small\item\em Inserts a value at the front of the linked list. \end{DoxyCompactList}\item 
 virtual \mbox{\hyperlink{class_linked_list}{Linked\+List}} \& \mbox{\hyperlink{class_linked_list_af10a265d1d97ed8e192b4e3d83e00380}{insert\+At\+End}} (const LLType \&value)
-\begin{DoxyCompactList}\small\item\em Inserts a value at the end of the linked list. \end{DoxyCompactList}\item 
-virtual \mbox{\hyperlink{class_linked_list}{Linked\+List}}$<$ LLType $>$ \& \mbox{\hyperlink{class_linked_list_ae9434520e2d7e006d98a41888828b1fe}{output\+Values}} ()
-\begin{DoxyCompactList}\small\item\em Outputs the values in the linked list. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Inserts a value at the end of the linked list. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
-std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_linked_list_1_1_node}{Node}}$<$ LLType $>$ $>$ \mbox{\hyperlink{class_linked_list_a63ecd9feda1359713c2fc2cee24154d2}{head}}
+std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{class_linked_list_1_1_node}{Node}}$<$ LLType $>$ $>$ \mbox{\hyperlink{class_linked_list_a797fde5d3747e434387d27a5477b915a}{head}}
 \end{DoxyCompactItemize}
+\doxysubsubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \mbox{\hyperlink{class_linked_list_aae564fcddff7b8a01358a7b560ba1cb7}{operator$<$$<$}} (std\+::ostream \&os, const \mbox{\hyperlink{class_linked_list}{Linked\+List}}$<$ LLType $>$ \&obj)
+\begin{DoxyCompactList}\small\item\em Outputs the values in the linked list. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
@@ -47,7 +50,7 @@ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_linked_list_1_1_node}{Node}}$<$
 class Linked\+List$<$ LLType $>$}
 This is a template class that represents the linked list. 
 
-It can take any basic C++ data type. 
+It can take any basic C++ data type. A linked list is a linear data structure, it can store multiple elements of the same data type. Each node in a linked list contains the data item and a pointer to the next node. 
 
 \label{doc-constructors}
 \Hypertarget{class_linked_list_doc-constructors}
@@ -165,12 +168,17 @@ Move assignment operator.
 {\em other} & -\/ the object that you want to transfer ownership from \\
 \hline
 \end{DoxyParams}
-\Hypertarget{class_linked_list_ae9434520e2d7e006d98a41888828b1fe}\index{LinkedList$<$ LLType $>$@{LinkedList$<$ LLType $>$}!outputValues@{outputValues}}
-\index{outputValues@{outputValues}!LinkedList$<$ LLType $>$@{LinkedList$<$ LLType $>$}}
-\doxysubsubsection{\texorpdfstring{outputValues()}{outputValues()}}
-{\footnotesize\ttfamily \label{class_linked_list_ae9434520e2d7e006d98a41888828b1fe} 
+
+
+\label{doc-related-members}
+\Hypertarget{class_linked_list_doc-related-members}
+\doxysubsection{Friends And Related Symbol Documentation}
+\Hypertarget{class_linked_list_aae564fcddff7b8a01358a7b560ba1cb7}\index{LinkedList$<$ LLType $>$@{LinkedList$<$ LLType $>$}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!LinkedList$<$ LLType $>$@{LinkedList$<$ LLType $>$}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily \label{class_linked_list_aae564fcddff7b8a01358a7b560ba1cb7} 
 template$<$class LLType$>$ \\
-virtual \mbox{\hyperlink{class_linked_list}{Linked\+List}}$<$ LLType $>$ \& \mbox{\hyperlink{class_linked_list}{Linked\+List}}$<$ LLType $>$\+::output\+Values (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+std\+::ostream \& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os}{, }\item[{const \mbox{\hyperlink{class_linked_list}{Linked\+List}}$<$ LLType $>$ \&}]{obj}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
 
 
 
@@ -181,12 +189,12 @@ Outputs the values in the linked list.
 \label{doc-variable-members}
 \Hypertarget{class_linked_list_doc-variable-members}
 \doxysubsection{Member Data Documentation}
-\Hypertarget{class_linked_list_a63ecd9feda1359713c2fc2cee24154d2}\index{LinkedList$<$ LLType $>$@{LinkedList$<$ LLType $>$}!head@{head}}
+\Hypertarget{class_linked_list_a797fde5d3747e434387d27a5477b915a}\index{LinkedList$<$ LLType $>$@{LinkedList$<$ LLType $>$}!head@{head}}
 \index{head@{head}!LinkedList$<$ LLType $>$@{LinkedList$<$ LLType $>$}}
 \doxysubsubsection{\texorpdfstring{head}{head}}
-{\footnotesize\ttfamily \label{class_linked_list_a63ecd9feda1359713c2fc2cee24154d2} 
+{\footnotesize\ttfamily \label{class_linked_list_a797fde5d3747e434387d27a5477b915a} 
 template$<$class LLType$>$ \\
-std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{class_linked_list_1_1_node}{Node}}$<$LLType$>$ $>$ \mbox{\hyperlink{class_linked_list}{Linked\+List}}$<$ LLType $>$\+::head\hspace{0.3cm}{\ttfamily [private]}}
+std\+::unique\+\_\+ptr$<$\mbox{\hyperlink{class_linked_list_1_1_node}{Node}}$<$LLType$>$ $>$ \mbox{\hyperlink{class_linked_list}{Linked\+List}}$<$ LLType $>$\+::head\hspace{0.3cm}{\ttfamily [private]}}
 
 
 

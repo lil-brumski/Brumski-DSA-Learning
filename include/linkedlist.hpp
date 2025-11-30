@@ -5,6 +5,8 @@
 
 /**
 * This is a template class that represents the linked list. It can take any basic C++ data type.
+* A linked list is a linear data structure, it can store multiple elements of the same data type. 
+* Each node in a linked list contains the data item and a pointer to the next node.
 */
 template<class LLType>
 class LinkedList {
@@ -16,7 +18,7 @@ private:
     class Node {
     public:
         NType data{}; /**< Stores the data for each node*/
-        std::shared_ptr<Node<NType>> next = nullptr; /**< Stores the address of the next node*/
+        std::unique_ptr<Node<NType>> next = nullptr; /**< Stores the address of the next node*/
 
         /**
         * Default Constructor
@@ -24,7 +26,7 @@ private:
         Node() = default;
     };
 private:
-    std::shared_ptr<Node<LLType>> head;
+    std::unique_ptr<Node<LLType>> head;
 
 public:
     /**
@@ -66,11 +68,11 @@ public:
     * @param value - the value that you want to pass to the front of the linked list
     */
     virtual LinkedList& insertAtFront(const LLType& value) {
-        std::shared_ptr<Node<LLType>> newNode = std::make_shared<Node<LLType>>();
+        std::unique_ptr<Node<LLType>> newNode = std::make_unique<Node<LLType>>();
         newNode->data = value;
-        newNode->next = head;
+        newNode->next = std::move(head);
 
-        head = newNode;
+        head = std::move(newNode);
         return *this;
     }
 
@@ -79,40 +81,40 @@ public:
     * @param value - the value that you want to pass to the back of the linked list
     */
     virtual LinkedList& insertAtEnd(const LLType& value) {
-        std::shared_ptr<Node<LLType>> newNode = std::make_shared<Node<LLType>>();
+        std::unique_ptr<Node<LLType>> newNode = std::make_unique<Node<LLType>>();
         newNode->data = value;
         newNode->next = nullptr;
 
         if (!head) {
-            head = newNode;
+            head = std::move(newNode);
             return *this;
         }
 
-        std::shared_ptr<Node<LLType>> lastNode = head;
+        Node<LLType>* lastNode = head.get();
         while (lastNode->next != nullptr) {
-            lastNode = lastNode->next;
+            lastNode = lastNode->next.get();
         }
-        lastNode->next = newNode;
+        lastNode->next = std::move(newNode);
         return *this;
     }
 
     /**
     * Outputs the values in the linked list
     */
-    virtual LinkedList<LLType>& outputValues() {
-        std::shared_ptr<Node<LLType>> PRINT_node = head;
-
-        if (!PRINT_node) {
-            std::cerr << "Object is null!" << std::endl;
-            return *this;
+    friend std::ostream& operator<<(std::ostream& os, const LinkedList<LLType>& obj) {
+        Node<LLType>* PRINT_node = obj.head.get();
+        if (!obj.head) throw std::runtime_error("linked list is empty");
+        
+        os << "[";
+        while (PRINT_node->next != nullptr) {
+            std::cout << PRINT_node->data <<", ";
+            PRINT_node = PRINT_node->next.get();
         }
+        os << PRINT_node->data;
+        PRINT_node = PRINT_node->next.get();
+        os << "]";
 
-        while (PRINT_node) {
-            std::cout << "Value: " << PRINT_node->data << std::endl;
-            PRINT_node = PRINT_node->next;
-        }
-
-        return *this;
+        return os;
     }
 };
 

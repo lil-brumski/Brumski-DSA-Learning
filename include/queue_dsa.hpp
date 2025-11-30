@@ -2,6 +2,11 @@
 #include <memory>
 #include <iostream>
 
+/**
+* This is a template class that represents the queue data structure.
+* It can take any basic C++ data type.
+* It uses the First In First Out (FIFO) principle.
+*/
 template<class T>
 class MyQueue {
 private:
@@ -12,7 +17,7 @@ private:
 	class Node {
 	public:
 		NType data{}; /**< Stores the data for each node*/
-		std::shared_ptr<Node<NType>> next = nullptr; /**< Stores the address of the next node*/
+		std::unique_ptr<Node<NType>> next = nullptr; /**< Stores the address of the next node*/
 
 		/**
 		* Default Constructor
@@ -20,7 +25,7 @@ private:
 		Node() = default;
 	};
 private:
-	std::shared_ptr<Node<T>> theFirst; /**< Pointer to the first element of the queue*/
+	std::unique_ptr<Node<T>> theFirst; /**< Pointer to the first element of the queue*/
 public:
 	/**
 	* Default Constructor
@@ -54,20 +59,20 @@ public:
 	* @param value - the value that you want to pass to the end of the queue
 	*/
 	virtual MyQueue<T>& push_back(const T& value) {
-		std::shared_ptr<Node<T>> newNode = std::make_shared<Node<T>>();
+		std::unique_ptr<Node<T>> newNode = std::make_unique<Node<T>>();
 		newNode->data = value;
 		newNode->next = nullptr;
 
 		if (!theFirst) {
-			theFirst = newNode;
+			theFirst = std::move(newNode);
 			return *this;
 		}
 
-		std::shared_ptr<Node<T>> lastNode = theFirst;
+		Node<T>* lastNode = theFirst.get();
 		while (lastNode->next != nullptr) {
-			lastNode = lastNode->next;
+			lastNode = lastNode->next.get();
 		}
-		lastNode->next = newNode;
+		lastNode->next = std::move(newNode);
 		return *this;
 	}
 
@@ -82,9 +87,9 @@ public:
 	* Prints out the last element in the queue
 	*/
 	virtual T last_element() {
-		std::shared_ptr<Node<T>> temp = theFirst;
+		Node<T>* temp = theFirst.get();
 		while (temp->next != nullptr) {
-			temp = temp->next;
+			temp = temp->next.get();
 		}
 
 		return temp->data;
@@ -94,7 +99,7 @@ public:
 	* Removes the first element in the queue
 	*/
 	virtual MyQueue<T>& popFront() {
-		theFirst = theFirst->next;
+		theFirst = std::move(theFirst->next);
 		return *this;
 	}
 
@@ -109,10 +114,10 @@ public:
 	}
 
 	virtual size_t size() {
-		std::shared_ptr<Node<T>> temp = theFirst;
+		Node<T>* temp = theFirst.get();
 		size_t counter = 0;
 		while (temp) {
-			temp = temp->next;
+			temp = temp->next.get();
 			counter++;
 		}
 

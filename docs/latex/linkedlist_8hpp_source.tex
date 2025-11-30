@@ -7,81 +7,81 @@
 \DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <iostream>}}
 \DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <memory>}}
 \DoxyCodeLine{00005\ }
-\DoxyCodeLine{00009\ \textcolor{keyword}{template}<\textcolor{keyword}{class}\ LLType>}
-\DoxyCodeLine{00010\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_linked_list_ab7bbba34b30827d6b1c7a6627d9929a4}{LinkedList}}\ \{}
-\DoxyCodeLine{00011\ \textcolor{keyword}{private}:}
-\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keyword}{template}<\textcolor{keyword}{class}\ NType>}
-\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_linked_list_1_1_node_aec5b0130ae2d30aceb03ba1cd73f6350}{Node}}\ \{}
-\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keyword}{public}:}
-\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ NType\ \mbox{\hyperlink{class_linked_list_1_1_node_afedd81f531361f6769c26ff74e5d763b}{data}}\{\};\ }
-\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ std::shared\_ptr<Node<NType>>\ \mbox{\hyperlink{class_linked_list_1_1_node_a38b070a08b2944714fe7e62d87921a1d}{next}}\ =\ \textcolor{keyword}{nullptr};\ }
-\DoxyCodeLine{00020\ }
-\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_linked_list_1_1_node_aec5b0130ae2d30aceb03ba1cd73f6350}{Node}}()\ =\ \textcolor{keywordflow}{default};}
-\DoxyCodeLine{00025\ \ \ \ \ \};}
-\DoxyCodeLine{00026\ \textcolor{keyword}{private}:}
-\DoxyCodeLine{00027\ \ \ \ \ std::shared\_ptr<Node<LLType>>\ \mbox{\hyperlink{class_linked_list_a63ecd9feda1359713c2fc2cee24154d2}{head}};}
-\DoxyCodeLine{00028\ }
-\DoxyCodeLine{00029\ \textcolor{keyword}{public}:}
-\DoxyCodeLine{00033\ \ \ \ \ \mbox{\hyperlink{class_linked_list_ab7bbba34b30827d6b1c7a6627d9929a4}{LinkedList}}()\ =\ \textcolor{keywordflow}{default};}
-\DoxyCodeLine{00034\ }
-\DoxyCodeLine{00038\ \ \ \ \ \mbox{\hyperlink{class_linked_list_ad38fc41e97e6a857be2665804f8004ef}{LinkedList}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_linked_list_ab7bbba34b30827d6b1c7a6627d9929a4}{LinkedList<LLType>}}\&)\ =\ \textcolor{keyword}{delete};}
-\DoxyCodeLine{00039\ }
-\DoxyCodeLine{00044\ \ \ \ \ \mbox{\hyperlink{class_linked_list_a65fd191db289a155075afbc22d1bc127}{LinkedList}}(\mbox{\hyperlink{class_linked_list_ab7bbba34b30827d6b1c7a6627d9929a4}{LinkedList<LLType>}}\&\&\ other)\ \textcolor{keyword}{noexcept}\ =\ \textcolor{keywordflow}{default};}
-\DoxyCodeLine{00045\ }
-\DoxyCodeLine{00050\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{class_linked_list_ab7bbba34b30827d6b1c7a6627d9929a4}{LinkedList<LLType>}}\&\ \mbox{\hyperlink{class_linked_list_abe0f0cf4b775b72cad13f9a9d6f21f6e}{operator=}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_linked_list_ab7bbba34b30827d6b1c7a6627d9929a4}{LinkedList<LLType>}}\&)\ =\ \textcolor{keyword}{delete};}
-\DoxyCodeLine{00051\ }
-\DoxyCodeLine{00056\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{class_linked_list_ab7bbba34b30827d6b1c7a6627d9929a4}{LinkedList<LLType>}}\&\ \mbox{\hyperlink{class_linked_list_a79314289744bd433485ee7c38c633a04}{operator=}}(\mbox{\hyperlink{class_linked_list_ab7bbba34b30827d6b1c7a6627d9929a4}{LinkedList<LLType>}}\&\&\ other)\ \textcolor{keyword}{noexcept}\ =\ \textcolor{keywordflow}{default};}
-\DoxyCodeLine{00057\ }
-\DoxyCodeLine{00061\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{class_linked_list_af347eb7a9d8c2d48f7b2066ff56d0a12}{\string~LinkedList}}()\ =\ \textcolor{keywordflow}{default};}
-\DoxyCodeLine{00062\ }
-\DoxyCodeLine{00063\ \textcolor{keyword}{public}:}
-\DoxyCodeLine{00068\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{class_linked_list_ab7bbba34b30827d6b1c7a6627d9929a4}{LinkedList}}\&\ \mbox{\hyperlink{class_linked_list_a4bf4f5cb6609fff49bf82ab37ed9c3e4}{insertAtFront}}(\textcolor{keyword}{const}\ LLType\&\ value)\ \{}
-\DoxyCodeLine{00069\ \ \ \ \ \ \ \ \ std::shared\_ptr<Node<LLType>>\ newNode\ =\ std::make\_shared<Node<LLType>>();}
-\DoxyCodeLine{00070\ \ \ \ \ \ \ \ \ newNode-\/>data\ =\ value;}
-\DoxyCodeLine{00071\ \ \ \ \ \ \ \ \ newNode-\/>next\ =\ \mbox{\hyperlink{class_linked_list_a63ecd9feda1359713c2fc2cee24154d2}{head}};}
-\DoxyCodeLine{00072\ }
-\DoxyCodeLine{00073\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_linked_list_a63ecd9feda1359713c2fc2cee24154d2}{head}}\ =\ newNode;}
-\DoxyCodeLine{00074\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ *\textcolor{keyword}{this};}
-\DoxyCodeLine{00075\ \ \ \ \ \}}
-\DoxyCodeLine{00076\ }
-\DoxyCodeLine{00081\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{class_linked_list_ab7bbba34b30827d6b1c7a6627d9929a4}{LinkedList}}\&\ \mbox{\hyperlink{class_linked_list_af10a265d1d97ed8e192b4e3d83e00380}{insertAtEnd}}(\textcolor{keyword}{const}\ LLType\&\ value)\ \{}
-\DoxyCodeLine{00082\ \ \ \ \ \ \ \ \ std::shared\_ptr<Node<LLType>>\ newNode\ =\ std::make\_shared<Node<LLType>>();}
-\DoxyCodeLine{00083\ \ \ \ \ \ \ \ \ newNode-\/>data\ =\ value;}
-\DoxyCodeLine{00084\ \ \ \ \ \ \ \ \ newNode-\/>next\ =\ \textcolor{keyword}{nullptr};}
-\DoxyCodeLine{00085\ }
-\DoxyCodeLine{00086\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!\mbox{\hyperlink{class_linked_list_a63ecd9feda1359713c2fc2cee24154d2}{head}})\ \{}
-\DoxyCodeLine{00087\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_linked_list_a63ecd9feda1359713c2fc2cee24154d2}{head}}\ =\ newNode;}
-\DoxyCodeLine{00088\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ *\textcolor{keyword}{this};}
-\DoxyCodeLine{00089\ \ \ \ \ \ \ \ \ \}}
-\DoxyCodeLine{00090\ }
-\DoxyCodeLine{00091\ \ \ \ \ \ \ \ \ std::shared\_ptr<Node<LLType>>\ lastNode\ =\ \mbox{\hyperlink{class_linked_list_a63ecd9feda1359713c2fc2cee24154d2}{head}};}
-\DoxyCodeLine{00092\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}\ (lastNode-\/>next\ !=\ \textcolor{keyword}{nullptr})\ \{}
-\DoxyCodeLine{00093\ \ \ \ \ \ \ \ \ \ \ \ \ lastNode\ =\ lastNode-\/>next;}
-\DoxyCodeLine{00094\ \ \ \ \ \ \ \ \ \}}
-\DoxyCodeLine{00095\ \ \ \ \ \ \ \ \ lastNode-\/>next\ =\ newNode;}
-\DoxyCodeLine{00096\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ *\textcolor{keyword}{this};}
-\DoxyCodeLine{00097\ \ \ \ \ \}}
-\DoxyCodeLine{00098\ }
-\DoxyCodeLine{00102\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{class_linked_list_ab7bbba34b30827d6b1c7a6627d9929a4}{LinkedList<LLType>}}\&\ \mbox{\hyperlink{class_linked_list_ae9434520e2d7e006d98a41888828b1fe}{outputValues}}()\ \{}
-\DoxyCodeLine{00103\ \ \ \ \ \ \ \ \ std::shared\_ptr<Node<LLType>>\ PRINT\_node\ =\ \mbox{\hyperlink{class_linked_list_a63ecd9feda1359713c2fc2cee24154d2}{head}};}
-\DoxyCodeLine{00104\ }
-\DoxyCodeLine{00105\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!PRINT\_node)\ \{}
-\DoxyCodeLine{00106\ \ \ \ \ \ \ \ \ \ \ \ \ std::cerr\ <<\ \textcolor{stringliteral}{"{}Object\ is\ null!"{}}\ <<\ std::endl;}
-\DoxyCodeLine{00107\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ *\textcolor{keyword}{this};}
-\DoxyCodeLine{00108\ \ \ \ \ \ \ \ \ \}}
-\DoxyCodeLine{00109\ }
-\DoxyCodeLine{00110\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}\ (PRINT\_node)\ \{}
-\DoxyCodeLine{00111\ \ \ \ \ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Value:\ "{}}\ <<\ PRINT\_node-\/>data\ <<\ std::endl;}
-\DoxyCodeLine{00112\ \ \ \ \ \ \ \ \ \ \ \ \ PRINT\_node\ =\ PRINT\_node-\/>next;}
-\DoxyCodeLine{00113\ \ \ \ \ \ \ \ \ \}}
-\DoxyCodeLine{00114\ }
-\DoxyCodeLine{00115\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ *\textcolor{keyword}{this};}
-\DoxyCodeLine{00116\ \ \ \ \ \}}
-\DoxyCodeLine{00117\ \};}
-\DoxyCodeLine{00118\ }
-\DoxyCodeLine{00119\ }
-\DoxyCodeLine{00123\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{linkedlist_8hpp_a558dcde16df55182bdb79452b84c5eec}{ListExample}}();}
-\DoxyCodeLine{00124\ }
-\DoxyCodeLine{00128\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{linkedlist_8hpp_a9564967f2f24e151270dd25ec83562bb}{ListExample2}}();}
+\DoxyCodeLine{00011\ \textcolor{keyword}{template}<\textcolor{keyword}{class}\ LLType>}
+\DoxyCodeLine{00012\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_linked_list_ab7bbba34b30827d6b1c7a6627d9929a4}{LinkedList}}\ \{}
+\DoxyCodeLine{00013\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keyword}{template}<\textcolor{keyword}{class}\ NType>}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_linked_list_1_1_node_aec5b0130ae2d30aceb03ba1cd73f6350}{Node}}\ \{}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ NType\ \mbox{\hyperlink{class_linked_list_1_1_node_afedd81f531361f6769c26ff74e5d763b}{data}}\{\};\ }
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ std::unique\_ptr<Node<NType>>\ \mbox{\hyperlink{class_linked_list_1_1_node_a98667165cbec841d8a5229649a08a65a}{next}}\ =\ \textcolor{keyword}{nullptr};\ }
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_linked_list_1_1_node_aec5b0130ae2d30aceb03ba1cd73f6350}{Node}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00027\ \ \ \ \ \};}
+\DoxyCodeLine{00028\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00029\ \ \ \ \ std::unique\_ptr<Node<LLType>>\ \mbox{\hyperlink{class_linked_list_a797fde5d3747e434387d27a5477b915a}{head}};}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00035\ \ \ \ \ \mbox{\hyperlink{class_linked_list_ab7bbba34b30827d6b1c7a6627d9929a4}{LinkedList}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00040\ \ \ \ \ \mbox{\hyperlink{class_linked_list_ad38fc41e97e6a857be2665804f8004ef}{LinkedList}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_linked_list_ab7bbba34b30827d6b1c7a6627d9929a4}{LinkedList<LLType>}}\&)\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00046\ \ \ \ \ \mbox{\hyperlink{class_linked_list_a65fd191db289a155075afbc22d1bc127}{LinkedList}}(\mbox{\hyperlink{class_linked_list_ab7bbba34b30827d6b1c7a6627d9929a4}{LinkedList<LLType>}}\&\&\ other)\ \textcolor{keyword}{noexcept}\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00052\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{class_linked_list_ab7bbba34b30827d6b1c7a6627d9929a4}{LinkedList<LLType>}}\&\ \mbox{\hyperlink{class_linked_list_abe0f0cf4b775b72cad13f9a9d6f21f6e}{operator=}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_linked_list_ab7bbba34b30827d6b1c7a6627d9929a4}{LinkedList<LLType>}}\&)\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00058\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{class_linked_list_ab7bbba34b30827d6b1c7a6627d9929a4}{LinkedList<LLType>}}\&\ \mbox{\hyperlink{class_linked_list_a79314289744bd433485ee7c38c633a04}{operator=}}(\mbox{\hyperlink{class_linked_list_ab7bbba34b30827d6b1c7a6627d9929a4}{LinkedList<LLType>}}\&\&\ other)\ \textcolor{keyword}{noexcept}\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00063\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{class_linked_list_af347eb7a9d8c2d48f7b2066ff56d0a12}{\string~LinkedList}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00064\ }
+\DoxyCodeLine{00065\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00070\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{class_linked_list_ab7bbba34b30827d6b1c7a6627d9929a4}{LinkedList}}\&\ \mbox{\hyperlink{class_linked_list_a4bf4f5cb6609fff49bf82ab37ed9c3e4}{insertAtFront}}(\textcolor{keyword}{const}\ LLType\&\ value)\ \{}
+\DoxyCodeLine{00071\ \ \ \ \ \ \ \ \ std::unique\_ptr<Node<LLType>>\ newNode\ =\ std::make\_unique<Node<LLType>>();}
+\DoxyCodeLine{00072\ \ \ \ \ \ \ \ \ newNode-\/>data\ =\ value;}
+\DoxyCodeLine{00073\ \ \ \ \ \ \ \ \ newNode-\/>next\ =\ std::move(\mbox{\hyperlink{class_linked_list_a797fde5d3747e434387d27a5477b915a}{head}});}
+\DoxyCodeLine{00074\ }
+\DoxyCodeLine{00075\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_linked_list_a797fde5d3747e434387d27a5477b915a}{head}}\ =\ std::move(newNode);}
+\DoxyCodeLine{00076\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ *\textcolor{keyword}{this};}
+\DoxyCodeLine{00077\ \ \ \ \ \}}
+\DoxyCodeLine{00078\ }
+\DoxyCodeLine{00083\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{class_linked_list_ab7bbba34b30827d6b1c7a6627d9929a4}{LinkedList}}\&\ \mbox{\hyperlink{class_linked_list_af10a265d1d97ed8e192b4e3d83e00380}{insertAtEnd}}(\textcolor{keyword}{const}\ LLType\&\ value)\ \{}
+\DoxyCodeLine{00084\ \ \ \ \ \ \ \ \ std::unique\_ptr<Node<LLType>>\ newNode\ =\ std::make\_unique<Node<LLType>>();}
+\DoxyCodeLine{00085\ \ \ \ \ \ \ \ \ newNode-\/>data\ =\ value;}
+\DoxyCodeLine{00086\ \ \ \ \ \ \ \ \ newNode-\/>next\ =\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{00087\ }
+\DoxyCodeLine{00088\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!\mbox{\hyperlink{class_linked_list_a797fde5d3747e434387d27a5477b915a}{head}})\ \{}
+\DoxyCodeLine{00089\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_linked_list_a797fde5d3747e434387d27a5477b915a}{head}}\ =\ std::move(newNode);}
+\DoxyCodeLine{00090\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ *\textcolor{keyword}{this};}
+\DoxyCodeLine{00091\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00092\ }
+\DoxyCodeLine{00093\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_linked_list_1_1_node}{Node<LLType>}}*\ lastNode\ =\ \mbox{\hyperlink{class_linked_list_a797fde5d3747e434387d27a5477b915a}{head}}.get();}
+\DoxyCodeLine{00094\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}\ (lastNode-\/>\mbox{\hyperlink{class_linked_list_1_1_node_a98667165cbec841d8a5229649a08a65a}{next}}\ !=\ \textcolor{keyword}{nullptr})\ \{}
+\DoxyCodeLine{00095\ \ \ \ \ \ \ \ \ \ \ \ \ lastNode\ =\ lastNode-\/>\mbox{\hyperlink{class_linked_list_1_1_node_a98667165cbec841d8a5229649a08a65a}{next}}.get();}
+\DoxyCodeLine{00096\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00097\ \ \ \ \ \ \ \ \ lastNode-\/>\mbox{\hyperlink{class_linked_list_1_1_node_a98667165cbec841d8a5229649a08a65a}{next}}\ =\ std::move(newNode);}
+\DoxyCodeLine{00098\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ *\textcolor{keyword}{this};}
+\DoxyCodeLine{00099\ \ \ \ \ \}}
+\DoxyCodeLine{00100\ }
+\DoxyCodeLine{00104\ \ \ \ \ \textcolor{keyword}{friend}\ std::ostream\&\ \mbox{\hyperlink{class_linked_list_aae564fcddff7b8a01358a7b560ba1cb7}{operator<<}}(std::ostream\&\ os,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_linked_list_ab7bbba34b30827d6b1c7a6627d9929a4}{LinkedList<LLType>}}\&\ obj)\ \{}
+\DoxyCodeLine{00105\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_linked_list_1_1_node}{Node<LLType>}}*\ PRINT\_node\ =\ obj.\mbox{\hyperlink{class_linked_list_a797fde5d3747e434387d27a5477b915a}{head}}.get();}
+\DoxyCodeLine{00106\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!obj.\mbox{\hyperlink{class_linked_list_a797fde5d3747e434387d27a5477b915a}{head}})\ \textcolor{keywordflow}{throw}\ std::runtime\_error(\textcolor{stringliteral}{"{}linked\ list\ is\ empty"{}});}
+\DoxyCodeLine{00107\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00108\ \ \ \ \ \ \ \ \ os\ <<\ \textcolor{stringliteral}{"{}["{}};}
+\DoxyCodeLine{00109\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}\ (PRINT\_node-\/>\mbox{\hyperlink{class_linked_list_1_1_node_a98667165cbec841d8a5229649a08a65a}{next}}\ !=\ \textcolor{keyword}{nullptr})\ \{}
+\DoxyCodeLine{00110\ \ \ \ \ \ \ \ \ \ \ \ \ std::cout\ <<\ PRINT\_node-\/>\mbox{\hyperlink{class_linked_list_1_1_node_afedd81f531361f6769c26ff74e5d763b}{data}}\ <<\textcolor{stringliteral}{"{},\ "{}};}
+\DoxyCodeLine{00111\ \ \ \ \ \ \ \ \ \ \ \ \ PRINT\_node\ =\ PRINT\_node-\/>\mbox{\hyperlink{class_linked_list_1_1_node_a98667165cbec841d8a5229649a08a65a}{next}}.get();}
+\DoxyCodeLine{00112\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00113\ \ \ \ \ \ \ \ \ os\ <<\ PRINT\_node-\/>\mbox{\hyperlink{class_linked_list_1_1_node_afedd81f531361f6769c26ff74e5d763b}{data}};}
+\DoxyCodeLine{00114\ \ \ \ \ \ \ \ \ PRINT\_node\ =\ PRINT\_node-\/>\mbox{\hyperlink{class_linked_list_1_1_node_a98667165cbec841d8a5229649a08a65a}{next}}.get();}
+\DoxyCodeLine{00115\ \ \ \ \ \ \ \ \ os\ <<\ \textcolor{stringliteral}{"{}]"{}};}
+\DoxyCodeLine{00116\ }
+\DoxyCodeLine{00117\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ os;}
+\DoxyCodeLine{00118\ \ \ \ \ \}}
+\DoxyCodeLine{00119\ \};}
+\DoxyCodeLine{00120\ }
+\DoxyCodeLine{00121\ }
+\DoxyCodeLine{00125\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{linkedlist_8hpp_a558dcde16df55182bdb79452b84c5eec}{ListExample}}();}
+\DoxyCodeLine{00126\ }
+\DoxyCodeLine{00130\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{linkedlist_8hpp_a9564967f2f24e151270dd25ec83562bb}{ListExample2}}();}
 
 \end{DoxyCode}

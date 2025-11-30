@@ -23,5 +23,5 @@ add_library(MyBinaryTree STATIC "src/binary_tree.cpp")
 add_library(My::BinaryTree ALIAS MyBinaryTree)
 target_include_directories(MyBinaryTree PUBLIC include)
 
-add_executable(brumski_dsa "src/main.cpp")
+add_executable(brumski_dsa "src/main.cpp" "appIcon.rc")
 target_link_libraries(brumski_dsa PRIVATE argparse Linked::List My::Stack My::Queue My::BinaryTree)
