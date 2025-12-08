@@ -17,7 +17,7 @@ private:
 	class Node {
 	public:
 		NType data{}; /**< Stores the data for each node*/
-		std::unique_ptr<Node<NType>> next = nullptr; /**< Stores the address of the next node*/
+		std::shared_ptr<Node<NType>> next = nullptr; /**< Stores the address of the next node*/
 
 		/**
 		* Default Constructor
@@ -25,7 +25,8 @@ private:
 		Node() = default;
 	};
 private:
-	std::unique_ptr<Node<T>> theFirst; /**< Pointer to the first element of the queue*/
+	std::shared_ptr<Node<T>> theFirst; /**< Pointer to the first element of the queue*/
+	std::shared_ptr<Node<T>> theRear; /**< Pointer to the last element of the queue*/
 public:
 	/**
 	* Default Constructor
@@ -59,20 +60,20 @@ public:
 	* @param value - the value that you want to pass to the end of the queue
 	*/
 	virtual MyQueue<T>& push_back(const T& value) {
-		std::unique_ptr<Node<T>> newNode = std::make_unique<Node<T>>();
+		std::shared_ptr<Node<T>> newNode = std::make_unique<Node<T>>();
 		newNode->data = value;
 		newNode->next = nullptr;
 
 		if (!theFirst) {
-			theFirst = std::move(newNode);
+			theFirst = theRear = newNode;
+			return *this;
+		}
+		else {
+			theRear->next = newNode;
+			theRear = newNode;
 			return *this;
 		}
 
-		Node<T>* lastNode = theFirst.get();
-		while (lastNode->next != nullptr) {
-			lastNode = lastNode->next.get();
-		}
-		lastNode->next = std::move(newNode);
 		return *this;
 	}
 
@@ -98,9 +99,13 @@ public:
 	/**
 	* Removes the first element in the queue
 	*/
-	virtual MyQueue<T>& popFront() {
-		theFirst = std::move(theFirst->next);
-		return *this;
+	virtual T popFront() {
+		if (theFirst == nullptr) throw std::runtime_error("cannot dequeue empty queue");
+		T data = theFirst->data;
+		theFirst = theFirst->next;
+		if (theFirst == nullptr) theRear = nullptr;
+
+		return data;
 	}
 
 	/**

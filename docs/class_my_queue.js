@@ -9,8 +9,9 @@ var class_my_queue =
     [ "last_element", "class_my_queue.html#a04500ea380d36eb6aea81408ccc7ec74", null ],
     [ "operator=", "class_my_queue.html#a8c56e3046b20a230b666e11e6ffbddda", null ],
     [ "operator=", "class_my_queue.html#a8cedbcb810aaaa53782582d0d2ecf65a", null ],
-    [ "popFront", "class_my_queue.html#a3d0d1d80217a103d6b8a5d4f0f9e625c", null ],
+    [ "popFront", "class_my_queue.html#a330213f16d60e2019ca3bbe9645d83f5", null ],
     [ "push_back", "class_my_queue.html#a76f2a52c29de95352d9743d630ac5bc9", null ],
     [ "size", "class_my_queue.html#a5e3ac9de3d6021ee4f675a253577aa07", null ],
-    [ "theFirst", "class_my_queue.html#a54b7da23ad3226b87795cfa9b907160e", null ]
+    [ "theFirst", "class_my_queue.html#aabdef303ee05e1aa10cfd05dc409aaaf", null ],
+    [ "theRear", "class_my_queue.html#a71b939c09e522074816a887616c3cb76", null ]
 ];

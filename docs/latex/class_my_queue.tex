@@ -33,7 +33,7 @@ virtual T \mbox{\hyperlink{class_my_queue_a6c19b79d70c5b75b08e39cc18e72ebd3}{fro
 \begin{DoxyCompactList}\small\item\em Prints out the front element in the queue. \end{DoxyCompactList}\item 
 virtual T \mbox{\hyperlink{class_my_queue_a04500ea380d36eb6aea81408ccc7ec74}{last\+\_\+element}} ()
 \begin{DoxyCompactList}\small\item\em Prints out the last element in the queue. \end{DoxyCompactList}\item 
-virtual \mbox{\hyperlink{class_my_queue}{My\+Queue}}$<$ T $>$ \& \mbox{\hyperlink{class_my_queue_a3d0d1d80217a103d6b8a5d4f0f9e625c}{pop\+Front}} ()
+virtual T \mbox{\hyperlink{class_my_queue_a330213f16d60e2019ca3bbe9645d83f5}{pop\+Front}} ()
 \begin{DoxyCompactList}\small\item\em Removes the first element in the queue. \end{DoxyCompactList}\item 
 virtual bool \mbox{\hyperlink{class_my_queue_ad8262f29399507cadd669736a0e0cf9e}{is\+Empty}} ()
 \begin{DoxyCompactList}\small\item\em Returns true if the queue is empty. \end{DoxyCompactList}\item 
@@ -42,8 +42,10 @@ virtual size\+\_\+t \mbox{\hyperlink{class_my_queue_a5e3ac9de3d6021ee4f675a25357
 \doxysubsubsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
-std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{class_my_queue_1_1_node}{Node}}$<$ T $>$ $>$ \mbox{\hyperlink{class_my_queue_a54b7da23ad3226b87795cfa9b907160e}{the\+First}}
-\begin{DoxyCompactList}\small\item\em Pointer to the first element of the queue. \end{DoxyCompactList}\end{DoxyCompactItemize}
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_my_queue_1_1_node}{Node}}$<$ T $>$ $>$ \mbox{\hyperlink{class_my_queue_aabdef303ee05e1aa10cfd05dc409aaaf}{the\+First}}
+\begin{DoxyCompactList}\small\item\em Pointer to the first element of the queue. \end{DoxyCompactList}\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_my_queue_1_1_node}{Node}}$<$ T $>$ $>$ \mbox{\hyperlink{class_my_queue_a71b939c09e522074816a887616c3cb76}{the\+Rear}}
+\begin{DoxyCompactList}\small\item\em Pointer to the last element of the queue. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
@@ -159,12 +161,12 @@ Default Move assignment operator.
 {\em other} & -\/ the object that you want to transfer ownership from \\
 \hline
 \end{DoxyParams}
-\Hypertarget{class_my_queue_a3d0d1d80217a103d6b8a5d4f0f9e625c}\index{MyQueue$<$ T $>$@{MyQueue$<$ T $>$}!popFront@{popFront}}
+\Hypertarget{class_my_queue_a330213f16d60e2019ca3bbe9645d83f5}\index{MyQueue$<$ T $>$@{MyQueue$<$ T $>$}!popFront@{popFront}}
 \index{popFront@{popFront}!MyQueue$<$ T $>$@{MyQueue$<$ T $>$}}
 \doxysubsubsection{\texorpdfstring{popFront()}{popFront()}}
-{\footnotesize\ttfamily \label{class_my_queue_a3d0d1d80217a103d6b8a5d4f0f9e625c} 
+{\footnotesize\ttfamily \label{class_my_queue_a330213f16d60e2019ca3bbe9645d83f5} 
 template$<$class T$>$ \\
-virtual \mbox{\hyperlink{class_my_queue}{My\+Queue}}$<$ T $>$ \& \mbox{\hyperlink{class_my_queue}{My\+Queue}}$<$ T $>$\+::pop\+Front (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+virtual T \mbox{\hyperlink{class_my_queue}{My\+Queue}}$<$ T $>$\+::pop\+Front (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
 
 
 
@@ -198,16 +200,27 @@ virtual size\+\_\+t \mbox{\hyperlink{class_my_queue}{My\+Queue}}$<$ T $>$\+::siz
 \label{doc-variable-members}
 \Hypertarget{class_my_queue_doc-variable-members}
 \doxysubsection{Member Data Documentation}
-\Hypertarget{class_my_queue_a54b7da23ad3226b87795cfa9b907160e}\index{MyQueue$<$ T $>$@{MyQueue$<$ T $>$}!theFirst@{theFirst}}
+\Hypertarget{class_my_queue_aabdef303ee05e1aa10cfd05dc409aaaf}\index{MyQueue$<$ T $>$@{MyQueue$<$ T $>$}!theFirst@{theFirst}}
 \index{theFirst@{theFirst}!MyQueue$<$ T $>$@{MyQueue$<$ T $>$}}
 \doxysubsubsection{\texorpdfstring{theFirst}{theFirst}}
-{\footnotesize\ttfamily \label{class_my_queue_a54b7da23ad3226b87795cfa9b907160e} 
+{\footnotesize\ttfamily \label{class_my_queue_aabdef303ee05e1aa10cfd05dc409aaaf} 
 template$<$class T$>$ \\
-std\+::unique\+\_\+ptr$<$\mbox{\hyperlink{class_my_queue_1_1_node}{Node}}$<$T$>$ $>$ \mbox{\hyperlink{class_my_queue}{My\+Queue}}$<$ T $>$\+::the\+First\hspace{0.3cm}{\ttfamily [private]}}
+std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{class_my_queue_1_1_node}{Node}}$<$T$>$ $>$ \mbox{\hyperlink{class_my_queue}{My\+Queue}}$<$ T $>$\+::the\+First\hspace{0.3cm}{\ttfamily [private]}}
 
 
 
 Pointer to the first element of the queue. 
+
+\Hypertarget{class_my_queue_a71b939c09e522074816a887616c3cb76}\index{MyQueue$<$ T $>$@{MyQueue$<$ T $>$}!theRear@{theRear}}
+\index{theRear@{theRear}!MyQueue$<$ T $>$@{MyQueue$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{theRear}{theRear}}
+{\footnotesize\ttfamily \label{class_my_queue_a71b939c09e522074816a887616c3cb76} 
+template$<$class T$>$ \\
+std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{class_my_queue_1_1_node}{Node}}$<$T$>$ $>$ \mbox{\hyperlink{class_my_queue}{My\+Queue}}$<$ T $>$\+::the\+Rear\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Pointer to the last element of the queue. 
 
 
 
