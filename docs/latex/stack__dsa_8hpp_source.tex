@@ -1,5 +1,5 @@
 \doxysection{stack\+\_\+dsa.\+hpp}
-\hypertarget{stack__dsa_8hpp_source}{}\label{stack__dsa_8hpp_source}\index{C:/Users/HP/Desktop/Brumski/C++/Brumski-\/DSA-\/Learning/include/stack\_dsa.hpp@{C:/Users/HP/Desktop/Brumski/C++/Brumski-\/DSA-\/Learning/include/stack\_dsa.hpp}}
+\hypertarget{stack__dsa_8hpp_source}{}\label{stack__dsa_8hpp_source}\index{/home/brumski/Desktop/BRUMSKI/C++ Projects/Brumski-\/DSA-\/Learning/include/stack\_dsa.hpp@{/home/brumski/Desktop/BRUMSKI/C++ Projects/Brumski-\/DSA-\/Learning/include/stack\_dsa.hpp}}
 \mbox{\hyperlink{stack__dsa_8hpp}{Go to the documentation of this file.}}
 \begin{DoxyCode}{0}
 \DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
@@ -11,50 +11,48 @@
 \DoxyCodeLine{00013\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{stack__dsa_8hpp_a02f0478341bf980020d53f6d2f5db570}{UsingStack2}}();}
 \DoxyCodeLine{00014\ }
 \DoxyCodeLine{00020\ \textcolor{keyword}{template}<\textcolor{keyword}{class}\ T>}
-\DoxyCodeLine{00021\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_my_stack_afe002424439904e08e5a7c35ca64a022}{MyStack}}\ \{}
+\DoxyCodeLine{00021\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classMyStack}{MyStack}}\ \{}
 \DoxyCodeLine{00022\ \textcolor{keyword}{private}:}
 \DoxyCodeLine{00026\ \ \ \ \ \textcolor{keyword}{template}<\textcolor{keyword}{class}\ NType>}
-\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_my_stack_1_1_node_aedfeabee79dacdf3c35d5111cd99099a}{Node}}\ \{}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{classMyStack_1_1Node}{Node}}\ \{}
 \DoxyCodeLine{00028\ \ \ \ \ \textcolor{keyword}{public}:}
-\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ NType\ \mbox{\hyperlink{class_my_stack_1_1_node_af660c1a2fe0454d8b9fdeb56e8d69d9d}{data}}\{\};\ }
-\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ std::unique\_ptr<Node<NType>>\ \mbox{\hyperlink{class_my_stack_1_1_node_a8d1e0364bfe1fbe6ddda81af20558c4c}{next}}\ =\ \textcolor{keyword}{nullptr};\ }
-\DoxyCodeLine{00031\ }
-\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_my_stack_1_1_node_aedfeabee79dacdf3c35d5111cd99099a}{Node}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classMyStack_1_1Node_af660c1a2fe0454d8b9fdeb56e8d69d9d}{NType}}\ \mbox{\hyperlink{classMyStack_1_1Node_af660c1a2fe0454d8b9fdeb56e8d69d9d}{data}}\{\};\ }
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ std::unique\_ptr<Node<NType>>\ \mbox{\hyperlink{classMyStack_1_1Node_a8d1e0364bfe1fbe6ddda81af20558c4c}{next}}\ =\ \textcolor{keyword}{nullptr};\ }
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classMyStack_1_1Node_aedfeabee79dacdf3c35d5111cd99099a}{Node}}()\ =\ \textcolor{keywordflow}{default};}
 \DoxyCodeLine{00036\ \ \ \ \ \};}
 \DoxyCodeLine{00037\ \textcolor{keyword}{public}:}
-\DoxyCodeLine{00041\ \ \ \ \ \mbox{\hyperlink{class_my_stack_afe002424439904e08e5a7c35ca64a022}{MyStack}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00041\ \ \ \ \ \mbox{\hyperlink{classMyStack_afe002424439904e08e5a7c35ca64a022}{MyStack}}()\ =\ \textcolor{keywordflow}{default};}
 \DoxyCodeLine{00042\ }
-\DoxyCodeLine{00046\ \ \ \ \ \mbox{\hyperlink{class_my_stack_a1401dfc373aef01be9bec209c1531a30}{MyStack}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_my_stack_afe002424439904e08e5a7c35ca64a022}{MyStack<T>}}\&)\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00046\ \ \ \ \ \mbox{\hyperlink{classMyStack_a1401dfc373aef01be9bec209c1531a30}{MyStack}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classMyStack}{MyStack<T>}}\&)\ =\ \textcolor{keyword}{delete};}
 \DoxyCodeLine{00047\ }
-\DoxyCodeLine{00052\ \ \ \ \ \mbox{\hyperlink{class_my_stack_a2df886765dc72f5aeffae04eb30373eb}{MyStack}}(\mbox{\hyperlink{class_my_stack_afe002424439904e08e5a7c35ca64a022}{MyStack<T>}}\&\&\ other)\ \textcolor{keyword}{noexcept}\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00052\ \ \ \ \ \mbox{\hyperlink{classMyStack_a2df886765dc72f5aeffae04eb30373eb}{MyStack}}(\mbox{\hyperlink{classMyStack}{MyStack<T>}}\&\&\ other)\ \textcolor{keyword}{noexcept}\ =\ \textcolor{keywordflow}{default};}
 \DoxyCodeLine{00053\ }
-\DoxyCodeLine{00057\ \ \ \ \ \mbox{\hyperlink{class_my_stack_afe002424439904e08e5a7c35ca64a022}{MyStack<T>}}\&\ \mbox{\hyperlink{class_my_stack_a8da4f76555596974150e409b3bc9598a}{operator=}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_my_stack_afe002424439904e08e5a7c35ca64a022}{MyStack<T>}}\&)\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00057\ \ \ \ \ \mbox{\hyperlink{classMyStack}{MyStack<T>}}\&\ \mbox{\hyperlink{classMyStack_a8da4f76555596974150e409b3bc9598a}{operator=}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classMyStack}{MyStack<T>}}\&)\ =\ \textcolor{keyword}{delete};}
 \DoxyCodeLine{00058\ }
-\DoxyCodeLine{00063\ \ \ \ \ \mbox{\hyperlink{class_my_stack_afe002424439904e08e5a7c35ca64a022}{MyStack<T>}}\&\ \mbox{\hyperlink{class_my_stack_a68f9b89a3b58adcd9107a32f48a967c5}{operator=}}(\mbox{\hyperlink{class_my_stack_afe002424439904e08e5a7c35ca64a022}{MyStack<T>}}\&\&\ other)\ \textcolor{keyword}{noexcept}\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00063\ \ \ \ \ \mbox{\hyperlink{classMyStack}{MyStack<T>}}\&\ \mbox{\hyperlink{classMyStack_a68f9b89a3b58adcd9107a32f48a967c5}{operator=}}(\mbox{\hyperlink{classMyStack}{MyStack<T>}}\&\&\ other)\ \textcolor{keyword}{noexcept}\ =\ \textcolor{keywordflow}{default};}
 \DoxyCodeLine{00064\ \textcolor{keyword}{private}:}
-\DoxyCodeLine{00065\ \ \ \ \ std::unique\_ptr<Node<T>>\ \mbox{\hyperlink{class_my_stack_a4e40957dd662c88cd809a8f3fb35c336}{myTop}};\ }
-\DoxyCodeLine{00066\ }
+\DoxyCodeLine{00065\ \ \ \ \ std::unique\_ptr<Node<T>>\ \mbox{\hyperlink{classMyStack_a4e40957dd662c88cd809a8f3fb35c336}{myTop}};\ }
 \DoxyCodeLine{00067\ \textcolor{keyword}{public}:}
-\DoxyCodeLine{00071\ \ \ \ \ \textcolor{keyword}{virtual}\ T\ \mbox{\hyperlink{class_my_stack_a6c53b5bd3c96604bdfb0a7c6636dac7f}{Top}}()\ \{}
-\DoxyCodeLine{00072\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_my_stack_a4e40957dd662c88cd809a8f3fb35c336}{myTop}}-\/>data;}
+\DoxyCodeLine{00071\ \ \ \ \ \textcolor{keyword}{virtual}\ T\ \mbox{\hyperlink{classMyStack_a6c53b5bd3c96604bdfb0a7c6636dac7f}{Top}}()\ \{}
+\DoxyCodeLine{00072\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classMyStack_a4e40957dd662c88cd809a8f3fb35c336}{myTop}}-\/>data;}
 \DoxyCodeLine{00073\ \ \ \ \ \}}
 \DoxyCodeLine{00074\ }
-\DoxyCodeLine{00079\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{class_my_stack_afe002424439904e08e5a7c35ca64a022}{MyStack<T>}}\&\ \mbox{\hyperlink{class_my_stack_a92c7f1af509db146274b5117090295b5}{push\_top}}(\textcolor{keyword}{const}\ T\&\ value)\ \{}
+\DoxyCodeLine{00079\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{classMyStack}{MyStack<T>}}\&\ \mbox{\hyperlink{classMyStack_a92c7f1af509db146274b5117090295b5}{push\_top}}(\textcolor{keyword}{const}\ T\&\ value)\ \{}
 \DoxyCodeLine{00080\ \ \ \ \ \ \ \ \ std::unique\_ptr<Node<T>>\ newNode\ =\ std::make\_unique<Node<T>>();}
 \DoxyCodeLine{00081\ \ \ \ \ \ \ \ \ newNode-\/>data\ =\ value;}
-\DoxyCodeLine{00082\ \ \ \ \ \ \ \ \ newNode-\/>next\ =\ std::move(\mbox{\hyperlink{class_my_stack_a4e40957dd662c88cd809a8f3fb35c336}{myTop}});}
-\DoxyCodeLine{00083\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_my_stack_a4e40957dd662c88cd809a8f3fb35c336}{myTop}}\ =\ std::move(newNode);}
+\DoxyCodeLine{00082\ \ \ \ \ \ \ \ \ newNode-\/>next\ =\ std::move(\mbox{\hyperlink{classMyStack_a4e40957dd662c88cd809a8f3fb35c336}{myTop}});}
+\DoxyCodeLine{00083\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classMyStack_a4e40957dd662c88cd809a8f3fb35c336}{myTop}}\ =\ std::move(newNode);}
 \DoxyCodeLine{00084\ }
 \DoxyCodeLine{00085\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ *\textcolor{keyword}{this};}
 \DoxyCodeLine{00086\ \ \ \ \ \}}
 \DoxyCodeLine{00087\ }
-\DoxyCodeLine{00091\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{class_my_stack_afe002424439904e08e5a7c35ca64a022}{MyStack<T>}}\&\ \mbox{\hyperlink{class_my_stack_aff269b73017c084cf5cce86e3f97dc44}{popTop}}()\ \{}
-\DoxyCodeLine{00092\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_my_stack_a4e40957dd662c88cd809a8f3fb35c336}{myTop}}\ =\ std::move(\mbox{\hyperlink{class_my_stack_a4e40957dd662c88cd809a8f3fb35c336}{myTop}}-\/>next);}
+\DoxyCodeLine{00091\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{classMyStack}{MyStack<T>}}\&\ \mbox{\hyperlink{classMyStack_aff269b73017c084cf5cce86e3f97dc44}{popTop}}()\ \{}
+\DoxyCodeLine{00092\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classMyStack_a4e40957dd662c88cd809a8f3fb35c336}{myTop}}\ =\ std::move(\mbox{\hyperlink{classMyStack_a4e40957dd662c88cd809a8f3fb35c336}{myTop}}-\/>next);}
 \DoxyCodeLine{00093\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ *\textcolor{keyword}{this};}
 \DoxyCodeLine{00094\ \ \ \ \ \}}
 \DoxyCodeLine{00095\ }
-\DoxyCodeLine{00099\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_my_stack_af1cde3c714578d491b281d6bf74079b9}{isEmpty}}()\ \{}
-\DoxyCodeLine{00100\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{class_my_stack_a4e40957dd662c88cd809a8f3fb35c336}{myTop}})\ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00099\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classMyStack_af1cde3c714578d491b281d6bf74079b9}{isEmpty}}()\ \{}
+\DoxyCodeLine{00100\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classMyStack_a4e40957dd662c88cd809a8f3fb35c336}{myTop}})\ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
 \DoxyCodeLine{00101\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
 \DoxyCodeLine{00102\ }
 \DoxyCodeLine{00103\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
@@ -62,10 +60,10 @@
 \DoxyCodeLine{00105\ \};}
 \DoxyCodeLine{00106\ }
 \DoxyCodeLine{00111\ \textcolor{keyword}{template}<\textcolor{keyword}{class}\ T>}
-\DoxyCodeLine{00112\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{stack__dsa_8hpp_a93cf46a983aa4c7743806566ae016ed1}{UsingStack3}}(\mbox{\hyperlink{class_my_stack}{MyStack<T>}}\&\ object1)\ \{}
-\DoxyCodeLine{00113\ \ \ \ \ \textcolor{keywordflow}{while}\ (!object1.\mbox{\hyperlink{class_my_stack_af1cde3c714578d491b281d6bf74079b9}{isEmpty}}())\ \{}
-\DoxyCodeLine{00114\ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}The\ top\ element\ is\ "{}}\ <<\ object1.\mbox{\hyperlink{class_my_stack_a6c53b5bd3c96604bdfb0a7c6636dac7f}{Top}}()\ <<\ std::endl;}
-\DoxyCodeLine{00115\ \ \ \ \ \ \ \ \ object1.\mbox{\hyperlink{class_my_stack_aff269b73017c084cf5cce86e3f97dc44}{popTop}}();}
+\DoxyCodeLine{00112\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{stack__dsa_8hpp_a93cf46a983aa4c7743806566ae016ed1}{UsingStack3}}(\mbox{\hyperlink{classMyStack}{MyStack<T>}}\&\ object1)\ \{}
+\DoxyCodeLine{00113\ \ \ \ \ \textcolor{keywordflow}{while}\ (!object1.\mbox{\hyperlink{classMyStack_af1cde3c714578d491b281d6bf74079b9}{isEmpty}}())\ \{}
+\DoxyCodeLine{00114\ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}The\ top\ element\ is\ "{}}\ <<\ object1.\mbox{\hyperlink{classMyStack_a6c53b5bd3c96604bdfb0a7c6636dac7f}{Top}}()\ <<\ std::endl;}
+\DoxyCodeLine{00115\ \ \ \ \ \ \ \ \ object1.\mbox{\hyperlink{classMyStack_aff269b73017c084cf5cce86e3f97dc44}{popTop}}();}
 \DoxyCodeLine{00116\ \ \ \ \ \}}
 \DoxyCodeLine{00117\ \}}
 

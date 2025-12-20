@@ -1,0 +1,195 @@
+\doxysection{Linked\+List\texorpdfstring{$<$}{<} LLType \texorpdfstring{$>$}{>} Class Template Reference}
+\hypertarget{classLinkedList}{}\label{classLinkedList}\index{LinkedList$<$ LLType $>$@{LinkedList$<$ LLType $>$}}
+
+
+This is a template class that represents the linked list.  
+
+
+
+
+{\ttfamily \#include $<$linkedlist.\+hpp$>$}
+
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classLinkedList_1_1Node}{Node}}
+\begin{DoxyCompactList}\small\item\em This is a template class represents a single element of the linked list, and it will be called "{}\+Node"{}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classLinkedList_ab7bbba34b30827d6b1c7a6627d9929a4}{Linked\+List}} ()=default
+\begin{DoxyCompactList}\small\item\em Default Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classLinkedList_ad38fc41e97e6a857be2665804f8004ef}{Linked\+List}} (const \mbox{\hyperlink{classLinkedList}{Linked\+List}}$<$ LLType $>$ \&)=delete
+\begin{DoxyCompactList}\small\item\em Deleted copy constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classLinkedList_a65fd191db289a155075afbc22d1bc127}{Linked\+List}} (\mbox{\hyperlink{classLinkedList}{Linked\+List}}$<$ LLType $>$ \&\&other) noexcept=default
+\begin{DoxyCompactList}\small\item\em Default Move constructor. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classLinkedList}{Linked\+List}}$<$ LLType $>$ \& \mbox{\hyperlink{classLinkedList_abe0f0cf4b775b72cad13f9a9d6f21f6e}{operator=}} (const \mbox{\hyperlink{classLinkedList}{Linked\+List}}$<$ LLType $>$ \&)=delete
+\begin{DoxyCompactList}\small\item\em Default Copy assignment operator Prevents assigning the values of existing Linked\+List$<$\+T$>$ objects to other objects. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classLinkedList}{Linked\+List}}$<$ LLType $>$ \& \mbox{\hyperlink{classLinkedList_a79314289744bd433485ee7c38c633a04}{operator=}} (\mbox{\hyperlink{classLinkedList}{Linked\+List}}$<$ LLType $>$ \&\&other) noexcept=default
+\begin{DoxyCompactList}\small\item\em Move assignment operator. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classLinkedList_af347eb7a9d8c2d48f7b2066ff56d0a12}{\texorpdfstring{$\sim$}{\string~}\+Linked\+List}} ()=default
+\begin{DoxyCompactList}\small\item\em Default Destructor. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classLinkedList}{Linked\+List}} \& \mbox{\hyperlink{classLinkedList_a4bf4f5cb6609fff49bf82ab37ed9c3e4}{insert\+At\+Front}} (const LLType \&value)
+\begin{DoxyCompactList}\small\item\em Inserts a value at the front of the linked list. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classLinkedList}{Linked\+List}} \& \mbox{\hyperlink{classLinkedList_af10a265d1d97ed8e192b4e3d83e00380}{insert\+At\+End}} (const LLType \&value)
+\begin{DoxyCompactList}\small\item\em Inserts a value at the end of the linked list. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classLinkedList_1_1Node}{Node}}$<$ LLType $>$ $>$ \mbox{\hyperlink{classLinkedList_a797fde5d3747e434387d27a5477b915a}{head}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \mbox{\hyperlink{classLinkedList_aae564fcddff7b8a01358a7b560ba1cb7}{operator$<$$<$}} (std\+::ostream \&os, const \mbox{\hyperlink{classLinkedList}{Linked\+List}}$<$ LLType $>$ \&obj)
+\begin{DoxyCompactList}\small\item\em Outputs the values in the linked list. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$class LLType$>$\newline
+class Linked\+List$<$ LLType $>$}
+This is a template class that represents the linked list. 
+
+It can take any basic C++ data type. A linked list is a linear data structure, it can store multiple elements of the same data type. Each node in a linked list contains the data item and a pointer to the next node. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classLinkedList_ab7bbba34b30827d6b1c7a6627d9929a4}\label{classLinkedList_ab7bbba34b30827d6b1c7a6627d9929a4} 
+\index{LinkedList$<$ LLType $>$@{LinkedList$<$ LLType $>$}!LinkedList@{LinkedList}}
+\index{LinkedList@{LinkedList}!LinkedList$<$ LLType $>$@{LinkedList$<$ LLType $>$}}
+\doxysubsubsection{\texorpdfstring{LinkedList()}{LinkedList()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily template$<$class LLType $>$ \\
+\mbox{\hyperlink{classLinkedList}{Linked\+List}}$<$ LLType $>$\mbox{\hyperlink{classLinkedList}{\+::\+Linked\+List}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+Default Constructor. 
+
+\Hypertarget{classLinkedList_ad38fc41e97e6a857be2665804f8004ef}\label{classLinkedList_ad38fc41e97e6a857be2665804f8004ef} 
+\index{LinkedList$<$ LLType $>$@{LinkedList$<$ LLType $>$}!LinkedList@{LinkedList}}
+\index{LinkedList@{LinkedList}!LinkedList$<$ LLType $>$@{LinkedList$<$ LLType $>$}}
+\doxysubsubsection{\texorpdfstring{LinkedList()}{LinkedList()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily template$<$class LLType $>$ \\
+\mbox{\hyperlink{classLinkedList}{Linked\+List}}$<$ LLType $>$\mbox{\hyperlink{classLinkedList}{\+::\+Linked\+List}} (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classLinkedList}{Linked\+List}}$<$ LLType $>$ \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+Deleted copy constructor. 
+
+\Hypertarget{classLinkedList_a65fd191db289a155075afbc22d1bc127}\label{classLinkedList_a65fd191db289a155075afbc22d1bc127} 
+\index{LinkedList$<$ LLType $>$@{LinkedList$<$ LLType $>$}!LinkedList@{LinkedList}}
+\index{LinkedList@{LinkedList}!LinkedList$<$ LLType $>$@{LinkedList$<$ LLType $>$}}
+\doxysubsubsection{\texorpdfstring{LinkedList()}{LinkedList()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily template$<$class LLType $>$ \\
+\mbox{\hyperlink{classLinkedList}{Linked\+List}}$<$ LLType $>$\mbox{\hyperlink{classLinkedList}{\+::\+Linked\+List}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classLinkedList}{Linked\+List}}$<$ LLType $>$ \&\&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}, {\ttfamily [noexcept]}}
+
+
+
+Default Move constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & -\/ the object that you want to transfer ownership from \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classLinkedList_af347eb7a9d8c2d48f7b2066ff56d0a12}\label{classLinkedList_af347eb7a9d8c2d48f7b2066ff56d0a12} 
+\index{LinkedList$<$ LLType $>$@{LinkedList$<$ LLType $>$}!````~LinkedList@{\texorpdfstring{$\sim$}{\string~}LinkedList}}
+\index{````~LinkedList@{\texorpdfstring{$\sim$}{\string~}LinkedList}!LinkedList$<$ LLType $>$@{LinkedList$<$ LLType $>$}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}LinkedList()}{\string~LinkedList()}}
+{\footnotesize\ttfamily template$<$class LLType $>$ \\
+virtual \mbox{\hyperlink{classLinkedList}{Linked\+List}}$<$ LLType $>$\+::\texorpdfstring{$\sim$}{\string~}\mbox{\hyperlink{classLinkedList}{Linked\+List}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+
+
+Default Destructor. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classLinkedList_af10a265d1d97ed8e192b4e3d83e00380}\label{classLinkedList_af10a265d1d97ed8e192b4e3d83e00380} 
+\index{LinkedList$<$ LLType $>$@{LinkedList$<$ LLType $>$}!insertAtEnd@{insertAtEnd}}
+\index{insertAtEnd@{insertAtEnd}!LinkedList$<$ LLType $>$@{LinkedList$<$ LLType $>$}}
+\doxysubsubsection{\texorpdfstring{insertAtEnd()}{insertAtEnd()}}
+{\footnotesize\ttfamily template$<$class LLType $>$ \\
+virtual \mbox{\hyperlink{classLinkedList}{Linked\+List}} \& \mbox{\hyperlink{classLinkedList}{Linked\+List}}$<$ LLType $>$\+::insert\+At\+End (\begin{DoxyParamCaption}\item[{const LLType \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Inserts a value at the end of the linked list. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & -\/ the value that you want to pass to the back of the linked list \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classLinkedList_a4bf4f5cb6609fff49bf82ab37ed9c3e4}\label{classLinkedList_a4bf4f5cb6609fff49bf82ab37ed9c3e4} 
+\index{LinkedList$<$ LLType $>$@{LinkedList$<$ LLType $>$}!insertAtFront@{insertAtFront}}
+\index{insertAtFront@{insertAtFront}!LinkedList$<$ LLType $>$@{LinkedList$<$ LLType $>$}}
+\doxysubsubsection{\texorpdfstring{insertAtFront()}{insertAtFront()}}
+{\footnotesize\ttfamily template$<$class LLType $>$ \\
+virtual \mbox{\hyperlink{classLinkedList}{Linked\+List}} \& \mbox{\hyperlink{classLinkedList}{Linked\+List}}$<$ LLType $>$\+::insert\+At\+Front (\begin{DoxyParamCaption}\item[{const LLType \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Inserts a value at the front of the linked list. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & -\/ the value that you want to pass to the front of the linked list \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classLinkedList_abe0f0cf4b775b72cad13f9a9d6f21f6e}\label{classLinkedList_abe0f0cf4b775b72cad13f9a9d6f21f6e} 
+\index{LinkedList$<$ LLType $>$@{LinkedList$<$ LLType $>$}!operator=@{operator=}}
+\index{operator=@{operator=}!LinkedList$<$ LLType $>$@{LinkedList$<$ LLType $>$}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class LLType $>$ \\
+virtual \mbox{\hyperlink{classLinkedList}{Linked\+List}}$<$ LLType $>$ \& \mbox{\hyperlink{classLinkedList}{Linked\+List}}$<$ LLType $>$\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classLinkedList}{Linked\+List}}$<$ LLType $>$ \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [delete]}}
+
+
+
+Default Copy assignment operator Prevents assigning the values of existing Linked\+List$<$\+T$>$ objects to other objects. 
+
+\Hypertarget{classLinkedList_a79314289744bd433485ee7c38c633a04}\label{classLinkedList_a79314289744bd433485ee7c38c633a04} 
+\index{LinkedList$<$ LLType $>$@{LinkedList$<$ LLType $>$}!operator=@{operator=}}
+\index{operator=@{operator=}!LinkedList$<$ LLType $>$@{LinkedList$<$ LLType $>$}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class LLType $>$ \\
+virtual \mbox{\hyperlink{classLinkedList}{Linked\+List}}$<$ LLType $>$ \& \mbox{\hyperlink{classLinkedList}{Linked\+List}}$<$ LLType $>$\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classLinkedList}{Linked\+List}}$<$ LLType $>$ \&\&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}, {\ttfamily [noexcept]}}
+
+
+
+Move assignment operator. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & -\/ the object that you want to transfer ownership from \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Friends And Related Symbol Documentation}
+\Hypertarget{classLinkedList_aae564fcddff7b8a01358a7b560ba1cb7}\label{classLinkedList_aae564fcddff7b8a01358a7b560ba1cb7} 
+\index{LinkedList$<$ LLType $>$@{LinkedList$<$ LLType $>$}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!LinkedList$<$ LLType $>$@{LinkedList$<$ LLType $>$}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily template$<$class LLType $>$ \\
+std\+::ostream \& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os,  }\item[{const \mbox{\hyperlink{classLinkedList}{Linked\+List}}$<$ LLType $>$ \&}]{obj }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Outputs the values in the linked list. 
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classLinkedList_a797fde5d3747e434387d27a5477b915a}\label{classLinkedList_a797fde5d3747e434387d27a5477b915a} 
+\index{LinkedList$<$ LLType $>$@{LinkedList$<$ LLType $>$}!head@{head}}
+\index{head@{head}!LinkedList$<$ LLType $>$@{LinkedList$<$ LLType $>$}}
+\doxysubsubsection{\texorpdfstring{head}{head}}
+{\footnotesize\ttfamily template$<$class LLType $>$ \\
+std\+::unique\+\_\+ptr$<$\mbox{\hyperlink{classLinkedList_1_1Node}{Node}}$<$LLType$>$ $>$ \mbox{\hyperlink{classLinkedList}{Linked\+List}}$<$ LLType $>$\+::head\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/brumski/\+Desktop/\+BRUMSKI/\+C++ Projects/\+Brumski-\/\+DSA-\/\+Learning/include/\mbox{\hyperlink{linkedlist_8hpp}{linkedlist.\+hpp}}\end{DoxyCompactItemize}

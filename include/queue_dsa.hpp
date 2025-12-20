@@ -60,7 +60,7 @@ public:
 	* @param value - the value that you want to pass to the end of the queue
 	*/
 	virtual MyQueue<T>& push_back(const T& value) {
-		std::shared_ptr<Node<T>> newNode = std::make_unique<Node<T>>();
+        std::shared_ptr<Node<T>> newNode = std::make_shared<Node<T>>();
 		newNode->data = value;
 		newNode->next = nullptr;
 

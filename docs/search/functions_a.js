@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['search_0',['search',['../class_b_s_tree.html#a3444ef8e9ad83e5a6b830c402940e13a',1,'BSTree']]],
-  ['searchhelper_1',['searchHelper',['../class_b_s_tree.html#aa11cfad710f2cf388b01519eeb3c8fff',1,'BSTree']]],
-  ['size_2',['size',['../class_my_queue.html#a5e3ac9de3d6021ee4f675a253577aa07',1,'MyQueue']]],
-  ['successor_3',['successor',['../class_b_s_tree.html#ac568908c3536077210c4807db8d74a36',1,'BSTree']]]
+  ['search_0',['search',['../classBSTree.html#a3444ef8e9ad83e5a6b830c402940e13a',1,'BSTree']]],
+  ['searchhelper_1',['searchHelper',['../classBSTree.html#aa11cfad710f2cf388b01519eeb3c8fff',1,'BSTree']]],
+  ['size_2',['size',['../classMyQueue.html#a5e3ac9de3d6021ee4f675a253577aa07',1,'MyQueue']]],
+  ['successor_3',['successor',['../classBSTree.html#ac568908c3536077210c4807db8d74a36',1,'BSTree']]]
 ];
