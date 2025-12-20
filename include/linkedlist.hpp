@@ -103,7 +103,7 @@ public:
     */
     friend std::ostream& operator<<(std::ostream& os, const LinkedList<LLType>& obj) {
         Node<LLType>* PRINT_node = obj.head.get();
-        if (!obj.head) throw std::runtime_error("linked list is empty");
+        if (!obj.head) return (os << "[ ]");
         
         os << "[";
         while (PRINT_node->next != nullptr) {
