@@ -1,8 +1,8 @@
 var classBSTree =
 [
     [ "BSTNode", "classBSTree_1_1BSTNode.html", "classBSTree_1_1BSTNode" ],
-    [ "display", "classBSTree.html#aa395dae0b7d12552ab32585b0fbc243b", null ],
-    [ "displayHelper", "classBSTree.html#a312d4a516542d49f19c82894dc2c4a93", null ],
+    [ "display", "classBSTree.html#afb288a09391fd53fd0b8043116418a70", null ],
+    [ "displayHelper", "classBSTree.html#a89ee39ee51182c2e8db7aebc8bafed28", null ],
     [ "insert", "classBSTree.html#a971bb58c0583730e47cb8c862a7e214a", null ],
     [ "insertHelper", "classBSTree.html#ad3b7d0e3447d6578edc8db20686f36a3", null ],
     [ "predecessor", "classBSTree.html#a88503849084901e9beb209cc1e2e3987", null ],

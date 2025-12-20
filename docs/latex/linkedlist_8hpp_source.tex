@@ -63,7 +63,7 @@
 \DoxyCodeLine{00100\ }
 \DoxyCodeLine{00104\ \ \ \ \ \textcolor{keyword}{friend}\ std::ostream\&\ \mbox{\hyperlink{classLinkedList_aae564fcddff7b8a01358a7b560ba1cb7}{operator<<}}(std::ostream\&\ os,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{classLinkedList}{LinkedList<LLType>}}\&\ obj)\ \{}
 \DoxyCodeLine{00105\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classLinkedList_1_1Node}{Node<LLType>}}*\ PRINT\_node\ =\ obj.\mbox{\hyperlink{classLinkedList_a797fde5d3747e434387d27a5477b915a}{head}}.get();}
-\DoxyCodeLine{00106\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!obj.\mbox{\hyperlink{classLinkedList_a797fde5d3747e434387d27a5477b915a}{head}})\ \textcolor{keywordflow}{throw}\ std::runtime\_error(\textcolor{stringliteral}{"{}linked\ list\ is\ empty"{}});}
+\DoxyCodeLine{00106\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!obj.\mbox{\hyperlink{classLinkedList_a797fde5d3747e434387d27a5477b915a}{head}})\ \textcolor{keywordflow}{return}\ (os\ <<\ \textcolor{stringliteral}{"{}[\ ]"{}});}
 \DoxyCodeLine{00107\ \ \ \ \ \ \ \ \ }
 \DoxyCodeLine{00108\ \ \ \ \ \ \ \ \ os\ <<\ \textcolor{stringliteral}{"{}["{}};}
 \DoxyCodeLine{00109\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}\ (PRINT\_node-\/>\mbox{\hyperlink{classLinkedList_1_1Node_a98667165cbec841d8a5229649a08a65a}{next}}\ !=\ \textcolor{keyword}{nullptr})\ \{}

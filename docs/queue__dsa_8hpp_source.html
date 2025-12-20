@@ -131,7 +131,7 @@ $(document).ready(function(){initNavTree('queue__dsa_8hpp_source.html',''); init
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="keyword">public</span>:</div>
 <div class="foldopen" id="foldopen00062" data-start="{" data-end="}">
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="classMyQueue.html#a76f2a52c29de95352d9743d630ac5bc9">   62</a></span>    <span class="keyword">virtual</span> <a class="code hl_class" href="classMyQueue.html">MyQueue&lt;T&gt;</a>&amp; <a class="code hl_function" href="classMyQueue.html#a76f2a52c29de95352d9743d630ac5bc9">push_back</a>(<span class="keyword">const</span> T&amp; value) {</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        std::shared_ptr&lt;Node&lt;T&gt;&gt; newNode = std::make_unique&lt;Node&lt;T&gt;&gt;();</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        std::shared_ptr&lt;Node&lt;T&gt;&gt; newNode = std::make_shared&lt;Node&lt;T&gt;&gt;();</div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        newNode-&gt;data = value;</div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        newNode-&gt;next = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>

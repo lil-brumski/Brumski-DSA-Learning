@@ -1,5 +1,7 @@
 var searchData=
 [
-  ['operator_3c_3c_0',['operator&lt;&lt;',['../classLinkedList.html#aae564fcddff7b8a01358a7b560ba1cb7',1,'LinkedList']]],
-  ['operator_3d_1',['operator=',['../classLinkedList.html#abe0f0cf4b775b72cad13f9a9d6f21f6e',1,'LinkedList::operator=(const LinkedList&lt; LLType &gt; &amp;)=delete'],['../classLinkedList.html#a79314289744bd433485ee7c38c633a04',1,'LinkedList::operator=(LinkedList&lt; LLType &gt; &amp;&amp;other) noexcept=default'],['../classMyQueue.html#a8c56e3046b20a230b666e11e6ffbddda',1,'MyQueue::operator=(const MyQueue&lt; T &gt; &amp;)=delete'],['../classMyQueue.html#a8cedbcb810aaaa53782582d0d2ecf65a',1,'MyQueue::operator=(MyQueue&lt; T &gt; &amp;&amp;other)=default'],['../classMyStack.html#a8da4f76555596974150e409b3bc9598a',1,'MyStack::operator=(const MyStack&lt; T &gt; &amp;)=delete'],['../classMyStack.html#a68f9b89a3b58adcd9107a32f48a967c5',1,'MyStack::operator=(MyStack&lt; T &gt; &amp;&amp;other) noexcept=default']]]
+  ['remove_0',['remove',['../classBSTree.html#ab2913a8d89eb1fced8acad77567f5ccf',1,'BSTree']]],
+  ['removehelper_1',['removeHelper',['../classBSTree.html#ad41dafd6e308e0e7dfb511f95d218456',1,'BSTree']]],
+  ['right_2',['right',['../classBSTree_1_1BSTNode.html#ac812850eca5e39d44c32ce4c87b3f9eb',1,'BSTree::BSTNode']]],
+  ['root_3',['root',['../classBSTree.html#acd77bb8456d50ed89faba7d5e5a1319a',1,'BSTree']]]
 ];

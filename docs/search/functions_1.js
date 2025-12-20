@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['display_0',['display',['../classBSTree.html#aa395dae0b7d12552ab32585b0fbc243b',1,'BSTree']]],
-  ['displayhelper_1',['displayHelper',['../classBSTree.html#a312d4a516542d49f19c82894dc2c4a93',1,'BSTree']]]
+  ['front_5felement_0',['front_element',['../classMyQueue.html#a6c19b79d70c5b75b08e39cc18e72ebd3',1,'MyQueue']]]
 ];

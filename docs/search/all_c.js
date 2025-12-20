@@ -1,8 +1,9 @@
 var searchData=
 [
-  ['popfront_0',['popFront',['../classMyQueue.html#a330213f16d60e2019ca3bbe9645d83f5',1,'MyQueue']]],
-  ['poptop_1',['popTop',['../classMyStack.html#aff269b73017c084cf5cce86e3f97dc44',1,'MyStack']]],
-  ['predecessor_2',['predecessor',['../classBSTree.html#a88503849084901e9beb209cc1e2e3987',1,'BSTree']]],
-  ['push_5fback_3',['push_back',['../classMyQueue.html#a76f2a52c29de95352d9743d630ac5bc9',1,'MyQueue']]],
-  ['push_5ftop_4',['push_top',['../classMyStack.html#a92c7f1af509db146274b5117090295b5',1,'MyStack']]]
+  ['search_0',['search',['../classBSTree.html#a3444ef8e9ad83e5a6b830c402940e13a',1,'BSTree']]],
+  ['searchhelper_1',['searchHelper',['../classBSTree.html#aa11cfad710f2cf388b01519eeb3c8fff',1,'BSTree']]],
+  ['size_2',['size',['../classMyQueue.html#a5e3ac9de3d6021ee4f675a253577aa07',1,'MyQueue']]],
+  ['stack_5fdsa_2ecpp_3',['stack_dsa.cpp',['../stack__dsa_8cpp.html',1,'']]],
+  ['stack_5fdsa_2ehpp_4',['stack_dsa.hpp',['../stack__dsa_8hpp.html',1,'']]],
+  ['successor_5',['successor',['../classBSTree.html#ac568908c3536077210c4807db8d74a36',1,'BSTree']]]
 ];

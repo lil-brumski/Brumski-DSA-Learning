@@ -1,8 +1,5 @@
 var searchData=
 [
-  ['insert_0',['insert',['../classBSTree.html#a971bb58c0583730e47cb8c862a7e214a',1,'BSTree']]],
-  ['insertatend_1',['insertAtEnd',['../classLinkedList.html#af10a265d1d97ed8e192b4e3d83e00380',1,'LinkedList']]],
-  ['insertatfront_2',['insertAtFront',['../classLinkedList.html#a4bf4f5cb6609fff49bf82ab37ed9c3e4',1,'LinkedList']]],
-  ['inserthelper_3',['insertHelper',['../classBSTree.html#ad3b7d0e3447d6578edc8db20686f36a3',1,'BSTree']]],
-  ['isempty_4',['isempty',['../classMyQueue.html#ad8262f29399507cadd669736a0e0cf9e',1,'MyQueue::isEmpty()'],['../classMyStack.html#af1cde3c714578d491b281d6bf74079b9',1,'MyStack::isEmpty()']]]
+  ['next_0',['next',['../classLinkedList_1_1Node.html#a98667165cbec841d8a5229649a08a65a',1,'LinkedList::Node::next'],['../classMyQueue_1_1Node.html#a667705b565fc39a6095b8a94856d5521',1,'MyQueue::Node::next'],['../classMyStack_1_1Node.html#a8d1e0364bfe1fbe6ddda81af20558c4c',1,'MyStack::Node::next']]],
+  ['node_1',['node',['../classLinkedList_1_1Node.html',1,'LinkedList&lt; LLType &gt;::Node&lt; NType &gt;'],['../classMyQueue_1_1Node.html',1,'MyQueue&lt; T &gt;::Node&lt; NType &gt;'],['../classMyStack_1_1Node.html',1,'MyStack&lt; T &gt;::Node&lt; NType &gt;'],['../classLinkedList_1_1Node.html#aec5b0130ae2d30aceb03ba1cd73f6350',1,'LinkedList::Node::Node()'],['../classMyQueue_1_1Node.html#af1b843db36074764b5b711cea1530814',1,'MyQueue::Node::Node()'],['../classMyStack_1_1Node.html#aedfeabee79dacdf3c35d5111cd99099a',1,'MyStack::Node::Node()']]]
 ];

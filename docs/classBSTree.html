@@ -117,8 +117,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a971bb58c0583730e47cb8c862a7e214a" id="r_a971bb58c0583730e47cb8c862a7e214a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBSTree.html#a971bb58c0583730e47cb8c862a7e214a">insert</a> (const T &amp;value)</td></tr>
 <tr class="memdesc:a971bb58c0583730e47cb8c862a7e214a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inserts a value into the binary search tree.  <br /></td></tr>
 <tr class="separator:a971bb58c0583730e47cb8c862a7e214a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa395dae0b7d12552ab32585b0fbc243b" id="r_aa395dae0b7d12552ab32585b0fbc243b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBSTree.html#aa395dae0b7d12552ab32585b0fbc243b">display</a> ()</td></tr>
-<tr class="separator:aa395dae0b7d12552ab32585b0fbc243b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb288a09391fd53fd0b8043116418a70" id="r_afb288a09391fd53fd0b8043116418a70"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBSTree.html#afb288a09391fd53fd0b8043116418a70">display</a> (const bool &amp;ascOrder=true)</td></tr>
+<tr class="separator:afb288a09391fd53fd0b8043116418a70"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3444ef8e9ad83e5a6b830c402940e13a" id="r_a3444ef8e9ad83e5a6b830c402940e13a"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBSTree.html#a3444ef8e9ad83e5a6b830c402940e13a">search</a> ()</td></tr>
 <tr class="separator:a3444ef8e9ad83e5a6b830c402940e13a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab2913a8d89eb1fced8acad77567f5ccf" id="r_ab2913a8d89eb1fced8acad77567f5ccf"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBSTree.html#ab2913a8d89eb1fced8acad77567f5ccf">remove</a> ()</td></tr>
@@ -145,16 +145,16 @@ Private Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-methods" name="pri-static-methods"></a>
 Static Private Member Functions</h2></td></tr>
-<tr class="memitem:a312d4a516542d49f19c82894dc2c4a93" id="r_a312d4a516542d49f19c82894dc2c4a93"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBSTree.html#a312d4a516542d49f19c82894dc2c4a93">displayHelper</a> (std::unique_ptr&lt; <a class="el" href="classBSTree_1_1BSTNode.html">BSTNode</a>&lt; T &gt; &gt; &amp;<a class="el" href="classBSTree.html#acd77bb8456d50ed89faba7d5e5a1319a">root</a>)</td></tr>
-<tr class="separator:a312d4a516542d49f19c82894dc2c4a93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89ee39ee51182c2e8db7aebc8bafed28" id="r_a89ee39ee51182c2e8db7aebc8bafed28"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBSTree.html#a89ee39ee51182c2e8db7aebc8bafed28">displayHelper</a> (std::unique_ptr&lt; <a class="el" href="classBSTree_1_1BSTNode.html">BSTNode</a>&lt; T &gt; &gt; &amp;<a class="el" href="classBSTree.html#acd77bb8456d50ed89faba7d5e5a1319a">root</a>, const bool &amp;ascendingOrder=true)</td></tr>
+<tr class="separator:a89ee39ee51182c2e8db7aebc8bafed28"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;class T&gt;<br />
 class BSTree&lt; T &gt;</div><p>This is a template class that represents a Binary Search Tree. </p>
 <p>It can take any basic C++ data type. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="aa395dae0b7d12552ab32585b0fbc243b" name="aa395dae0b7d12552ab32585b0fbc243b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa395dae0b7d12552ab32585b0fbc243b">&#9670;&#160;</a></span>display()</h2>
+<a id="afb288a09391fd53fd0b8043116418a70" name="afb288a09391fd53fd0b8043116418a70"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb288a09391fd53fd0b8043116418a70">&#9670;&#160;</a></span>display()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -167,7 +167,8 @@ template&lt;class T &gt; </div>
         <tr>
           <td class="memname">virtual void <a class="el" href="classBSTree.html">BSTree</a>&lt; T &gt;::display </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">const bool &amp;&#160;</td>
+          <td class="paramname"><em>ascOrder</em> = <code>true</code></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -180,8 +181,8 @@ template&lt;class T &gt; </div>
 
 </div>
 </div>
-<a id="a312d4a516542d49f19c82894dc2c4a93" name="a312d4a516542d49f19c82894dc2c4a93"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a312d4a516542d49f19c82894dc2c4a93">&#9670;&#160;</a></span>displayHelper()</h2>
+<a id="a89ee39ee51182c2e8db7aebc8bafed28" name="a89ee39ee51182c2e8db7aebc8bafed28"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89ee39ee51182c2e8db7aebc8bafed28">&#9670;&#160;</a></span>displayHelper()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -195,8 +196,18 @@ template&lt;class T &gt; </div>
           <td class="memname">static void <a class="el" href="classBSTree.html">BSTree</a>&lt; T &gt;::displayHelper </td>
           <td>(</td>
           <td class="paramtype">std::unique_ptr&lt; <a class="el" href="classBSTree_1_1BSTNode.html">BSTNode</a>&lt; T &gt; &gt; &amp;&#160;</td>
-          <td class="paramname"><em>root</em></td><td>)</td>
+          <td class="paramname"><em>root</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">const bool &amp;&#160;</td>
+          <td class="paramname"><em>ascendingOrder</em> = <code>true</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>

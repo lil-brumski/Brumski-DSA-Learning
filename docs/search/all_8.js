@@ -1,10 +1,5 @@
 var searchData=
 [
-  ['last_5felement_0',['last_element',['../classMyQueue.html#a04500ea380d36eb6aea81408ccc7ec74',1,'MyQueue']]],
-  ['left_1',['left',['../classBSTree_1_1BSTNode.html#ad679cf96bce6f52bc664219e184b6afc',1,'BSTree::BSTNode']]],
-  ['linkedlist_2',['linkedlist',['../classLinkedList.html',1,'LinkedList&lt; LLType &gt;'],['../classLinkedList.html#ab7bbba34b30827d6b1c7a6627d9929a4',1,'LinkedList::LinkedList()=default'],['../classLinkedList.html#ad38fc41e97e6a857be2665804f8004ef',1,'LinkedList::LinkedList(const LinkedList&lt; LLType &gt; &amp;)=delete'],['../classLinkedList.html#a65fd191db289a155075afbc22d1bc127',1,'LinkedList::LinkedList(LinkedList&lt; LLType &gt; &amp;&amp;other) noexcept=default']]],
-  ['linkedlist_2ecpp_3',['linkedlist.cpp',['../linkedlist_8cpp.html',1,'']]],
-  ['linkedlist_2ehpp_4',['linkedlist.hpp',['../linkedlist_8hpp.html',1,'']]],
-  ['listexample_5',['listexample',['../linkedlist_8cpp.html#a558dcde16df55182bdb79452b84c5eec',1,'ListExample():&#160;linkedlist.cpp'],['../linkedlist_8hpp.html#a558dcde16df55182bdb79452b84c5eec',1,'ListExample():&#160;linkedlist.cpp']]],
-  ['listexample2_6',['listexample2',['../linkedlist_8cpp.html#a9564967f2f24e151270dd25ec83562bb',1,'ListExample2():&#160;linkedlist.cpp'],['../linkedlist_8hpp.html#a9564967f2f24e151270dd25ec83562bb',1,'ListExample2():&#160;linkedlist.cpp']]]
+  ['operator_3c_3c_0',['operator&lt;&lt;',['../classLinkedList.html#aae564fcddff7b8a01358a7b560ba1cb7',1,'LinkedList']]],
+  ['operator_3d_1',['operator=',['../classLinkedList.html#abe0f0cf4b775b72cad13f9a9d6f21f6e',1,'LinkedList::operator=(const LinkedList&lt; LLType &gt; &amp;)=delete'],['../classLinkedList.html#a79314289744bd433485ee7c38c633a04',1,'LinkedList::operator=(LinkedList&lt; LLType &gt; &amp;&amp;other) noexcept=default'],['../classMyQueue.html#a8c56e3046b20a230b666e11e6ffbddda',1,'MyQueue::operator=(const MyQueue&lt; T &gt; &amp;)=delete'],['../classMyQueue.html#a8cedbcb810aaaa53782582d0d2ecf65a',1,'MyQueue::operator=(MyQueue&lt; T &gt; &amp;&amp;other)=default'],['../classMyStack.html#a8da4f76555596974150e409b3bc9598a',1,'MyStack::operator=(const MyStack&lt; T &gt; &amp;)=delete'],['../classMyStack.html#a68f9b89a3b58adcd9107a32f48a967c5',1,'MyStack::operator=(MyStack&lt; T &gt; &amp;&amp;other) noexcept=default']]]
 ];

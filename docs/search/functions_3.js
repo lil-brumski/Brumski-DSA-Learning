@@ -1,8 +1,7 @@
 var searchData=
 [
-  ['insert_0',['insert',['../classBSTree.html#a971bb58c0583730e47cb8c862a7e214a',1,'BSTree']]],
-  ['insertatend_1',['insertAtEnd',['../classLinkedList.html#af10a265d1d97ed8e192b4e3d83e00380',1,'LinkedList']]],
-  ['insertatfront_2',['insertAtFront',['../classLinkedList.html#a4bf4f5cb6609fff49bf82ab37ed9c3e4',1,'LinkedList']]],
-  ['inserthelper_3',['insertHelper',['../classBSTree.html#ad3b7d0e3447d6578edc8db20686f36a3',1,'BSTree']]],
-  ['isempty_4',['isempty',['../classMyQueue.html#ad8262f29399507cadd669736a0e0cf9e',1,'MyQueue::isEmpty()'],['../classMyStack.html#af1cde3c714578d491b281d6bf74079b9',1,'MyStack::isEmpty()']]]
+  ['last_5felement_0',['last_element',['../classMyQueue.html#a04500ea380d36eb6aea81408ccc7ec74',1,'MyQueue']]],
+  ['linkedlist_1',['linkedlist',['../classLinkedList.html#ab7bbba34b30827d6b1c7a6627d9929a4',1,'LinkedList::LinkedList()=default'],['../classLinkedList.html#ad38fc41e97e6a857be2665804f8004ef',1,'LinkedList::LinkedList(const LinkedList&lt; LLType &gt; &amp;)=delete'],['../classLinkedList.html#a65fd191db289a155075afbc22d1bc127',1,'LinkedList::LinkedList(LinkedList&lt; LLType &gt; &amp;&amp;other) noexcept=default']]],
+  ['listexample_2',['listexample',['../linkedlist_8cpp.html#a558dcde16df55182bdb79452b84c5eec',1,'ListExample():&#160;linkedlist.cpp'],['../linkedlist_8hpp.html#a558dcde16df55182bdb79452b84c5eec',1,'ListExample():&#160;linkedlist.cpp']]],
+  ['listexample2_3',['listexample2',['../linkedlist_8cpp.html#a9564967f2f24e151270dd25ec83562bb',1,'ListExample2():&#160;linkedlist.cpp'],['../linkedlist_8hpp.html#a9564967f2f24e151270dd25ec83562bb',1,'ListExample2():&#160;linkedlist.cpp']]]
 ];

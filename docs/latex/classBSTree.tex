@@ -19,7 +19,7 @@ class \mbox{\hyperlink{classBSTree_1_1BSTNode}{BSTNode}}
 \item 
 virtual void \mbox{\hyperlink{classBSTree_a971bb58c0583730e47cb8c862a7e214a}{insert}} (const T \&value)
 \begin{DoxyCompactList}\small\item\em Inserts a value into the binary search tree. \end{DoxyCompactList}\item 
-virtual void \mbox{\hyperlink{classBSTree_aa395dae0b7d12552ab32585b0fbc243b}{display}} ()
+virtual void \mbox{\hyperlink{classBSTree_afb288a09391fd53fd0b8043116418a70}{display}} (const bool \&asc\+Order=true)
 \item 
 virtual bool \mbox{\hyperlink{classBSTree_a3444ef8e9ad83e5a6b830c402940e13a}{search}} ()
 \item 
@@ -46,7 +46,7 @@ T \mbox{\hyperlink{classBSTree_a88503849084901e9beb209cc1e2e3987}{predecessor}} 
 \doxysubsubsection*{Static Private Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-static void \mbox{\hyperlink{classBSTree_a312d4a516542d49f19c82894dc2c4a93}{display\+Helper}} (std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classBSTree_1_1BSTNode}{BSTNode}}$<$ T $>$ $>$ \&\mbox{\hyperlink{classBSTree_acd77bb8456d50ed89faba7d5e5a1319a}{root}})
+static void \mbox{\hyperlink{classBSTree_a89ee39ee51182c2e8db7aebc8bafed28}{display\+Helper}} (std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classBSTree_1_1BSTNode}{BSTNode}}$<$ T $>$ $>$ \&\mbox{\hyperlink{classBSTree_acd77bb8456d50ed89faba7d5e5a1319a}{root}}, const bool \&ascending\+Order=true)
 \end{DoxyCompactItemize}
 
 
@@ -58,19 +58,19 @@ This is a template class that represents a Binary Search Tree.
 It can take any basic C++ data type. 
 
 \doxysubsection{Member Function Documentation}
-\Hypertarget{classBSTree_aa395dae0b7d12552ab32585b0fbc243b}\label{classBSTree_aa395dae0b7d12552ab32585b0fbc243b} 
+\Hypertarget{classBSTree_afb288a09391fd53fd0b8043116418a70}\label{classBSTree_afb288a09391fd53fd0b8043116418a70} 
 \index{BSTree$<$ T $>$@{BSTree$<$ T $>$}!display@{display}}
 \index{display@{display}!BSTree$<$ T $>$@{BSTree$<$ T $>$}}
 \doxysubsubsection{\texorpdfstring{display()}{display()}}
 {\footnotesize\ttfamily template$<$class T $>$ \\
-virtual void \mbox{\hyperlink{classBSTree}{BSTree}}$<$ T $>$\+::display (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+virtual void \mbox{\hyperlink{classBSTree}{BSTree}}$<$ T $>$\+::display (\begin{DoxyParamCaption}\item[{const bool \&}]{asc\+Order = {\ttfamily true} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
 
-\Hypertarget{classBSTree_a312d4a516542d49f19c82894dc2c4a93}\label{classBSTree_a312d4a516542d49f19c82894dc2c4a93} 
+\Hypertarget{classBSTree_a89ee39ee51182c2e8db7aebc8bafed28}\label{classBSTree_a89ee39ee51182c2e8db7aebc8bafed28} 
 \index{BSTree$<$ T $>$@{BSTree$<$ T $>$}!displayHelper@{displayHelper}}
 \index{displayHelper@{displayHelper}!BSTree$<$ T $>$@{BSTree$<$ T $>$}}
 \doxysubsubsection{\texorpdfstring{displayHelper()}{displayHelper()}}
 {\footnotesize\ttfamily template$<$class T $>$ \\
-static void \mbox{\hyperlink{classBSTree}{BSTree}}$<$ T $>$\+::display\+Helper (\begin{DoxyParamCaption}\item[{std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classBSTree_1_1BSTNode}{BSTNode}}$<$ T $>$ $>$ \&}]{root }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [private]}}
+static void \mbox{\hyperlink{classBSTree}{BSTree}}$<$ T $>$\+::display\+Helper (\begin{DoxyParamCaption}\item[{std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classBSTree_1_1BSTNode}{BSTNode}}$<$ T $>$ $>$ \&}]{root,  }\item[{const bool \&}]{ascending\+Order = {\ttfamily true} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [private]}}
 
 \Hypertarget{classBSTree_a971bb58c0583730e47cb8c862a7e214a}\label{classBSTree_a971bb58c0583730e47cb8c862a7e214a} 
 \index{BSTree$<$ T $>$@{BSTree$<$ T $>$}!insert@{insert}}
