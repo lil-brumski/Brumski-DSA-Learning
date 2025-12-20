@@ -46,7 +46,7 @@ int main(int argc, char** argv) {
         UsingBST();
     }
     else {
-        argparse::ArgumentParser program("LinkedList", "1.3");
+        argparse::ArgumentParser program("LinkedList", "1.4");
 
         //For linked lists
         std::vector<int> IntNumbers;

@@ -1,9 +1,10 @@
 cmake_minimum_required(VERSION 3.30)
 
-project(DataStructuresAndAlgorithms VERSION 1.2)
+project(DataStructuresAndAlgorithms VERSION 1.4)
 
 set(CMAKE_CXX_STANDARD 23)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
+set(CMAKE_CXX_EXTENSIONS False)
 
 add_subdirectory(deps/argparse)
 add_subdirectory(deps/termcolor)
