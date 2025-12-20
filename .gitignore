@@ -1,5 +1,9 @@
 .vs
 
+.vscode/
+
+.qtcreator/
+
 out/
 
 build/

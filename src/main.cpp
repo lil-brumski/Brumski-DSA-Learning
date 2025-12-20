@@ -1,5 +1,4 @@
 #include <vector>
-#include <stdexcept>
 #include <string>
 
 #include "linkedlist.hpp"
@@ -9,6 +8,7 @@
 #include "binary_tree.hpp"
 
 #include <argparse/argparse.hpp>
+#include <termcolor/termcolor.hpp>
 
 #if defined(_WIN32)
 	#pragma message("Target: Windows")
@@ -31,32 +31,6 @@
 #else 
 	#pragma message("Compiler: Unknown Compiler")
 #endif
-
-
-/**
-* Contains constants that will allow the text in the command line to have colours other than the default one.
-*/
-
-enum class Color {
-    red, /**< Will display the colour red*/
-    green, /**< Will display the colour green*/
-    yellow, /**< Will display the colour yellow*/
-    reset /**< Will display the default command line colour*/
-};
-
-/**
-* \brief View-only string function
-* @param c - the enum constant containing the ANSI value that you want displayed.
-*/
-constexpr std::string_view ansi(Color c = Color::reset) {
-    switch (c) {
-    case Color::red: return "\033[31m";
-    case Color::reset: return "\033[0m";
-    case Color::green: return "\033[32m";
-    case Color::yellow: return "\033[33m";
-    }
-    return "\033[0m";
-}
 
 int main(int argc, char** argv) {
 
@@ -142,9 +116,9 @@ int main(int argc, char** argv) {
                     list_f.insertAtEnd(s);
                 }
 
-                std::cout << ansi(Color::green) << "\nSTART (linked list): Floats" << ansi() << std::endl;
+                std::cout << termcolor::green << "\nSTART (linked list): Floats" << termcolor::reset << std::endl;
                 std::cout << list_f << std::endl;
-                std::cout << ansi(Color::green) << "STOP: Floats" << ansi() << std::endl;
+                std::cout << termcolor::green << "STOP: Floats" << termcolor::reset << std::endl;
             }
             if(program.is_used("--floatst")){
                 std::vector<float> FDEC = program.get<std::vector<float>>("--floatst");
@@ -153,9 +127,9 @@ int main(int argc, char** argv) {
                     obj_f.push_top(s);
                 }
 
-                std::cout << ansi(Color::green) << "\nSTART (stack): Floats" << ansi() << std::endl;
+                std::cout << termcolor::green << "\nSTART (stack): Floats" << termcolor::reset << std::endl;
                 UsingStack3(obj_f);
-                std::cout << ansi(Color::green) << "STOP: Floats" << ansi() << std::endl;
+                std::cout << termcolor::green << "STOP: Floats" << termcolor::reset << std::endl;
             }
             if (program.is_used("--floatqu")) {
                 std::vector<float> FQ = program.get<std::vector<float>>("--floatqu");
@@ -164,9 +138,9 @@ int main(int argc, char** argv) {
                     myFQ.push_back(s);
                 }
 
-                std::cout << ansi(Color::green) << "\nSTART (queue): Floats" << ansi() << std::endl;
+                std::cout << termcolor::green << "\nSTART (queue): Floats" << termcolor::reset << std::endl;
                 UsingQueue3(myFQ);
-                std::cout << ansi(Color::green) << "STOP: Floats" << ansi() << std::endl;
+                std::cout << termcolor::green << "STOP: Floats" << termcolor::reset << std::endl;
             }
         }
 
@@ -179,27 +153,27 @@ int main(int argc, char** argv) {
                 for (auto& s : IntNumbers) {
                     list_int.insertAtEnd(s);
                 }
-                std::cout << ansi(Color::green) << "\nSTART (linked list): Integers" << ansi() << std::endl;
+                std::cout << termcolor::green << "\nSTART (linked list): Integers" << termcolor::reset << std::endl;
                 std::cout << list_int << std::endl;
-                std::cout << ansi(Color::green) << "STOP: Integers" << ansi() << std::endl;
+                std::cout << termcolor::green << "STOP: Integers" << termcolor::reset << std::endl;
             }
             if(program.is_used("--intst")) {
                 MyStack<int> obj_int;
                 for (auto& s : SINT) {
                     obj_int.push_top(s);
                 }
-                std::cout << ansi(Color::green) << "\nSTART (stack): Integers" << ansi() << std::endl;
+                std::cout << termcolor::green << "\nSTART (stack): Integers" << termcolor::reset << std::endl;
                 UsingStack3(obj_int);
-                std::cout << ansi(Color::green) << "STOP: Integers" << ansi() << std::endl;
+                std::cout << termcolor::green << "STOP: Integers" << termcolor::reset << std::endl;
             }
             if (program.is_used("--intqu")) {
                 MyQueue<int> myIQ;
                 for (auto& s : QINT) {
                     myIQ.push_back(s);
                 }
-                std::cout << ansi(Color::green) << "\nSTART (queue): Integers" << ansi() << std::endl;
+                std::cout << termcolor::green << "\nSTART (queue): Integers" << termcolor::reset << std::endl;
                 UsingQueue3(myIQ);
-                std::cout << ansi(Color::green) << "STOP: Integers" << ansi() << std::endl;
+                std::cout << termcolor::green << "STOP: Integers" << termcolor::reset << std::endl;
             }
         }
 
@@ -212,27 +186,27 @@ int main(int argc, char** argv) {
                 for (auto& s : StringVessel) {
                     list_str.insertAtEnd(s);
                 }
-                std::cout << ansi(Color::green) << "\nSTART (linked list): Strings" << ansi() << std::endl;
+                std::cout << termcolor::green << "\nSTART (linked list): Strings" << termcolor::reset << std::endl;
                 std::cout << list_str << std::endl;
-                std::cout << ansi(Color::green) << "STOP: Strings" << ansi() << std::endl;
+                std::cout << termcolor::green << "STOP: Strings" << termcolor::reset << std::endl;
             }
             if(program.is_used("--stringst")) {
                 MyStack<std::string> obj_str;
                 for (auto& s : SCHAR) {
                     obj_str.push_top(s);
                 }
-                std::cout << ansi(Color::green) << "\nSTART (stack): Strings" << ansi() << std::endl;
+                std::cout << termcolor::green << "\nSTART (stack): Strings" << termcolor::reset << std::endl;
                 UsingStack3(obj_str);
-                std::cout << ansi(Color::green) << "STOP: Strings" << ansi() << std::endl;
+                std::cout << termcolor::green << "STOP: Strings" << termcolor::reset << std::endl;
             }
             if (program.is_used("--stringqu")) {
                 MyQueue<std::string> mySQ;
                 for (auto& s : QCHAR) {
                     mySQ.push_back(s);
                 }
-                std::cout << ansi(Color::green) << "\nSTART (queue): Strings" << ansi() << std::endl;
+                std::cout << termcolor::green << "\nSTART (queue): Strings" << termcolor::reset << std::endl;
                 UsingQueue3(mySQ);
-                std::cout << ansi(Color::green) << "STOP: Strings" << ansi() << std::endl;
+                std::cout << termcolor::green << "STOP: Strings" << termcolor::reset << std::endl;
             }
         }
 
