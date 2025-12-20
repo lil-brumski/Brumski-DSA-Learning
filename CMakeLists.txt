@@ -6,6 +6,7 @@ set(CMAKE_CXX_STANDARD 23)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 
 add_subdirectory(deps/argparse)
+add_subdirectory(deps/termcolor)
 
 add_library(LinkedList STATIC "src/linkedlist.cpp")
 add_library(Linked::List ALIAS LinkedList)
@@ -24,4 +25,4 @@ add_library(My::BinaryTree ALIAS MyBinaryTree)
 target_include_directories(MyBinaryTree PUBLIC include)
 
 add_executable(brumski_dsa "src/main.cpp" "appIcon.rc")
-target_link_libraries(brumski_dsa PRIVATE argparse Linked::List My::Stack My::Queue My::BinaryTree)
+target_link_libraries(brumski_dsa PRIVATE argparse termcolor Linked::List My::Stack My::Queue My::BinaryTree)
