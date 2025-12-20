@@ -24,12 +24,7 @@ void ListExample2() {
     std::cout << CopyObj1 << std::endl;
 
     std::cout << "\nBIList" << std::endl;
-    try {
-        std::cout << BIList << std::endl;
-    }
-    catch (const std::exception& error) {
-        std::cerr << "Error: " << error.what() << std::endl;
-    }
+    std::cout << BIList << std::endl;
 
     std::cout << "\nBIList" << std::endl;
     BIList.insertAtFront(1);

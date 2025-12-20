@@ -31,8 +31,8 @@ public:
 		root = insertHelper(root, node);
 	}
 
-	virtual void display() {
-		displayHelper(root);
+    virtual void display(const bool& ascOrder = true) {
+        displayHelper(root, ascOrder);
 	}
 
 	virtual bool search(){
@@ -60,18 +60,27 @@ private:
 			root->left = insertHelper(root->left, node);
 		}
 		else {
-			root->right = insertHelper(root->right, node);
+            root->right = insertHelper(root->right, node);
 		}
 		
 		return std::move(root);
 	}
 
-	static void displayHelper(std::unique_ptr<BSTNode<T>>& root) {
-		if (root) {
-			displayHelper(root->left);
-			std::cout << root->data << std::endl;
-			displayHelper(root->right);
-		}
+    static void displayHelper(std::unique_ptr<BSTNode<T>>& root, const bool& ascendingOrder = true) {
+        if(ascendingOrder) {
+            if (root) {
+                displayHelper(root->left);
+                std::cout << root->data << std::endl;
+                displayHelper(root->right);
+            }
+        }
+        else{
+            if (root) {
+                displayHelper(root->right, ascendingOrder);
+                std::cout << root->data << std::endl;
+                displayHelper(root->left, ascendingOrder);
+            }
+        }
 	}
 
 	virtual bool searchHelper() {

@@ -13,5 +13,5 @@ void UsingBST() {
 	tree.insert(-2);
 	tree.insert(50);
 
-	tree.display();
+    tree.display(false);
 }
