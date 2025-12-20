@@ -13,5 +13,6 @@ void UsingBST() {
 	tree.insert(-2);
 	tree.insert(50);
 
+    std::cout << std::boolalpha << "Found: " << tree.search(-2) << std::endl;
     tree.display(false);
 }

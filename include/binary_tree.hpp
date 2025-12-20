@@ -31,12 +31,20 @@ public:
 		root = insertHelper(root, node);
 	}
 
+    /**
+    * Displays all the values in the binary search tree
+    * @param ascendingOrder - boolean variable that will decide if the traversal will be in ascending or descending order
+    */
     virtual void display(const bool& ascOrder = true) {
         displayHelper(root, ascOrder);
 	}
 
-	virtual bool search(){
-		return true;
+    /**
+    * Searches for an element in the binary search tree
+    * @param data - the element that you want to search for
+    */
+    virtual bool search(const T& data){
+        return searchHelper(root, data);
 	}
 
 	virtual void remove() {
@@ -46,8 +54,8 @@ public:
 private:
 	/**
 	* Helper to BSTree<T>::insert()
-	* @param value - the root node
-	* @param value - a new node
+    * @param root - the root node
+    * @param node - a new node
 	*/
 	virtual std::unique_ptr<BSTNode<T>> insertHelper(std::unique_ptr<BSTNode<T>>& root, std::unique_ptr<BSTNode<T>>& node) {
 		T data = node->data;
@@ -66,6 +74,11 @@ private:
 		return std::move(root);
 	}
 
+    /**
+    * Helper to BSTree<T>::display()
+    * @param root - the root node
+    * @param ascendingOrder - boolean variable that will decide if the traversal will be in ascending or descending order
+    */
     static void displayHelper(std::unique_ptr<BSTNode<T>>& root, const bool& ascendingOrder = true) {
         if(ascendingOrder) {
             if (root) {
@@ -83,8 +96,26 @@ private:
         }
 	}
 
-	virtual bool searchHelper() {
-		return true;
+    /**
+    * Helper to BSTree<T>::search()
+    * @param root - the root node
+    * @param data - the element that you want to search for
+    */
+    virtual bool searchHelper(std::unique_ptr<BSTNode<T>>& root, const T& data) {
+        if(!root){
+            return false;
+        }
+        else if(root->data == data){
+            return true;
+        }
+        else if(root->data > data){
+            return searchHelper(root->left, data);
+        }
+        else if(root->data < data){
+            return searchHelper(root->right, data);
+        }
+
+        return false;
 	}
 
 	virtual void removeHelper() {

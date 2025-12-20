@@ -4,6 +4,22 @@ project(DataStructuresAndAlgorithms VERSION 1.3)
 
 set(CMAKE_CXX_STANDARD 23)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
+set(CMAKE_CXX_EXTENSIONS False)
+
+if(CMAKE_BUILD_TYPE MATCHES "Release")
+    message(STATUS "Building the Release Binary")
+    set(CMAKE_BUILD_TYPE Release)
+    set(CMAKE_EXE_LINKER_FLAGS "-s")
+endif()
+
+if(CMAKE_CXX_COMPILER_ID MATCHES "GNU|Clang")
+    add_compile_options(
+        -Wall
+        -Wextra
+        -Werror
+        -Wpedantic
+    )
+endif()
 
 add_subdirectory(deps/argparse)
 add_subdirectory(deps/termcolor)
