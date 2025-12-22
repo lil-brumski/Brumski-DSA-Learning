@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['right_0',['right',['../classBSTree_1_1BSTNode.html#ac812850eca5e39d44c32ce4c87b3f9eb',1,'BSTree::BSTNode']]],
-  ['root_1',['root',['../classBSTree.html#acd77bb8456d50ed89faba7d5e5a1319a',1,'BSTree']]]
+  ['thefirst_0',['theFirst',['../classMyQueue.html#aabdef303ee05e1aa10cfd05dc409aaaf',1,'MyQueue']]],
+  ['therear_1',['theRear',['../classMyQueue.html#a71b939c09e522074816a887616c3cb76',1,'MyQueue']]]
 ];

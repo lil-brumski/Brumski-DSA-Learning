@@ -1,6 +1,6 @@
 \doxysection{linkedlist.\+hpp}
 \hypertarget{linkedlist_8hpp_source}{}\label{linkedlist_8hpp_source}\index{/home/brumski/Desktop/BRUMSKI/C++ Projects/Brumski-\/DSA-\/Learning/include/linkedlist.hpp@{/home/brumski/Desktop/BRUMSKI/C++ Projects/Brumski-\/DSA-\/Learning/include/linkedlist.hpp}}
-\mbox{\hyperlink{linkedlist_8hpp}{Go to the documentation of this file.}}
+
 \begin{DoxyCode}{0}
 \DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
 \DoxyCodeLine{00002\ }
@@ -18,7 +18,7 @@
 \DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classLinkedList_1_1Node_aec5b0130ae2d30aceb03ba1cd73f6350}{Node}}()\ =\ \textcolor{keywordflow}{default};}
 \DoxyCodeLine{00027\ \ \ \ \ \};}
 \DoxyCodeLine{00028\ \textcolor{keyword}{private}:}
-\DoxyCodeLine{00029\ \ \ \ \ std::unique\_ptr<Node<LLType>>\ \mbox{\hyperlink{classLinkedList_a797fde5d3747e434387d27a5477b915a}{head}};}
+\DoxyCodeLine{00029\ \ \ \ \ std::unique\_ptr<Node<LLType>>\ head;}
 \DoxyCodeLine{00030\ }
 \DoxyCodeLine{00031\ \textcolor{keyword}{public}:}
 \DoxyCodeLine{00035\ \ \ \ \ \mbox{\hyperlink{classLinkedList_ab7bbba34b30827d6b1c7a6627d9929a4}{LinkedList}}()\ =\ \textcolor{keywordflow}{default};}
@@ -37,9 +37,9 @@
 \DoxyCodeLine{00070\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{classLinkedList}{LinkedList}}\&\ \mbox{\hyperlink{classLinkedList_a4bf4f5cb6609fff49bf82ab37ed9c3e4}{insertAtFront}}(\textcolor{keyword}{const}\ LLType\&\ value)\ \{}
 \DoxyCodeLine{00071\ \ \ \ \ \ \ \ \ std::unique\_ptr<Node<LLType>>\ newNode\ =\ std::make\_unique<Node<LLType>>();}
 \DoxyCodeLine{00072\ \ \ \ \ \ \ \ \ newNode-\/>data\ =\ value;}
-\DoxyCodeLine{00073\ \ \ \ \ \ \ \ \ newNode-\/>next\ =\ std::move(\mbox{\hyperlink{classLinkedList_a797fde5d3747e434387d27a5477b915a}{head}});}
+\DoxyCodeLine{00073\ \ \ \ \ \ \ \ \ newNode-\/>next\ =\ std::move(head);}
 \DoxyCodeLine{00074\ }
-\DoxyCodeLine{00075\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classLinkedList_a797fde5d3747e434387d27a5477b915a}{head}}\ =\ std::move(newNode);}
+\DoxyCodeLine{00075\ \ \ \ \ \ \ \ \ head\ =\ std::move(newNode);}
 \DoxyCodeLine{00076\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ *\textcolor{keyword}{this};}
 \DoxyCodeLine{00077\ \ \ \ \ \}}
 \DoxyCodeLine{00078\ }
@@ -48,12 +48,12 @@
 \DoxyCodeLine{00085\ \ \ \ \ \ \ \ \ newNode-\/>data\ =\ value;}
 \DoxyCodeLine{00086\ \ \ \ \ \ \ \ \ newNode-\/>next\ =\ \textcolor{keyword}{nullptr};}
 \DoxyCodeLine{00087\ }
-\DoxyCodeLine{00088\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!\mbox{\hyperlink{classLinkedList_a797fde5d3747e434387d27a5477b915a}{head}})\ \{}
-\DoxyCodeLine{00089\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classLinkedList_a797fde5d3747e434387d27a5477b915a}{head}}\ =\ std::move(newNode);}
+\DoxyCodeLine{00088\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!head)\ \{}
+\DoxyCodeLine{00089\ \ \ \ \ \ \ \ \ \ \ \ \ head\ =\ std::move(newNode);}
 \DoxyCodeLine{00090\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ *\textcolor{keyword}{this};}
 \DoxyCodeLine{00091\ \ \ \ \ \ \ \ \ \}}
 \DoxyCodeLine{00092\ }
-\DoxyCodeLine{00093\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classLinkedList_1_1Node}{Node<LLType>}}*\ lastNode\ =\ \mbox{\hyperlink{classLinkedList_a797fde5d3747e434387d27a5477b915a}{head}}.get();}
+\DoxyCodeLine{00093\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classLinkedList_1_1Node}{Node<LLType>}}*\ lastNode\ =\ head.get();}
 \DoxyCodeLine{00094\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}\ (lastNode-\/>\mbox{\hyperlink{classLinkedList_1_1Node_a98667165cbec841d8a5229649a08a65a}{next}}\ !=\ \textcolor{keyword}{nullptr})\ \{}
 \DoxyCodeLine{00095\ \ \ \ \ \ \ \ \ \ \ \ \ lastNode\ =\ lastNode-\/>\mbox{\hyperlink{classLinkedList_1_1Node_a98667165cbec841d8a5229649a08a65a}{next}}.get();}
 \DoxyCodeLine{00096\ \ \ \ \ \ \ \ \ \}}
@@ -62,8 +62,8 @@
 \DoxyCodeLine{00099\ \ \ \ \ \}}
 \DoxyCodeLine{00100\ }
 \DoxyCodeLine{00104\ \ \ \ \ \textcolor{keyword}{friend}\ std::ostream\&\ \mbox{\hyperlink{classLinkedList_aae564fcddff7b8a01358a7b560ba1cb7}{operator<<}}(std::ostream\&\ os,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{classLinkedList}{LinkedList<LLType>}}\&\ obj)\ \{}
-\DoxyCodeLine{00105\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classLinkedList_1_1Node}{Node<LLType>}}*\ PRINT\_node\ =\ obj.\mbox{\hyperlink{classLinkedList_a797fde5d3747e434387d27a5477b915a}{head}}.get();}
-\DoxyCodeLine{00106\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!obj.\mbox{\hyperlink{classLinkedList_a797fde5d3747e434387d27a5477b915a}{head}})\ \textcolor{keywordflow}{return}\ (os\ <<\ \textcolor{stringliteral}{"{}[\ ]"{}});}
+\DoxyCodeLine{00105\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classLinkedList_1_1Node}{Node<LLType>}}*\ PRINT\_node\ =\ obj.head.get();}
+\DoxyCodeLine{00106\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!obj.head)\ \textcolor{keywordflow}{return}\ (os\ <<\ \textcolor{stringliteral}{"{}[\ ]"{}});}
 \DoxyCodeLine{00107\ \ \ \ \ \ \ \ \ }
 \DoxyCodeLine{00108\ \ \ \ \ \ \ \ \ os\ <<\ \textcolor{stringliteral}{"{}["{}};}
 \DoxyCodeLine{00109\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}\ (PRINT\_node-\/>\mbox{\hyperlink{classLinkedList_1_1Node_a98667165cbec841d8a5229649a08a65a}{next}}\ !=\ \textcolor{keyword}{nullptr})\ \{}
@@ -79,8 +79,8 @@
 \DoxyCodeLine{00119\ \};}
 \DoxyCodeLine{00120\ }
 \DoxyCodeLine{00121\ }
-\DoxyCodeLine{00125\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{linkedlist_8hpp_a558dcde16df55182bdb79452b84c5eec}{ListExample}}();}
+\DoxyCodeLine{00125\ \textcolor{keywordtype}{void}\ ListExample();}
 \DoxyCodeLine{00126\ }
-\DoxyCodeLine{00130\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{linkedlist_8hpp_a9564967f2f24e151270dd25ec83562bb}{ListExample2}}();}
+\DoxyCodeLine{00130\ \textcolor{keywordtype}{void}\ ListExample2();}
 
 \end{DoxyCode}

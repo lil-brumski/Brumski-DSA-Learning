@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['remove_0',['remove',['../classBSTree.html#ab2913a8d89eb1fced8acad77567f5ccf',1,'BSTree']]],
-  ['removehelper_1',['removeHelper',['../classBSTree.html#ad41dafd6e308e0e7dfb511f95d218456',1,'BSTree']]]
+  ['search_0',['search',['../classBSTree.html#a0f62f90def30b127e164863156242a8d',1,'BSTree']]],
+  ['searchhelper_1',['searchHelper',['../classBSTree.html#a836aed003cd8824fe8d9f4baceb690c4',1,'BSTree']]]
 ];

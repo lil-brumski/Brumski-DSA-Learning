@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Brumski&#39;s Data Structures and Algorithm Learning Project: BSTree&lt; T &gt; Class Template Reference</title>
+<title>Brumski&#39;s DSA Learning Project: BSTree&lt; T &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -25,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Brumski&#39;s Data Structures and Algorithm Learning Project<span id="projectnumber">&#160;1.3</span>
+   <div id="projectname">Brumski&#39;s DSA Learning Project<span id="projectnumber">&#160;1.3</span>
    </div>
    <div id="projectbrief">For Learning Data Structures and Algorithms in C++</div>
   </td>
@@ -93,7 +93,6 @@ $(document).ready(function(){initNavTree('classBSTree.html',''); initResizable()
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-static-methods">Static Private Member Functions</a> &#124;
 <a href="classBSTree-members.html">List of all members</a>  </div>
@@ -118,34 +117,25 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a971bb58c0583730e47cb8c862a7e214a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inserts a value into the binary search tree.  <br /></td></tr>
 <tr class="separator:a971bb58c0583730e47cb8c862a7e214a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afb288a09391fd53fd0b8043116418a70" id="r_afb288a09391fd53fd0b8043116418a70"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBSTree.html#afb288a09391fd53fd0b8043116418a70">display</a> (const bool &amp;ascOrder=true)</td></tr>
+<tr class="memdesc:afb288a09391fd53fd0b8043116418a70"><td class="mdescLeft">&#160;</td><td class="mdescRight">Displays all the values in the binary search tree.  <br /></td></tr>
 <tr class="separator:afb288a09391fd53fd0b8043116418a70"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3444ef8e9ad83e5a6b830c402940e13a" id="r_a3444ef8e9ad83e5a6b830c402940e13a"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBSTree.html#a3444ef8e9ad83e5a6b830c402940e13a">search</a> ()</td></tr>
-<tr class="separator:a3444ef8e9ad83e5a6b830c402940e13a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab2913a8d89eb1fced8acad77567f5ccf" id="r_ab2913a8d89eb1fced8acad77567f5ccf"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBSTree.html#ab2913a8d89eb1fced8acad77567f5ccf">remove</a> ()</td></tr>
-<tr class="separator:ab2913a8d89eb1fced8acad77567f5ccf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
-Public Attributes</h2></td></tr>
-<tr class="memitem:acd77bb8456d50ed89faba7d5e5a1319a" id="r_acd77bb8456d50ed89faba7d5e5a1319a"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classBSTree_1_1BSTNode.html">BSTNode</a>&lt; T &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBSTree.html#acd77bb8456d50ed89faba7d5e5a1319a">root</a></td></tr>
-<tr class="separator:acd77bb8456d50ed89faba7d5e5a1319a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f62f90def30b127e164863156242a8d" id="r_a0f62f90def30b127e164863156242a8d"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBSTree.html#a0f62f90def30b127e164863156242a8d">search</a> (const T &amp;data)</td></tr>
+<tr class="memdesc:a0f62f90def30b127e164863156242a8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Searches for an element in the binary search tree.  <br /></td></tr>
+<tr class="separator:a0f62f90def30b127e164863156242a8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:ad3b7d0e3447d6578edc8db20686f36a3" id="r_ad3b7d0e3447d6578edc8db20686f36a3"><td class="memItemLeft" align="right" valign="top">virtual std::unique_ptr&lt; <a class="el" href="classBSTree_1_1BSTNode.html">BSTNode</a>&lt; T &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBSTree.html#ad3b7d0e3447d6578edc8db20686f36a3">insertHelper</a> (std::unique_ptr&lt; <a class="el" href="classBSTree_1_1BSTNode.html">BSTNode</a>&lt; T &gt; &gt; &amp;<a class="el" href="classBSTree.html#acd77bb8456d50ed89faba7d5e5a1319a">root</a>, std::unique_ptr&lt; <a class="el" href="classBSTree_1_1BSTNode.html">BSTNode</a>&lt; T &gt; &gt; &amp;node)</td></tr>
+<tr class="memitem:ad3b7d0e3447d6578edc8db20686f36a3" id="r_ad3b7d0e3447d6578edc8db20686f36a3"><td class="memItemLeft" align="right" valign="top">virtual std::unique_ptr&lt; <a class="el" href="classBSTree_1_1BSTNode.html">BSTNode</a>&lt; T &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBSTree.html#ad3b7d0e3447d6578edc8db20686f36a3">insertHelper</a> (std::unique_ptr&lt; <a class="el" href="classBSTree_1_1BSTNode.html">BSTNode</a>&lt; T &gt; &gt; &amp;root, std::unique_ptr&lt; <a class="el" href="classBSTree_1_1BSTNode.html">BSTNode</a>&lt; T &gt; &gt; &amp;node)</td></tr>
 <tr class="memdesc:ad3b7d0e3447d6578edc8db20686f36a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper to <a class="el" href="classBSTree.html#a971bb58c0583730e47cb8c862a7e214a" title="Inserts a value into the binary search tree.">BSTree&lt;T&gt;::insert()</a>  <br /></td></tr>
 <tr class="separator:ad3b7d0e3447d6578edc8db20686f36a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa11cfad710f2cf388b01519eeb3c8fff" id="r_aa11cfad710f2cf388b01519eeb3c8fff"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBSTree.html#aa11cfad710f2cf388b01519eeb3c8fff">searchHelper</a> ()</td></tr>
-<tr class="separator:aa11cfad710f2cf388b01519eeb3c8fff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad41dafd6e308e0e7dfb511f95d218456" id="r_ad41dafd6e308e0e7dfb511f95d218456"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBSTree.html#ad41dafd6e308e0e7dfb511f95d218456">removeHelper</a> ()</td></tr>
-<tr class="separator:ad41dafd6e308e0e7dfb511f95d218456"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac568908c3536077210c4807db8d74a36" id="r_ac568908c3536077210c4807db8d74a36"><td class="memItemLeft" align="right" valign="top">T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBSTree.html#ac568908c3536077210c4807db8d74a36">successor</a> ()</td></tr>
-<tr class="separator:ac568908c3536077210c4807db8d74a36"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a88503849084901e9beb209cc1e2e3987" id="r_a88503849084901e9beb209cc1e2e3987"><td class="memItemLeft" align="right" valign="top">T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBSTree.html#a88503849084901e9beb209cc1e2e3987">predecessor</a> ()</td></tr>
-<tr class="separator:a88503849084901e9beb209cc1e2e3987"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a836aed003cd8824fe8d9f4baceb690c4" id="r_a836aed003cd8824fe8d9f4baceb690c4"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBSTree.html#a836aed003cd8824fe8d9f4baceb690c4">searchHelper</a> (std::unique_ptr&lt; <a class="el" href="classBSTree_1_1BSTNode.html">BSTNode</a>&lt; T &gt; &gt; &amp;root, const T &amp;data)</td></tr>
+<tr class="memdesc:a836aed003cd8824fe8d9f4baceb690c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper to <a class="el" href="classBSTree.html#a0f62f90def30b127e164863156242a8d" title="Searches for an element in the binary search tree.">BSTree&lt;T&gt;::search()</a>  <br /></td></tr>
+<tr class="separator:a836aed003cd8824fe8d9f4baceb690c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-methods" name="pri-static-methods"></a>
 Static Private Member Functions</h2></td></tr>
-<tr class="memitem:a89ee39ee51182c2e8db7aebc8bafed28" id="r_a89ee39ee51182c2e8db7aebc8bafed28"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBSTree.html#a89ee39ee51182c2e8db7aebc8bafed28">displayHelper</a> (std::unique_ptr&lt; <a class="el" href="classBSTree_1_1BSTNode.html">BSTNode</a>&lt; T &gt; &gt; &amp;<a class="el" href="classBSTree.html#acd77bb8456d50ed89faba7d5e5a1319a">root</a>, const bool &amp;ascendingOrder=true)</td></tr>
+<tr class="memitem:a89ee39ee51182c2e8db7aebc8bafed28" id="r_a89ee39ee51182c2e8db7aebc8bafed28"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBSTree.html#a89ee39ee51182c2e8db7aebc8bafed28">displayHelper</a> (std::unique_ptr&lt; <a class="el" href="classBSTree_1_1BSTNode.html">BSTNode</a>&lt; T &gt; &gt; &amp;root, const bool &amp;ascendingOrder=true)</td></tr>
+<tr class="memdesc:a89ee39ee51182c2e8db7aebc8bafed28"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper to <a class="el" href="classBSTree.html#afb288a09391fd53fd0b8043116418a70" title="Displays all the values in the binary search tree.">BSTree&lt;T&gt;::display()</a>  <br /></td></tr>
 <tr class="separator:a89ee39ee51182c2e8db7aebc8bafed28"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -178,6 +168,14 @@ template&lt;class T &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Displays all the values in the binary search tree. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ascendingOrder</td><td>- boolean variable that will decide if the traversal will be in ascending or descending order </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -216,6 +214,15 @@ template&lt;class T &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Helper to <a class="el" href="classBSTree.html#afb288a09391fd53fd0b8043116418a70" title="Displays all the values in the binary search tree.">BSTree&lt;T&gt;::display()</a> </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">root</td><td>- the root node </td></tr>
+    <tr><td class="paramname">ascendingOrder</td><td>- boolean variable that will decide if the traversal will be in ascending or descending order </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -294,97 +301,16 @@ template&lt;class T &gt; </div>
 <p>Helper to <a class="el" href="classBSTree.html#a971bb58c0583730e47cb8c862a7e214a" title="Inserts a value into the binary search tree.">BSTree&lt;T&gt;::insert()</a> </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">value</td><td>- the root node </td></tr>
-    <tr><td class="paramname">value</td><td>- a new node </td></tr>
+    <tr><td class="paramname">root</td><td>- the root node </td></tr>
+    <tr><td class="paramname">node</td><td>- a new node </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="a88503849084901e9beb209cc1e2e3987" name="a88503849084901e9beb209cc1e2e3987"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a88503849084901e9beb209cc1e2e3987">&#9670;&#160;</a></span>predecessor()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class T &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">T <a class="el" href="classBSTree.html">BSTree</a>&lt; T &gt;::predecessor </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ab2913a8d89eb1fced8acad77567f5ccf" name="ab2913a8d89eb1fced8acad77567f5ccf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab2913a8d89eb1fced8acad77567f5ccf">&#9670;&#160;</a></span>remove()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class T &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void <a class="el" href="classBSTree.html">BSTree</a>&lt; T &gt;::remove </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ad41dafd6e308e0e7dfb511f95d218456" name="ad41dafd6e308e0e7dfb511f95d218456"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad41dafd6e308e0e7dfb511f95d218456">&#9670;&#160;</a></span>removeHelper()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class T &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void <a class="el" href="classBSTree.html">BSTree</a>&lt; T &gt;::removeHelper </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a3444ef8e9ad83e5a6b830c402940e13a" name="a3444ef8e9ad83e5a6b830c402940e13a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3444ef8e9ad83e5a6b830c402940e13a">&#9670;&#160;</a></span>search()</h2>
+<a id="a0f62f90def30b127e164863156242a8d" name="a0f62f90def30b127e164863156242a8d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f62f90def30b127e164863156242a8d">&#9670;&#160;</a></span>search()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -397,7 +323,8 @@ template&lt;class T &gt; </div>
         <tr>
           <td class="memname">virtual bool <a class="el" href="classBSTree.html">BSTree</a>&lt; T &gt;::search </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">const T &amp;&#160;</td>
+          <td class="paramname"><em>data</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -408,10 +335,18 @@ template&lt;class T &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Searches for an element in the binary search tree. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td>- the element that you want to search for </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
-<a id="aa11cfad710f2cf388b01519eeb3c8fff" name="aa11cfad710f2cf388b01519eeb3c8fff"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa11cfad710f2cf388b01519eeb3c8fff">&#9670;&#160;</a></span>searchHelper()</h2>
+<a id="a836aed003cd8824fe8d9f4baceb690c4" name="a836aed003cd8824fe8d9f4baceb690c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a836aed003cd8824fe8d9f4baceb690c4">&#9670;&#160;</a></span>searchHelper()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -424,8 +359,19 @@ template&lt;class T &gt; </div>
         <tr>
           <td class="memname">virtual bool <a class="el" href="classBSTree.html">BSTree</a>&lt; T &gt;::searchHelper </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">std::unique_ptr&lt; <a class="el" href="classBSTree_1_1BSTNode.html">BSTNode</a>&lt; T &gt; &gt; &amp;&#160;</td>
+          <td class="paramname"><em>root</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">const T &amp;&#160;</td>
+          <td class="paramname"><em>data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -435,49 +381,14 @@ template&lt;class T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-</div>
-</div>
-<a id="ac568908c3536077210c4807db8d74a36" name="ac568908c3536077210c4807db8d74a36"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac568908c3536077210c4807db8d74a36">&#9670;&#160;</a></span>successor()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class T &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">T <a class="el" href="classBSTree.html">BSTree</a>&lt; T &gt;::successor </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="acd77bb8456d50ed89faba7d5e5a1319a" name="acd77bb8456d50ed89faba7d5e5a1319a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acd77bb8456d50ed89faba7d5e5a1319a">&#9670;&#160;</a></span>root</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class T &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">std::unique_ptr&lt;<a class="el" href="classBSTree_1_1BSTNode.html">BSTNode</a>&lt;T&gt; &gt; <a class="el" href="classBSTree.html">BSTree</a>&lt; T &gt;::root</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
+<p>Helper to <a class="el" href="classBSTree.html#a0f62f90def30b127e164863156242a8d" title="Searches for an element in the binary search tree.">BSTree&lt;T&gt;::search()</a> </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">root</td><td>- the root node </td></tr>
+    <tr><td class="paramname">data</td><td>- the element that you want to search for </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

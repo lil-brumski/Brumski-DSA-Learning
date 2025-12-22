@@ -9,6 +9,5 @@ var classLinkedList =
     [ "insertAtFront", "classLinkedList.html#a4bf4f5cb6609fff49bf82ab37ed9c3e4", null ],
     [ "operator=", "classLinkedList.html#abe0f0cf4b775b72cad13f9a9d6f21f6e", null ],
     [ "operator=", "classLinkedList.html#a79314289744bd433485ee7c38c633a04", null ],
-    [ "operator<<", "classLinkedList.html#aae564fcddff7b8a01358a7b560ba1cb7", null ],
-    [ "head", "classLinkedList.html#a797fde5d3747e434387d27a5477b915a", null ]
+    [ "operator<<", "classLinkedList.html#aae564fcddff7b8a01358a7b560ba1cb7", null ]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['left_0',['left',['../classBSTree_1_1BSTNode.html#ad679cf96bce6f52bc664219e184b6afc',1,'BSTree::BSTNode']]]
+  ['mytop_0',['myTop',['../classMyStack.html#a4e40957dd662c88cd809a8f3fb35c336',1,'MyStack']]]
 ];

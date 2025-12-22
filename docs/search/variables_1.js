@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['head_0',['head',['../classLinkedList.html#a797fde5d3747e434387d27a5477b915a',1,'LinkedList']]]
+  ['left_0',['left',['../classBSTree_1_1BSTNode.html#ad679cf96bce6f52bc664219e184b6afc',1,'BSTree::BSTNode']]]
 ];

@@ -1,5 +1,7 @@
 var searchData=
 [
-  ['operator_3c_3c_0',['operator&lt;&lt;',['../classLinkedList.html#aae564fcddff7b8a01358a7b560ba1cb7',1,'LinkedList']]],
-  ['operator_3d_1',['operator=',['../classLinkedList.html#abe0f0cf4b775b72cad13f9a9d6f21f6e',1,'LinkedList::operator=(const LinkedList&lt; LLType &gt; &amp;)=delete'],['../classLinkedList.html#a79314289744bd433485ee7c38c633a04',1,'LinkedList::operator=(LinkedList&lt; LLType &gt; &amp;&amp;other) noexcept=default'],['../classMyQueue.html#a8c56e3046b20a230b666e11e6ffbddda',1,'MyQueue::operator=(const MyQueue&lt; T &gt; &amp;)=delete'],['../classMyQueue.html#a8cedbcb810aaaa53782582d0d2ecf65a',1,'MyQueue::operator=(MyQueue&lt; T &gt; &amp;&amp;other)=default'],['../classMyStack.html#a8da4f76555596974150e409b3bc9598a',1,'MyStack::operator=(const MyStack&lt; T &gt; &amp;)=delete'],['../classMyStack.html#a68f9b89a3b58adcd9107a32f48a967c5',1,'MyStack::operator=(MyStack&lt; T &gt; &amp;&amp;other) noexcept=default']]]
+  ['popfront_0',['popFront',['../classMyQueue.html#a330213f16d60e2019ca3bbe9645d83f5',1,'MyQueue']]],
+  ['poptop_1',['popTop',['../classMyStack.html#aff269b73017c084cf5cce86e3f97dc44',1,'MyStack']]],
+  ['push_5fback_2',['push_back',['../classMyQueue.html#a76f2a52c29de95352d9743d630ac5bc9',1,'MyQueue']]],
+  ['push_5ftop_3',['push_top',['../classMyStack.html#a92c7f1af509db146274b5117090295b5',1,'MyStack']]]
 ];

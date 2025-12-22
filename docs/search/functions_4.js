@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['main_0',['main',['../main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627',1,'main.cpp']]],
-  ['myqueue_1',['myqueue',['../classMyQueue.html#ac76245b95d700b5cc5e93b9985aebb0f',1,'MyQueue::MyQueue()=default'],['../classMyQueue.html#a3eafbfab8c16b472710836e86db33aa5',1,'MyQueue::MyQueue(const MyQueue&lt; T &gt; &amp;)=delete'],['../classMyQueue.html#ae542281896714163c98224bc916e8a4b',1,'MyQueue::MyQueue(MyQueue&lt; T &gt; &amp;&amp;other)=default']]],
-  ['mystack_2',['mystack',['../classMyStack.html#afe002424439904e08e5a7c35ca64a022',1,'MyStack::MyStack()=default'],['../classMyStack.html#a1401dfc373aef01be9bec209c1531a30',1,'MyStack::MyStack(const MyStack&lt; T &gt; &amp;)=delete'],['../classMyStack.html#a2df886765dc72f5aeffae04eb30373eb',1,'MyStack::MyStack(MyStack&lt; T &gt; &amp;&amp;other) noexcept=default']]]
+  ['myqueue_0',['myqueue',['../classMyQueue.html#ac76245b95d700b5cc5e93b9985aebb0f',1,'MyQueue::MyQueue()=default'],['../classMyQueue.html#a3eafbfab8c16b472710836e86db33aa5',1,'MyQueue::MyQueue(const MyQueue&lt; T &gt; &amp;)=delete'],['../classMyQueue.html#ae542281896714163c98224bc916e8a4b',1,'MyQueue::MyQueue(MyQueue&lt; T &gt; &amp;&amp;other)=default']]],
+  ['mystack_1',['mystack',['../classMyStack.html#afe002424439904e08e5a7c35ca64a022',1,'MyStack::MyStack()=default'],['../classMyStack.html#a1401dfc373aef01be9bec209c1531a30',1,'MyStack::MyStack(const MyStack&lt; T &gt; &amp;)=delete'],['../classMyStack.html#a2df886765dc72f5aeffae04eb30373eb',1,'MyStack::MyStack(MyStack&lt; T &gt; &amp;&amp;other) noexcept=default']]]
 ];

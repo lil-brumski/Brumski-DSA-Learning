@@ -1,6 +1,6 @@
 \doxysection{queue\+\_\+dsa.\+hpp}
 \hypertarget{queue__dsa_8hpp_source}{}\label{queue__dsa_8hpp_source}\index{/home/brumski/Desktop/BRUMSKI/C++ Projects/Brumski-\/DSA-\/Learning/include/queue\_dsa.hpp@{/home/brumski/Desktop/BRUMSKI/C++ Projects/Brumski-\/DSA-\/Learning/include/queue\_dsa.hpp}}
-\mbox{\hyperlink{queue__dsa_8hpp}{Go to the documentation of this file.}}
+
 \begin{DoxyCode}{0}
 \DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
 \DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ <memory>}}
@@ -77,11 +77,11 @@
 \DoxyCodeLine{00118\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
 \DoxyCodeLine{00119\ \ \ \ \ \}}
 \DoxyCodeLine{00120\ }
-\DoxyCodeLine{00121\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{size\_t}\ \mbox{\hyperlink{classMyQueue_a5e3ac9de3d6021ee4f675a253577aa07}{size}}()\ \{}
-\DoxyCodeLine{00122\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classMyQueue_1_1Node}{Node<T>}}*\ temp\ =\ \mbox{\hyperlink{classMyQueue_aabdef303ee05e1aa10cfd05dc409aaaf}{theFirst}}.get();}
+\DoxyCodeLine{00121\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{size\_t}\ size()\ \{}
+\DoxyCodeLine{00122\ \ \ \ \ \ \ \ \ Node<T>*\ temp\ =\ \mbox{\hyperlink{classMyQueue_aabdef303ee05e1aa10cfd05dc409aaaf}{theFirst}}.get();}
 \DoxyCodeLine{00123\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{size\_t}\ counter\ =\ 0;}
 \DoxyCodeLine{00124\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}\ (temp)\ \{}
-\DoxyCodeLine{00125\ \ \ \ \ \ \ \ \ \ \ \ \ temp\ =\ temp-\/>\mbox{\hyperlink{classMyQueue_1_1Node_a667705b565fc39a6095b8a94856d5521}{next}}.get();}
+\DoxyCodeLine{00125\ \ \ \ \ \ \ \ \ \ \ \ \ temp\ =\ temp-\/>next.get();}
 \DoxyCodeLine{00126\ \ \ \ \ \ \ \ \ \ \ \ \ counter++;}
 \DoxyCodeLine{00127\ \ \ \ \ \ \ \ \ \}}
 \DoxyCodeLine{00128\ }
@@ -89,12 +89,12 @@
 \DoxyCodeLine{00130\ \ \ \ \ \}}
 \DoxyCodeLine{00131\ \};}
 \DoxyCodeLine{00132\ }
-\DoxyCodeLine{00136\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{queue__dsa_8hpp_a79b22eae2930982af77519fad4932293}{UsingQueue}}();}
+\DoxyCodeLine{00136\ \textcolor{keywordtype}{void}\ UsingQueue();}
 \DoxyCodeLine{00137\ }
-\DoxyCodeLine{00141\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{queue__dsa_8hpp_a9984162e62bdffd507933f58acd76ab1}{UsingQueue2}}();}
+\DoxyCodeLine{00141\ \textcolor{keywordtype}{void}\ UsingQueue2();}
 \DoxyCodeLine{00142\ }
 \DoxyCodeLine{00147\ \textcolor{keyword}{template}<\textcolor{keyword}{class}\ T>}
-\DoxyCodeLine{00148\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{queue__dsa_8hpp_aa4d33478478758030e8e2023b368ed95}{UsingQueue3}}(\mbox{\hyperlink{classMyQueue}{MyQueue<T>}}\&\ deez)\ \{}
+\DoxyCodeLine{00148\ \textcolor{keywordtype}{void}\ UsingQueue3(\mbox{\hyperlink{classMyQueue}{MyQueue<T>}}\&\ deez)\ \{}
 \DoxyCodeLine{00149\ \ \ \ \ \textcolor{keywordflow}{while}\ (!deez.\mbox{\hyperlink{classMyQueue_ad8262f29399507cadd669736a0e0cf9e}{isEmpty}}())\ \{}
 \DoxyCodeLine{00150\ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}The\ first\ in\ the\ queue\ right\ now\ is\ "{}}\ <<\ deez.\mbox{\hyperlink{classMyQueue_a6c19b79d70c5b75b08e39cc18e72ebd3}{front\_element}}()\ <<\ std::endl;}
 \DoxyCodeLine{00151\ \ \ \ \ \ \ \ \ deez.\mbox{\hyperlink{classMyQueue_a330213f16d60e2019ca3bbe9645d83f5}{popFront}}();}

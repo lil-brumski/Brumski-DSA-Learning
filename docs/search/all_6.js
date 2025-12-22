@@ -1,9 +1,5 @@
 var searchData=
 [
-  ['main_0',['main',['../main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627',1,'main.cpp']]],
-  ['main_2ecpp_1',['main.cpp',['../main_8cpp.html',1,'']]],
-  ['map_5fdsa_2ehpp_2',['map_dsa.hpp',['../map__dsa_8hpp.html',1,'']]],
-  ['myqueue_3',['myqueue',['../classMyQueue.html',1,'MyQueue&lt; T &gt;'],['../classMyQueue.html#ac76245b95d700b5cc5e93b9985aebb0f',1,'MyQueue::MyQueue()=default'],['../classMyQueue.html#a3eafbfab8c16b472710836e86db33aa5',1,'MyQueue::MyQueue(const MyQueue&lt; T &gt; &amp;)=delete'],['../classMyQueue.html#ae542281896714163c98224bc916e8a4b',1,'MyQueue::MyQueue(MyQueue&lt; T &gt; &amp;&amp;other)=default']]],
-  ['mystack_4',['mystack',['../classMyStack.html',1,'MyStack&lt; T &gt;'],['../classMyStack.html#afe002424439904e08e5a7c35ca64a022',1,'MyStack::MyStack()=default'],['../classMyStack.html#a1401dfc373aef01be9bec209c1531a30',1,'MyStack::MyStack(const MyStack&lt; T &gt; &amp;)=delete'],['../classMyStack.html#a2df886765dc72f5aeffae04eb30373eb',1,'MyStack::MyStack(MyStack&lt; T &gt; &amp;&amp;other) noexcept=default']]],
-  ['mytop_5',['myTop',['../classMyStack.html#a4e40957dd662c88cd809a8f3fb35c336',1,'MyStack']]]
+  ['next_0',['next',['../classLinkedList_1_1Node.html#a98667165cbec841d8a5229649a08a65a',1,'LinkedList::Node::next'],['../classMyQueue_1_1Node.html#a667705b565fc39a6095b8a94856d5521',1,'MyQueue::Node::next'],['../classMyStack_1_1Node.html#a8d1e0364bfe1fbe6ddda81af20558c4c',1,'MyStack::Node::next']]],
+  ['node_1',['node',['../classLinkedList_1_1Node.html',1,'LinkedList&lt; LLType &gt;::Node&lt; NType &gt;'],['../classMyQueue_1_1Node.html',1,'MyQueue&lt; T &gt;::Node&lt; NType &gt;'],['../classMyStack_1_1Node.html',1,'MyStack&lt; T &gt;::Node&lt; NType &gt;'],['../classLinkedList_1_1Node.html#aec5b0130ae2d30aceb03ba1cd73f6350',1,'LinkedList::Node::Node()'],['../classMyQueue_1_1Node.html#af1b843db36074764b5b711cea1530814',1,'MyQueue::Node::Node()'],['../classMyStack_1_1Node.html#aedfeabee79dacdf3c35d5111cd99099a',1,'MyStack::Node::Node()']]]
 ];
