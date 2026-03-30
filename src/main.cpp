@@ -24,10 +24,10 @@
 
 #if defined(_MSC_VER)
 	#pragma message("Compiler: MSVC detected")
+#elif defined(__GNUC__)
+    #pragma message("Compiler: GCC detected")
 #elif defined(__clang__)
 	#pragma message("Compiler: Clang detected")
-#elif defined(__GNUC__)
-	#pragma message("Compiler: GCC detected")
 #else 
 	#pragma message("Compiler: Unknown Compiler")
 #endif
